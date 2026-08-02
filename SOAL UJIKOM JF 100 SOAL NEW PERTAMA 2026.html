@@ -1,0 +1,2285 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Soal UKJPF 2026 - Panduan Lengkap</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8edf3 100%);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  /* HEADER UTAMA */
+  .main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  .main-header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .main-header .subtitle {
+    font-size: 1.1em;
+    opacity: 0.95;
+    margin-bottom: 15px;
+  }
+  
+  .badge-info {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    margin-top: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  /* SECTION HEADER */
+  .section-header {
+    padding: 25px 30px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .section-header .icon {
+    font-size: 1.8em;
+  }
+  
+  .section-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+  .section-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+  .section-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+  .section-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+  .section-5 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+  .section-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #2c3e50; }
+  .section-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #2c3e50; }
+  .section-8 { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #2c3e50; }
+  .section-9 { background: linear-gradient(135deg, #ff6e7f 0%, #bfe9ff 100%); color: #2c3e50; }
+  .section-10 { background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%); color: #2c3e50; }
+  
+  /* CONTENT */
+  .content {
+    padding: 30px;
+  }
+  
+  /* SOAL CARD */
+  .soal-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .soal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  }
+  
+  .soal-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+  }
+  
+  .soal-text {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .options {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  
+  .options li {
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #dee2e6;
+    transition: all 0.2s;
+  }
+  
+  .options li.correct {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-left: 4px solid #28a745;
+    color: #155724;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
+  }
+  
+  .options li.correct::before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* PEMBAHASAN */
+  .pembahasan {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+    border-left: 4px solid #ffc107;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+  
+  .pembahasan-label {
+    font-weight: bold;
+    color: #856404;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .pembahasan-text {
+    color: #664d03;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+  
+  /* RINGKASAN */
+  .summary-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 2px solid #00acc1;
+  }
+  
+  .summary-section h2 {
+    color: #006064;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .summary-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #00acc1;
+  }
+  
+  .summary-card h3 {
+    color: #006064;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .summary-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .summary-card li {
+    padding: 4px 0;
+    font-size: 0.92em;
+    color: #37474f;
+  }
+  
+  .summary-card li::before {
+    content: "▸ ";
+    color: #00acc1;
+    font-weight: bold;
+  }
+  
+  /* TABEL REGULASI */
+  .regulasi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .regulasi-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .regulasi-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .regulasi-table tr:hover {
+    background: #f5f5f5;
+  }
+  
+  .regulasi-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* TIPS */
+  .tips-box {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    border-left: 5px solid #e91e63;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .tips-box h3 {
+    color: #880e4f;
+    margin-bottom: 10px;
+  }
+  
+  .tips-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .tips-box li {
+    padding: 6px 0;
+    color: #4a148c;
+  }
+  
+  .tips-box li::before {
+    content: "💡 ";
+  }
+  
+  /* FOOTER */
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  /* PRINT STYLES */
+  @media print {
+    body { background: white; padding: 0; }
+    .container { box-shadow: none; }
+    .soal-card { break-inside: avoid; page-break-inside: avoid; }
+    .section-header { break-after: avoid; }
+  }
+  
+  @media (max-width: 768px) {
+    .main-header h1 { font-size: 1.6em; }
+    .content { padding: 15px; }
+    .soal-card { padding: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER UTAMA -->
+  <div class="main-header">
+    <h1>📚 100 SOAL UKJPF 2026</h1>
+    <p class="subtitle">Panduan Lengkap Belajar & Persiapan Ujian</p>
+    <div class="badge-info">🎯 100 Soal + Pembahasan | 📖 10 Kategori Tematik</div>
+  </div>
+
+  <div class="content">
+
+    <!-- ============ BAGIAN 1: KONSEP DASAR JF ============ -->
+    <div class="section-header section-1">
+      <span class="icon">📋</span>
+      <span>KONSEP DASAR JF (Soal 1–12)</span>
+    </div>
+
+    <!-- Soal 1 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 1</span>
+      <p class="soal-text">Berdasarkan PP Nomor 11 Tahun 2017, yang dimaksud dengan Jabatan Fungsional (JF) adalah …</p>
+      <ul class="options">
+        <li>A. Jabatan yang hanya berisi fungsi pengawasan</li>
+        <li class="correct">B. Sekelompok jabatan yang berisi fungsi dan tugas berkaitan dengan pelayanan fungsional berdasarkan keahlian dan keterampilan tertentu</li>
+        <li>C. Jabatan struktural yang telah dialihkan</li>
+        <li>D. Jabatan yang hanya diduduki oleh PNS golongan tinggi</li>
+        <li>E. Jabatan teknis yang tidak memerlukan kompetensi khusus</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pasal 1 PP 11/2017 mendefinisikan JF sebagai sekelompok jabatan yang berisi fungsi dan tugas berkaitan dengan pelayanan fungsional berdasarkan keahlian dan keterampilan tertentu.</div>
+      </div>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 2</span>
+      <p class="soal-text">Perbedaan mendasar antara Jabatan Fungsional dan Jabatan Struktural adalah …</p>
+      <ul class="options">
+        <li>A. JF memiliki kewenangan memerintah bawahan, sedangkan struktural tidak</li>
+        <li>B. JF lebih tinggi pangkatnya daripada struktural</li>
+        <li class="correct">C. JF menekankan pada keahlian/keterampilan tertentu tanpa garis komando struktural, sedangkan struktural memiliki wewenang kepemimpinan dan hierarki</li>
+        <li>D. JF hanya ada di instansi pusat, struktural hanya di daerah</li>
+        <li>E. Tidak ada perbedaan, keduanya sama secara konsep</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF berbasis keahlian/keterampilan tanpa hierarki komando, sedangkan jabatan struktural memiliki wewenang memimpin unit organisasi secara hierarkis.</div>
+      </div>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 3</span>
+      <p class="soal-text">Klasifikasi Jabatan Fungsional berdasarkan Permenpan RB Nomor 1 Tahun 2023 terdiri dari dua kategori, yaitu …</p>
+      <ul class="options">
+        <li>A. JF Ahli dan JF Terampil</li>
+        <li class="correct">B. JF Keahlian dan JF Keterampilan</li>
+        <li>C. JF Umum dan JF Khusus</li>
+        <li>D. JF Pusat dan JF Daerah</li>
+        <li>E. JF Utama dan JF Madya</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 1/2023 mengklasifikasikan JF menjadi dua kategori: JF Keahlian (pendidikan minimal S1/D4) dan JF Keterampilan (pendidikan minimal SMA/Sederajat hingga D3).</div>
+      </div>
+    </div>
+
+    <!-- Soal 4 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 4</span>
+      <p class="soal-text">Yang dimaksud dengan 'Jenjang Jabatan' dalam konteks Jabatan Fungsional Keahlian adalah …</p>
+      <ul class="options">
+        <li>A. Golongan ruang PNS</li>
+        <li class="correct">B. Tingkat jabatan yang mencerminkan tingkat kompetensi dan tanggung jawab, terdiri dari Ahli Pertama, Ahli Muda, Ahli Madya, dan Ahli Utama</li>
+        <li>C. Pangkat tertinggi dalam karier PNS</li>
+        <li>D. Urutan administratif dalam instansi</li>
+        <li>E. Level pendidikan formal yang dimiliki</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Jenjang JF Keahlian terdiri dari Ahli Pertama (terendah), Ahli Muda, Ahli Madya, dan Ahli Utama (tertinggi), yang mencerminkan tingkat kompetensi dan tanggung jawab.</div>
+      </div>
+    </div>
+
+    <!-- Soal 5 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 5</span>
+      <p class="soal-text">Berdasarkan Permenpan RB Nomor 1 Tahun 2023, JF Keterampilan terdiri dari jenjang …</p>
+      <ul class="options">
+        <li class="correct">A. Pemula, Terampil, Mahir, dan Penyelia</li>
+        <li>B. Pelaksana, Pelaksana Lanjutan, dan Penyelia</li>
+        <li>C. Pemula, Terampil, Mahir, dan Utama</li>
+        <li>D. Terampil, Mahir, Penyelia, dan Utama</li>
+        <li>E. Pertama, Muda, Madya, dan Utama</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF Keterampilan memiliki jenjang: Pemula, Terampil, Mahir, dan Penyelia (Pasal 8 Permenpan RB 1/2023).</div>
+      </div>
+    </div>
+
+    <!-- Soal 6 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 6</span>
+      <p class="soal-text">Prinsip pengelompokan Jabatan Fungsional didasarkan pada …</p>
+      <ul class="options">
+        <li>A. Kesamaan golongan ruang PNS</li>
+        <li>B. Kesamaan lokasi kerja pegawai</li>
+        <li class="correct">C. Kesamaan bidang tugas, fungsi, dan keahlian yang bersifat spesifik</li>
+        <li>D. Kesamaan usia pegawai</li>
+        <li>E. Kesamaan masa kerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF dikelompokkan berdasarkan kesamaan bidang tugas, fungsi, dan keahlian spesifik yang memerlukan kompetensi teknis tertentu, membentuk rumpun jabatan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 7 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 7</span>
+      <p class="soal-text">Yang dimaksud dengan 'Rumpun Jabatan Fungsional' adalah …</p>
+      <ul class="options">
+        <li>A. Kelompok JF yang memiliki pangkat yang sama</li>
+        <li class="correct">B. Kumpulan beberapa JF yang memiliki kesamaan bidang keilmuan, metodologi, dan teknik kerja</li>
+        <li>C. Kumpulan JF dalam satu instansi</li>
+        <li>D. Kelompok JF yang tidak dapat dialihkan</li>
+        <li>E. Kumpulan JF yang memiliki angka kredit sama</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Rumpun JF adalah kumpulan beberapa JF yang memiliki kesamaan bidang keilmuan, metodologi, dan teknik kerja tertentu.</div>
+      </div>
+    </div>
+
+    <!-- Soal 8 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 8</span>
+      <p class="soal-text">Berdasarkan PP Nomor 11 Tahun 2017, Manajemen PNS meliputi aspek berikut, KECUALI …</p>
+      <ul class="options">
+        <li>A. Pengadaan dan pengembangan karier</li>
+        <li>B. Penilaian kinerja dan penggajian</li>
+        <li>C. Penyusunan dan penetapan kebutuhan</li>
+        <li class="correct">D. Pembentukan partai politik pegawai</li>
+        <li>E. Disiplin dan pemberhentian</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Manajemen PNS meliputi penyusunan kebutuhan, pengadaan, pangkat, pengembangan karier, promosi, mutasi, penilaian kinerja, penggajian, penghargaan, disiplin, pemberhentian, jaminan pensiun, dan perlindungan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 9 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 9</span>
+      <p class="soal-text">Sistem pembinaan Jabatan Fungsional di Indonesia bertujuan untuk …</p>
+      <ul class="options">
+        <li>A. Membatasi jumlah PNS</li>
+        <li class="correct">B. Meningkatkan profesionalisme PNS melalui pengembangan kompetensi dan karier berbasis keahlian</li>
+        <li>C. Menghapus jabatan struktural</li>
+        <li>D. Memusatkan semua PNS di Jakarta</li>
+        <li>E. Menyamakan semua jenis jabatan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pembinaan JF bertujuan meningkatkan profesionalisme, kompetensi, dan karier PNS sesuai bidang keahliannya, mendukung pelayanan publik yang berkualitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 10 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 10</span>
+      <p class="soal-text">Yang dimaksud dengan 'Pejabat Fungsional' adalah …</p>
+      <ul class="options">
+        <li>A. Pegawai ASN yang menduduki jabatan struktural</li>
+        <li class="correct">B. Pegawai ASN yang menduduki JF pada instansi pemerintah</li>
+        <li>C. Pegawai kontrak di instansi pemerintah</li>
+        <li>D. Pejabat yang memiliki wewenang memerintah</li>
+        <li>E. Pejabat yang diangkat oleh presiden langsung</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Menurut PP 11/2017 Pasal 1, Pejabat Fungsional adalah Pegawai ASN yang menduduki JF pada instansi pemerintah.</div>
+      </div>
+    </div>
+
+    <!-- Soal 11 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 11</span>
+      <p class="soal-text">Salah satu ciri utama Jabatan Fungsional adalah …</p>
+      <ul class="options">
+        <li>A. Memiliki struktur birokrasi yang panjang</li>
+        <li>B. Memiliki anggota staf yang banyak</li>
+        <li class="correct">C. Pelaksanaan tugasnya memerlukan kompetensi teknis spesifik dan bersifat profesional</li>
+        <li>D. Tidak dapat diisi oleh PPPK</li>
+        <li>E. Hanya berlaku di kementerian pusat</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF memerlukan kompetensi teknis spesifik sebagai syarat utama, dan pejabatnya bersifat profesional dalam bidang keahlian tertentu.</div>
+      </div>
+    </div>
+
+    <!-- Soal 12 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 12</span>
+      <p class="soal-text">Berdasarkan Permenpan RB Nomor 1 Tahun 2023, Instansi Pembina JF adalah …</p>
+      <ul class="options">
+        <li>A. Kementerian Keuangan</li>
+        <li>B. Badan Kepegawaian Negara</li>
+        <li class="correct">C. Kementerian PANRB atau kementerian/lembaga yang mendapat mandat untuk membina JF tertentu</li>
+        <li>D. Setiap pemerintah daerah secara mandiri</li>
+        <li>E. Kementerian Dalam Negeri</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Instansi Pembina JF ditetapkan oleh Menteri PANRB, dapat berupa Kementerian PANRB sendiri atau kementerian/lembaga lain yang mendapat mandat sebagai pembina JF tertentu.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 2: PENGELOMPOKAN JF ============ -->
+    <div class="section-header section-2">
+      <span class="icon">🗂️</span>
+      <span>PENGELOMPOKAN JF (Soal 13–22)</span>
+    </div>
+
+    <!-- Soal 13 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 13</span>
+      <p class="soal-text">Jabatan Fungsional Guru termasuk dalam kategori …</p>
+      <ul class="options">
+        <li>A. JF Keterampilan</li>
+        <li class="correct">B. JF Keahlian</li>
+        <li>C. JF Struktural</li>
+        <li>D. JF Umum</li>
+        <li>E. JF Teknis</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Guru termasuk JF Keahlian karena mensyaratkan pendidikan minimal S1/D4 dan memiliki jenjang Ahli Pertama hingga Ahli Utama.</div>
+      </div>
+    </div>
+
+    <!-- Soal 14 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 14</span>
+      <p class="soal-text">Berdasarkan peraturan terbaru, JF Guru diatur dalam …</p>
+      <ul class="options">
+        <li class="correct">A. Permenpan RB Nomor 21 Tahun 2024</li>
+        <li>B. Permenpan RB Nomor 25 Tahun 2022</li>
+        <li>C. Permenpan RB Nomor 1 Tahun 2023</li>
+        <li>D. PP Nomor 11 Tahun 2017</li>
+        <li>E. UU Nomor 5 Tahun 2014</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB Nomor 21 Tahun 2024 mengatur Jabatan Fungsional Guru, menggantikan peraturan sebelumnya tentang JF Guru.</div>
+      </div>
+    </div>
+
+    <!-- Soal 15 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 15</span>
+      <p class="soal-text">Yang termasuk JF di bidang kesehatan adalah …</p>
+      <ul class="options">
+        <li>A. Analis Pajak</li>
+        <li>B. Pemeriksa Pajak</li>
+        <li class="correct">C. Perawat, Apoteker, dan Tenaga Kesehatan lainnya</li>
+        <li>D. Penyuluh Sosial</li>
+        <li>E. Insinyur</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perawat, Apoteker, dan berbagai Tenaga Kesehatan merupakan JF di bidang kesehatan yang diatur dalam peraturan masing-masing.</div>
+      </div>
+    </div>
+
+    <!-- Soal 16 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 16</span>
+      <p class="soal-text">JF Analis Pajak, Pemeriksa Pajak, dan Penilai Pajak berada di bawah instansi pembina …</p>
+      <ul class="options">
+        <li>A. Kementerian PANRB</li>
+        <li class="correct">B. Kementerian Keuangan</li>
+        <li>C. Badan Kepegawaian Negara</li>
+        <li>D. Kementerian Dalam Negeri</li>
+        <li>E. Badan Pemeriksa Keuangan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF di bidang perpajakan seperti Analis Pajak, Pemeriksa Pajak, dan Penilai Pajak dibina oleh Kementerian Keuangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 17 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 17</span>
+      <p class="soal-text">Rumpun JF di bidang pertanian mencakup …</p>
+      <ul class="options">
+        <li>A. Analis Pajak dan Pemeriksa Pajak</li>
+        <li class="correct">B. Penyuluh Pertanian dan jabatan lain di bidang pertanian</li>
+        <li>C. Perawat dan Apoteker</li>
+        <li>D. Auditor dan Akuntan</li>
+        <li>E. Guru dan Dosen</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penyuluh Pertanian merupakan salah satu JF dalam rumpun pertanian, yang diatur dalam Permenpan RB Nomor 23 Tahun 2024 tentang JF Bidang Pertanian.</div>
+      </div>
+    </div>
+
+    <!-- Soal 18 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 18</span>
+      <p class="soal-text">Yang dimaksud dengan JF PAKIS/PAJK adalah …</p>
+      <ul class="options">
+        <li>A. JF di bidang pengawasan keuangan</li>
+        <li class="correct">B. JF Pejabat Akademik dan JF Pejabat Administrasi Keuangan</li>
+        <li>C. JF Perencana dan JF Analis Kebijakan</li>
+        <li>D. JF Pranata Komputer dan JF Analis Sistem Informasi</li>
+        <li>E. JF Pekerja Sosial dan JF Penyuluh</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PAKIS/PAJK merujuk pada kelompok JF di bidang akademik dan administrasi keuangan di lingkungan perguruan tinggi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 19 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 19</span>
+      <p class="soal-text">JF Auditor Intern termasuk dalam kategori jabatan yang dibina oleh …</p>
+      <ul class="options">
+        <li>A. Kementerian Keuangan</li>
+        <li class="correct">B. Badan Pengawasan Keuangan dan Pembangunan (BPKP)</li>
+        <li>C. Badan Kepegawaian Negara</li>
+        <li>D. Kementerian PANRB</li>
+        <li>E. Kementerian Dalam Negeri</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF Auditor Intern dibina oleh BPKP sebagai instansi pembina sesuai peraturan yang berlaku.</div>
+      </div>
+    </div>
+
+    <!-- Soal 20 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 20</span>
+      <p class="soal-text">JF Pejabat Pengelola Keuangan Daerah (PPKD) berada di lingkungan …</p>
+      <ul class="options">
+        <li>A. Pemerintah pusat saja</li>
+        <li class="correct">B. Pemerintah daerah provinsi/kabupaten/kota</li>
+        <li>C. Kementerian Keuangan</li>
+        <li>D. Seluruh instansi vertikal</li>
+        <li>E. BUMN</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF PPKD berada di lingkungan pemerintah daerah, bertanggung jawab dalam pengelolaan keuangan daerah sesuai ketentuan perundang-undangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 21 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 21</span>
+      <p class="soal-text">Berdasarkan Permenpan RB Nomor 1 Tahun 2023, pengangkatan dalam JF dapat dilakukan melalui mekanisme …</p>
+      <ul class="options">
+        <li>A. Hanya melalui penerimaan CPNS baru</li>
+        <li class="correct">B. Penyesuaian/inpassing, perpindahan dari jabatan lain, dan promosi</li>
+        <li>C. Hanya melalui kenaikan pangkat</li>
+        <li>D. Hanya melalui mutasi internal</li>
+        <li>E. Hanya melalui seleksi terbuka</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengangkatan JF dapat dilakukan melalui penyesuaian (inpassing), perpindahan dari jabatan lain, atau promosi/kenaikan jenjang.</div>
+      </div>
+    </div>
+
+    <!-- Soal 22 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 22</span>
+      <p class="soal-text">Salah satu contoh JF yang termasuk dalam kategori JF Keterampilan adalah …</p>
+      <ul class="options">
+        <li>A. Dosen</li>
+        <li>B. Guru</li>
+        <li class="correct">C. Pranata Laboratorium Pendidikan (jenjang terampil)</li>
+        <li>D. Insinyur</li>
+        <li>E. Dokter</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pranata Laboratorium Pendidikan tersedia dalam kategori keterampilan (Pemula, Terampil, Mahir, Penyelia) maupun keahlian.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 3: PROSES UKJPF ============ -->
+    <div class="section-header section-3">
+      <span class="icon">📝</span>
+      <span>PROSES UKJPF (Soal 23–38)</span>
+    </div>
+
+    <!-- Soal 23 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 23</span>
+      <p class="soal-text">Kepanjangan UKJPF adalah …</p>
+      <ul class="options">
+        <li>A. Uji Kompetensi Jenjang Pejabat Fungsional</li>
+        <li>B. Uji Kompetensi Jabatan Profesi Fungsional</li>
+        <li>C. Uji Kompetensi Jabatan Fungsional Pegawai</li>
+        <li class="correct">D. Uji Kompetensi Jabatan Fungsional</li>
+        <li>E. Uji Kenaikan Jenjang Pejabat Fungsional</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UKJPF adalah Uji Kompetensi Jabatan Fungsional, yaitu ujian yang mengukur kompetensi teknis, manajerial, dan sosial kultural pejabat fungsional.</div>
+      </div>
+    </div>
+
+    <!-- Soal 24 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 24</span>
+      <p class="soal-text">UKJPF diselenggarakan oleh …</p>
+      <ul class="options">
+        <li class="correct">A. BKN dan/atau instansi pembina JF masing-masing</li>
+        <li>B. Kementerian PANRB secara langsung</li>
+        <li>C. Setiap instansi secara mandiri tanpa koordinasi</li>
+        <li>D. Komisi Aparatur Sipil Negara</li>
+        <li>E. Lembaga Administrasi Negara</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">BKN dan/atau instansi pembina JF menyelenggarakan UKJPF sesuai dengan bidang dan jenjang masing-masing.</div>
+      </div>
+    </div>
+
+    <!-- Soal 25 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 25</span>
+      <p class="soal-text">Salah satu tujuan utama UKJPF adalah …</p>
+      <ul class="options">
+        <li>A. Menaikkan pangkat PNS secara otomatis</li>
+        <li class="correct">B. Mengukur dan memastikan kompetensi pejabat fungsional sesuai standar yang ditetapkan</li>
+        <li>C. Mengganti sistem penilaian kinerja</li>
+        <li>D. Menghapus sistem angka kredit</li>
+        <li>E. Memindahkan PNS ke jabatan struktural</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UKJPF bertujuan memastikan pejabat fungsional memiliki kompetensi yang sesuai dengan standar kompetensi yang telah ditetapkan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 26 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 26</span>
+      <p class="soal-text">Materi uji dalam UKJPF mencakup …</p>
+      <ul class="options">
+        <li>A. Hanya kompetensi teknis</li>
+        <li>B. Hanya kompetensi manajerial</li>
+        <li class="correct">C. Kompetensi teknis, manajerial, dan sosial kultural</li>
+        <li>D. Hanya pengetahuan umum</li>
+        <li>E. Hanya wawasan kebangsaan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UKJPF mengukur tiga aspek kompetensi: teknis (bidang keahlian), manajerial (pengelolaan), dan sosial kultural (interaksi dan kebangsaan).</div>
+      </div>
+    </div>
+
+    <!-- Soal 27 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 27</span>
+      <p class="soal-text">Jenjang keahlian dalam JF Keahlian terdiri dari Level …</p>
+      <ul class="options">
+        <li>A. Level 1 sampai Level 3</li>
+        <li>B. Level 1 sampai Level 4</li>
+        <li class="correct">C. Level 1 sampai Level 5</li>
+        <li>D. Level 1 sampai Level 10</li>
+        <li>E. Level A sampai Level D</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF Keahlian memiliki 5 level: Level 1 (Ahli Pertama), Level 2 (Ahli Muda), Level 3 (Ahli Madya), Level 4 (Ahli Utama), dan dalam perkembangannya terdapat Level 5 (Jenjang Tertinggi/Utama).</div>
+      </div>
+    </div>
+
+    <!-- Soal 28 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 28</span>
+      <p class="soal-text">Peserta yang tidak lulus UKJPF berhak mengikuti ujian ulang (remedial) dengan ketentuan …</p>
+      <ul class="options">
+        <li>A. Tidak diperbolehkan remedial sama sekali</li>
+        <li>B. Remedial hanya satu kali seumur hidup</li>
+        <li class="correct">C. Diusulkan kembali tanpa perlu melampirkan dokumen persyaratan kecuali ada perubahan data kepegawaian</li>
+        <li>D. Remedial hanya diperbolehkan setelah 5 tahun</li>
+        <li>E. Remedial hanya untuk peserta dengan nilai di atas 50</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Berdasarkan panduan BKN, peserta yang tidak lulus dapat diusulkan kembali untuk remedial tanpa melampirkan ulang dokumen kecuali ada perubahan data.</div>
+      </div>
+    </div>
+
+    <!-- Soal 29 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 29</span>
+      <p class="soal-text">Metode pelaksanaan UKJPF dapat berupa …</p>
+      <ul class="options">
+        <li>A. Hanya tes tertulis</li>
+        <li class="correct">B. Computer-Based Test (CBT), presentasi, dan/atau wawancara</li>
+        <li>C. Hanya wawancara</li>
+        <li>D. Hanya portofolio</li>
+        <li>E. Observasi lapangan saja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UKJPF menggunakan CBT, presentasi, dan/atau wawancara untuk mengukur kompetensi peserta secara komprehensif.</div>
+      </div>
+    </div>
+
+    <!-- Soal 30 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 30</span>
+      <p class="soal-text">Syarat utama untuk mengikuti UKJPF kenaikan jenjang adalah …</p>
+      <ul class="options">
+        <li>A. Memiliki hobi yang relevan</li>
+        <li class="correct">B. Memenuhi angka kredit kumulatif untuk kenaikan jenjang dan menduduki pangkat tertinggi pada jenjang JF saat ini</li>
+        <li>C. Berusia di atas 50 tahun</li>
+        <li>D. Memiliki koneksi di instansi pembina</li>
+        <li>E. Telah mengikuti diklat minimal 10 kali</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Peserta UKJPF kenaikan jenjang harus telah memenuhi angka kredit kumulatif dan menduduki pangkat tertinggi pada jenjang JF saat ini.</div>
+      </div>
+    </div>
+
+    <!-- Soal 31 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 31</span>
+      <p class="soal-text">Pelaksanaan UKJPF di lingkungan BKN untuk JFK pada tahun 2025 dilakukan sebanyak …</p>
+      <ul class="options">
+        <li>A. 4 kali dalam setahun</li>
+        <li>B. 6 kali dalam setahun</li>
+        <li class="correct">C. 12 kali dalam setahun</li>
+        <li>D. 2 kali dalam setahun</li>
+        <li>E. 24 kali dalam setahun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Berdasarkan Surat Kepala BKN Nomor 2786/B-BJ.01.01/SD/K/2025, UKJPF JFK dilaksanakan 12 kali dalam setahun atau setiap bulan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 32 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 32</span>
+      <p class="soal-text">Kompetensi Teknis dalam UKJPF berkaitan dengan …</p>
+      <ul class="options">
+        <li>A. Kemampuan mengelola organisasi dan tim kerja</li>
+        <li>B. Kemampuan berinteraksi dalam masyarakat majemuk</li>
+        <li class="correct">C. Pengetahuan, keterampilan, dan sikap spesifik yang berkaitan dengan bidang teknis jabatan fungsional</li>
+        <li>D. Kemampuan berbahasa asing</li>
+        <li>E. Kemampuan fisik dan daya tahan tubuh</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kompetensi Teknis adalah pengetahuan, keterampilan, dan sikap spesifik yang berkaitan dengan bidang teknis JF (Pasal 1 PP 11/2017).</div>
+      </div>
+    </div>
+
+    <!-- Soal 33 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 33</span>
+      <p class="soal-text">Yang dimaksud dengan Kompetensi Manajerial dalam UKJPF adalah …</p>
+      <ul class="options">
+        <li>A. Pengetahuan tentang peraturan perundang-undangan</li>
+        <li>B. Kemampuan mengoperasikan komputer</li>
+        <li>C. Penguasaan bahasa Inggris</li>
+        <li class="correct">D. Pengetahuan, keterampilan, dan sikap dalam mengelola organisasi, sumber daya, dan kinerja</li>
+        <li>E. Kemampuan membuat laporan keuangan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kompetensi Manajerial meliputi integritas, kerja sama, komunikasi, orientasi hasil, pelayanan publik, pengembangan diri dan orang lain, mengelola perubahan, dan pengambilan keputusan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 34 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 34</span>
+      <p class="soal-text">Kompetensi Sosial Kultural dalam UKJPF mencakup …</p>
+      <ul class="options">
+        <li>A. Kemampuan menghafal UUD 1945</li>
+        <li class="correct">B. Kemampuan berinteraksi dan beradaptasi dalam masyarakat yang beragam (perekat bangsa)</li>
+        <li>C. Kemampuan matematika dan statistika</li>
+        <li>D. Kemampuan menulis laporan ilmiah</li>
+        <li>E. Keterampilan presentasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kompetensi Sosial Kultural adalah kemampuan berinteraksi dan beradaptasi dalam masyarakat majemuk, berperan sebagai perekat bangsa.</div>
+      </div>
+    </div>
+
+    <!-- Soal 35 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 35</span>
+      <p class="soal-text">Berdasarkan Panduan BKN, usulan UKJPF disampaikan melalui …</p>
+      <ul class="options">
+        <li>A. Surat pribadi peserta</li>
+        <li class="correct">B. Email ujikompetensijfk@bkn.go.id atau Aplikasi SRIKANDI</li>
+        <li>C. Telepon langsung ke BKN</li>
+        <li>D. Media sosial BKN</li>
+        <li>E. Kurir langsung ke kantor BKN</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Usulan calon peserta UKJPF disampaikan melalui email ujikompetensijfk@bkn.go.id atau aplikasi SRIKANDI.</div>
+      </div>
+    </div>
+
+    <!-- Soal 36 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 36</span>
+      <p class="soal-text">Kriteria kelulusan UKJPF ditetapkan berdasarkan …</p>
+      <ul class="options">
+        <li>A. Nilai tertinggi di antara peserta</li>
+        <li class="correct">B. Nilai minimal (passing grade) yang telah ditetapkan oleh instansi pembina</li>
+        <li>C. Keputusan sepihak penguji</li>
+        <li>D. Lama masa kerja peserta</li>
+        <li>E. Usia peserta</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kelulusan UKJPF didasarkan pada nilai minimal/passing grade yang ditetapkan oleh instansi pembina masing-masing JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 37 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 37</span>
+      <p class="soal-text">Uji kompetensi untuk perpindahan dari jabatan lain ke dalam JF meliputi …</p>
+      <ul class="options">
+        <li>A. Hanya tes teknis</li>
+        <li>B. Tidak perlu uji kompetensi</li>
+        <li class="correct">C. Uji kompetensi teknis, manajerial, dan sosial kultural</li>
+        <li>D. Hanya wawancara</li>
+        <li>E. Hanya presentasi portofolio</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perpindahan ke JF juga memerlukan uji kompetensi teknis, manajerial, dan sosial kultural, sama seperti kenaikan jenjang.</div>
+      </div>
+    </div>
+
+    <!-- Soal 38 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 38</span>
+      <p class="soal-text">Jika peserta dinyatakan tidak lulus UKJPF, instansi akan memberikan …</p>
+      <ul class="options">
+        <li>A. Sanksi disiplin</li>
+        <li class="correct">B. Informasi hasil uji pada materi yang belum memenuhi nilai kelulusan</li>
+        <li>C. Larangan mengikuti uji selamanya</li>
+        <li>D. Penurunan pangkat</li>
+        <li>E. Mutasi paksa</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Peserta yang tidak lulus diberikan informasi detail tentang materi yang belum memenuhi nilai kelulusan agar dapat dipersiapkan untuk remedial.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 4: JENJANG KARIR JF ============ -->
+    <div class="section-header section-4">
+      <span class="icon">📈</span>
+      <span>JENJANG KARIR JF (Soal 39–48)</span>
+    </div>
+
+    <!-- Soal 39 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 39</span>
+      <p class="soal-text">Jenjang JF Ahli Muda merupakan tingkat keahlian setelah …</p>
+      <ul class="options">
+        <li class="correct">A. Ahli Pertama</li>
+        <li>B. Ahli Madya</li>
+        <li>C. Ahli Utama</li>
+        <li>D. Penyelia</li>
+        <li>E. Mahir</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Urutan jenjang JF Keahlian: Ahli Pertama → Ahli Muda → Ahli Madya → Ahli Utama.</div>
+      </div>
+    </div>
+
+    <!-- Soal 40 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 40</span>
+      <p class="soal-text">Pangkat minimal untuk menduduki JF Ahli Madya adalah …</p>
+      <ul class="options">
+        <li>A. Penata Muda (III/a)</li>
+        <li>B. Penata Tingkat I (III/d)</li>
+        <li class="correct">C. Pembina (IV/a)</li>
+        <li>D. Pembina Utama Muda (IV/c)</li>
+        <li>E. Pembina Utama (IV/e)</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF Ahli Madya setara dengan pangkat Pembina (IV/a) hingga Pembina Utama Muda (IV/c).</div>
+      </div>
+    </div>
+
+    <!-- Soal 41 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 41</span>
+      <p class="soal-text">Kenaikan jenjang JF dari Ahli Muda ke Ahli Madya memerlukan …</p>
+      <ul class="options">
+        <li>A. Izin atasan langsung</li>
+        <li>B. Rekomendasi rekan kerja</li>
+        <li class="correct">C. Pemenuhan angka kredit kumulatif dan lulus UKJPF</li>
+        <li>D. Surat keterangan sehat</li>
+        <li>E. Ujian persamaan ijazah</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kenaikan jenjang JF mensyaratkan pemenuhan angka kredit kumulatif dan lulus uji kompetensi pada jenjang yang lebih tinggi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 42 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 42</span>
+      <p class="soal-text">JF Ahli Utama merupakan jenjang tertinggi yang …</p>
+      <ul class="options">
+        <li>A. Tidak dapat dicapai oleh PNS</li>
+        <li>B. Hanya dapat dicapai melalui penunjukan langsung presiden</li>
+        <li class="correct">C. Mencerminkan kepakaran tertinggi dalam bidang JF tertentu</li>
+        <li>D. Setara dengan eselon I</li>
+        <li>E. Tidak memerlukan uji kompetensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Ahli Utama adalah jenjang tertinggi JF Keahlian yang mencerminkan kepakaran dan kompetensi tertinggi dalam bidang tertentu.</div>
+      </div>
+    </div>
+
+    <!-- Soal 43 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 43</span>
+      <p class="soal-text">Pola karier Pejabat JF bersifat …</p>
+      <ul class="options">
+        <li>A. Linear vertikal saja</li>
+        <li class="correct">B. Horizontal (lintas JF) dan vertikal (kenaikan jenjang) dalam satu rumpun atau rumpun yang terkait</li>
+        <li>C. Acak tanpa pola</li>
+        <li>D. Hanya horizontal tanpa kenaikan jenjang</li>
+        <li>E. Tergantung kebijakan masing-masing instansi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pola karier JF mencakup promosi vertikal (kenaikan jenjang) dan mutasi horizontal (perpindahan antar JF dalam satu rumpun).</div>
+      </div>
+    </div>
+
+    <!-- Soal 44 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 44</span>
+      <p class="soal-text">Pengembangan karier JF dilakukan melalui …</p>
+      <ul class="options">
+        <li>A. Mutasi ke jabatan struktural setiap 5 tahun</li>
+        <li class="correct">B. Diklat kompetensi, penugasan, dan uji kompetensi secara berkelanjutan</li>
+        <li>C. Rotasi massal setiap tahun</li>
+        <li>D. Penugasan di luar negeri</li>
+        <li>E. Program pensiun dini</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengembangan karier JF dilakukan melalui pendidikan dan pelatihan, penugasan, serta uji kompetensi secara berkelanjutan sesuai kebutuhan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 45 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 45</span>
+      <p class="soal-text">Kenaikan pangkat JF dapat dilakukan apabila …</p>
+      <ul class="options">
+        <li>A. PNS mengajukan permohonan pribadi</li>
+        <li class="correct">B. Memenuhi angka kredit, memiliki penilaian kinerja baik, dan lulus uji kompetensi (jika diperlukan)</li>
+        <li>C. Telah bekerja minimal 30 tahun</li>
+        <li>D. Mendapat rekomendasi dari organisasi profesi</li>
+        <li>E. Memiliki piagam penghargaan internasional</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kenaikan pangkat JF mensyaratkan pemenuhan angka kredit, penilaian kinerja minimal baik, dan jika diperlukan lulus uji kompetensi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 46 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 46</span>
+      <p class="soal-text">Ahli Pertama merupakan jenjang awal JF Keahlian dengan persyaratan pendidikan minimal …</p>
+      <ul class="options">
+        <li>A. SMA/SMK</li>
+        <li>B. D3</li>
+        <li class="correct">C. S1/D4</li>
+        <li>D. S2</li>
+        <li>E. S3</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">JF Keahlian mensyaratkan pendidikan minimal S1/D4, dan Ahli Pertama merupakan jenjang awal setelah pengangkatan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 47 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 47</span>
+      <p class="soal-text">Penyelia adalah jenjang tertinggi dalam JF …</p>
+      <ul class="options">
+        <li>A. Keahlian</li>
+        <li>B. Struktural</li>
+        <li class="correct">C. Keterampilan</li>
+        <li>D. Teknis</li>
+        <li>E. Umum</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penyelia merupakan jenjang tertinggi dalam JF Keterampilan (setelah Pemula, Terampil, Mahir).</div>
+      </div>
+    </div>
+
+    <!-- Soal 48 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 48</span>
+      <p class="soal-text">Promosi JF dapat dilakukan dalam bentuk …</p>
+      <ul class="options">
+        <li class="correct">A. Kenaikan jenjang setingkat lebih tinggi atau perpindahan ke JF lain yang setingkat</li>
+        <li>B. Hanya kenaikan gaji</li>
+        <li>C. Hanya penambahan tunjangan</li>
+        <li>D. Mutasi ke daerah terpencil</li>
+        <li>E. Pemberian sertifikat penghargaan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Promosi JF dapat berupa kenaikan jenjang ke tingkat lebih tinggi atau perpindahan ke JF lain yang setingkat dalam satu rumpun.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 5: ANGKA KREDIT ============ -->
+    <div class="section-header section-5">
+      <span class="icon">🔢</span>
+      <span>ANGKA KREDIT (Soal 49–58)</span>
+    </div>
+
+    <!-- Soal 49 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 49</span>
+      <p class="soal-text">Angka Kredit (AK) adalah …</p>
+      <ul class="options">
+        <li>A. Nilai ujian kompetensi</li>
+        <li class="correct">B. Satuan nilai dari butir kegiatan dan/atau akumulasi nilai butir-butir kegiatan yang harus dicapai oleh Pejabat JF dalam rangka pengembangan karier</li>
+        <li>C. Nilai kinerja tahunan PNS</li>
+        <li>D. Skor penilaian atasan</li>
+        <li>E. Nilai kehadiran pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Angka Kredit adalah satuan nilai dari butir kegiatan JF yang harus dicapai untuk pengembangan karier dan kenaikan pangkat/jenjang.</div>
+      </div>
+    </div>
+
+    <!-- Soal 50 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 50</span>
+      <p class="soal-text">Pengumpulan Angka Kredit JF dilakukan melalui …</p>
+      <ul class="options">
+        <li>A. Hanya kegiatan diklat</li>
+        <li class="correct">B. Unsur utama (pendidikan, pelaksanaan tugas, pengembangan profesi) dan unsur penunjang</li>
+        <li>C. Hanya kegiatan pengabdian masyarakat</li>
+        <li>D. Hanya publikasi ilmiah</li>
+        <li>E. Hanya kehadiran kerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Angka Kredit diperoleh dari unsur utama (pendidikan, pelaksanaan tugas, pengembangan profesi) dan unsur penunjang (kegiatan penunjang tugas).</div>
+      </div>
+    </div>
+
+    <!-- Soal 51 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 51</span>
+      <p class="soal-text">Yang bertugas melakukan validasi dan verifikasi Angka Kredit adalah …</p>
+      <ul class="options">
+        <li>A. Pejabat Pembina Kepegawaian</li>
+        <li class="correct">B. Tim Penilai Angka Kredit (TPAK) yang dibentuk oleh pejabat yang berwenang</li>
+        <li>C. BKN pusat langsung</li>
+        <li>D. Kemenpan RB</li>
+        <li>E. Inspektorat</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tim Penilai Angka Kredit (TPAK) melakukan validasi dan verifikasi terhadap usulan angka kredit Pejabat JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 52 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 52</span>
+      <p class="soal-text">Sejak berlakunya Permenpan RB Nomor 1 Tahun 2023, sistem penilaian Angka Kredit menggunakan …</p>
+      <ul class="options">
+        <li>A. Sistem konvensional manual</li>
+        <li class="correct">B. Sistem Angka Kredit Integrasi/Konversi yang terintegrasi dengan penilaian kinerja</li>
+        <li>C. Sistem poin kompetensi</li>
+        <li>D. Sistem kredit semester</li>
+        <li>E. Sistem penilaian atasan langsung</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Sejak Januari 2023, penilaian angka kredit menggunakan AK Konversi/Integrasi yang terintegrasi dengan sistem penilaian kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 53 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 53</span>
+      <p class="soal-text">Angka Kredit yang telah ditetapkan dimanfaatkan untuk …</p>
+      <ul class="options">
+        <li class="correct">A. Kenaikan pangkat dan kenaikan jenjang JF</li>
+        <li>B. Hanya untuk kenaikan gaji berkala</li>
+        <li>C. Tidak memiliki fungsi apa pun</li>
+        <li>D. Hanya untuk syariat pensiun</li>
+        <li>E. Untuk kepentingan mutasi saja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Angka Kredit digunakan sebagai dasar kenaikan pangkat dan/atau kenaikan jenjang JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 54 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 54</span>
+      <p class="soal-text">Unsur utama dalam penilaian Angka Kredit terdiri dari …</p>
+      <ul class="options">
+        <li class="correct">A. Pendidikan, pelaksanaan tugas pokok, dan pengembangan profesi</li>
+        <li>B. Absensi dan sikap</li>
+        <li>C. Pendidikan saja</li>
+        <li>D. Pengalaman kerja dan pendidikan</li>
+        <li>E. Penghargaan dan prestasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Unsur utama meliputi pendidikan (formal dan pelatihan), pelaksanaan tugas pokok JF, dan pengembangan profesi (karya tulis, inovasi, dll).</div>
+      </div>
+    </div>
+
+    <!-- Soal 55 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 55</span>
+      <p class="soal-text">Yang dimaksud dengan Angka Kredit Kumulatif adalah …</p>
+      <ul class="options">
+        <li>A. Angka kredit tertinggi dalam satu golongan</li>
+        <li class="correct">B. Jumlah angka kredit dari seluruh butir kegiatan yang dipersyaratkan untuk kenaikan pangkat/jenjang</li>
+        <li>C. Rata-rata angka kredit per tahun</li>
+        <li>D. Angka kredit minimal per bulan</li>
+        <li>E. Angka kredit yang tidak dapat digunakan lagi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Angka Kredit Kumulatif adalah total angka kredit yang harus dipenuhi PNS untuk naik pangkat atau naik jenjang JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 56 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 56</span>
+      <p class="soal-text">Dalam sistem Angka Kredit Integrasi (AKI) berdasarkan Permenpan RB 1/2023, penilaian kinerja JF didasarkan pada …</p>
+      <ul class="options">
+        <li class="correct">A. Ekspektasi kinerja dan pengembangan kompetensi</li>
+        <li>B. Hanya kehadiran harian</li>
+        <li>C. Hanya hasil ujian kompetensi</li>
+        <li>D. Senioritas pegawai</li>
+        <li>E. Kedekatan dengan atasan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">AKI mengintegrasikan penilaian kinerja berbasis ekspektasi kinerja dan pengembangan kompetensi, bukan lagi butir kegiatan manual.</div>
+      </div>
+    </div>
+
+    <!-- Soal 57 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 57</span>
+      <p class="soal-text">Pejabat yang berwenang menetapkan Angka Kredit adalah …</p>
+      <ul class="options">
+        <li>A. Kepala BKN</li>
+        <li class="correct">B. Pejabat Penetap Angka Kredit (PPAK) di instansi masing-masing</li>
+        <li>C. Menteri PANRB</li>
+        <li>D. Presiden</li>
+        <li>E. Kepala daerah</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PPAK adalah pejabat yang berwenang menetapkan Angka Kredit di instansi masing-masing sesuai dengan ketentuan peraturan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 58 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 58</span>
+      <p class="soal-text">Jika seorang Pejabat JF tidak memenuhi target angka kredit dalam periode tertentu, maka …</p>
+      <ul class="options">
+        <li>A. Otomatis dipecat</li>
+        <li class="correct">B. Dapat diberikan kesempatan untuk memenuhi kekurangan pada periode berikutnya sesuai ketentuan</li>
+        <li>C. Langsung diturunkan pangkat</li>
+        <li>D. Dikenakan denda administrasi</li>
+        <li>E. Dilarang mengikuti uji kompetensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Dalam sistem yang berlaku, Pejabat JF yang belum memenuhi target AK dapat diberikan kesempatan memenuhi kekurangan pada periode berikutnya.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 6: HAK DAN KEWAJIBAN ============ -->
+    <div class="section-header section-6">
+      <span class="icon">⚖️</span>
+      <span>HAK DAN KEWAJIBAN (Soal 59–66)</span>
+    </div>
+
+    <!-- Soal 59 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 59</span>
+      <p class="soal-text">Hak Pejabat Fungsional antara lain …</p>
+      <ul class="options">
+        <li class="correct">A. Gaji, tunjangan, cuti, pengembangan kompetensi, dan perlindungan hukum</li>
+        <li>B. Mendapatkan fasilitas rumah dinas mewah</li>
+        <li>C. Mendapat kendaraan dinas tanpa batas</li>
+        <li>D. Bebas dari pengawasan atasan</li>
+        <li>E. Tidak perlu mengikuti peraturan instansi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF berhak atas gaji, tunjangan, cuti, pengembangan kompetensi, perlindungan hukum, dan hak-hak lain sesuai peraturan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 60 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 60</span>
+      <p class="soal-text">Kewajiban utama Pejabat Fungsional adalah …</p>
+      <ul class="options">
+        <li class="correct">A. Bekerja sesuai dengan Standar Kompetensi yang ditetapkan dan memenuhi target kinerja</li>
+        <li>B. Pindah tugas setiap 2 tahun</li>
+        <li>C. Menjadi anggota partai politik</li>
+        <li>D. Menyumbangkan sebagian gaji</li>
+        <li>E. Tidak boleh mengambil cuti</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF wajib melaksanakan tugas sesuai standar kompetensi, memenuhi target kinerja, dan mentaati peraturan perundang-undangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 61 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 61</span>
+      <p class="soal-text">Tunjangan yang berhak diterima Pejabat JF antara lain …</p>
+      <ul class="options">
+        <li class="correct">A. Tunjangan jabatan fungsional, tunjangan keluarga, tunjangan beras, dan tunjangan PPh</li>
+        <li>B. Hanya tunjangan fungsional</li>
+        <li>C. Hanya tunjangan beras</li>
+        <li>D. Tunjangan kinerja tanpa tunjangan fungsional</li>
+        <li>E. Hanya tunjangan keluarga</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF berhak atas tunjangan jabatan fungsional, tunjangan keluarga, tunjangan beras, dan tunjangan PPh sesuai ketentuan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 62 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 62</span>
+      <p class="soal-text">Pejabat JF berhak mendapatkan pengembangan kompetensi minimal …</p>
+      <ul class="options">
+        <li>A. Tidak ada ketentuan minimal</li>
+        <li>B. 20 Jam Pelajaran (JP) per tahun</li>
+        <li class="correct">C. Sesuai dengan kebutuhan jabatan dan standar yang ditetapkan oleh instansi pembina</li>
+        <li>D. 100 Jam per bulan</li>
+        <li>E. Sekali seumur hidup</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengembangan kompetensi JF dilaksanakan sesuai kebutuhan dan standar yang ditetapkan oleh masing-masing instansi pembina.</div>
+      </div>
+    </div>
+
+    <!-- Soal 63 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 63</span>
+      <p class="soal-text">Salah satu kewajiban Pejabat JF terkait integritas adalah …</p>
+      <ul class="options">
+        <li>A. Menyembunyikan kekurangan data</li>
+        <li>B. Menolak mutasi</li>
+        <li class="correct">C. Menjaga netralitas dan tidak terlibat dalam politik praktis</li>
+        <li>D. Bekerja lembur setiap hari</li>
+        <li>E. Tidak boleh mengikuti organisasi profesi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF wajib menjaga netralitas dan tidak terlibat dalam politik praktis sesuai ketentuan peraturan perundang-undangan ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 64 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 64</span>
+      <p class="soal-text">Cuti bagi Pejabat JF diatur dalam …</p>
+      <ul class="options">
+        <li>A. Peraturan BKN</li>
+        <li class="correct">B. Peraturan Pemerintah tentang Manajemen PNS dan peraturan pelaksanaannya</li>
+        <li>C. Keputusan atasan langsung</li>
+        <li>D. Perjanjian kerja individu</li>
+        <li>E. Tidak diatur khusus</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Cuti PNS termasuk Pejabat JF diatur dalam PP Manajemen PNS dan peraturan pelaksanaannya (PP 11/2017 jo. PP 17/2020).</div>
+      </div>
+    </div>
+
+    <!-- Soal 65 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 65</span>
+      <p class="soal-text">Pejabat JF berhak mendapatkan perlindungan hukum dalam …</p>
+      <ul class="options">
+        <li>A. Hanya dalam tugas di luar negeri</li>
+        <li class="correct">B. Melaksanakan tugas dan wewenangnya sesuai dengan ketentuan peraturan perundang-undangan</li>
+        <li>C. Hanya ketika menghadapi sengketa lahan</li>
+        <li>D. Hanya dalam urusan pajak pribadi</li>
+        <li>E. Tidak ada perlindungan khusus</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perlindungan hukum diberikan kepada Pejabat JF saat melaksanakan tugas dan wewenangnya sesuai ketentuan yang berlaku.</div>
+      </div>
+    </div>
+
+    <!-- Soal 66 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 66</span>
+      <p class="soal-text">Kewajiban Pejabat JF dalam hal pengembangan profesi adalah …</p>
+      <ul class="options">
+        <li>A. Tidak ada kewajiban pengembangan profesi</li>
+        <li>B. Mengikuti pendidikan lanjutan setiap tahun</li>
+        <li class="correct">C. Melaksanakan pengembangan profesi secara berkelanjutan untuk meningkatkan kompetensi</li>
+        <li>D. Pindah ke jabatan lain setiap 3 tahun</li>
+        <li>E. Menulis buku setiap semester</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF wajib melaksanakan pengembangan profesi secara berkelanjutan untuk mempertahankan dan meningkatkan kompetensinya.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 7: SAJF DAN SIASN ============ -->
+    <div class="section-header section-7">
+      <span class="icon">💻</span>
+      <span>SAJF DAN SIASN (Soal 67–74)</span>
+    </div>
+
+    <!-- Soal 67 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 67</span>
+      <p class="soal-text">Kepanjangan SAJF adalah …</p>
+      <ul class="options">
+        <li class="correct">A. Sistem Administrasi Jabatan Fungsional</li>
+        <li>B. Sistem Aplikasi Jabatan Fungsional</li>
+        <li>C. Sistem Administrasi Jenjang Fungsional</li>
+        <li>D. Sistem Analisis Jabatan Fungsional</li>
+        <li>E. Sistem Angka Kredit Jabatan Fungsional</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SAJF adalah Sistem Administrasi Jabatan Fungsional yang digunakan untuk mengelola data dan administrasi JF secara elektronik.</div>
+      </div>
+    </div>
+
+    <!-- Soal 68 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 68</span>
+      <p class="soal-text">SIASN merupakan sistem informasi yang dikelola oleh …</p>
+      <ul class="options">
+        <li>A. Kementerian PANRB</li>
+        <li class="correct">B. Badan Kepegawaian Negara (BKN)</li>
+        <li>C. Lembaga Administrasi Negara</li>
+        <li>D. Kementerian Komunikasi dan Informatika</li>
+        <li>E. Badan Pusat Statistik</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SIASN (Sistem Informasi Aparatur Sipil Negara) dikelola oleh BKN sebagai pusat data ASN nasional.</div>
+      </div>
+    </div>
+
+    <!-- Soal 69 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 69</span>
+      <p class="soal-text">Fungsi utama SAJF adalah …</p>
+      <ul class="options">
+        <li>A. Menghitung pajak penghasilan PNS</li>
+        <li class="correct">B. Mengelola administrasi JF termasuk usulan angka kredit, kenaikan pangkat, dan uji kompetensi secara elektronik</li>
+        <li>C. Menyusun anggaran instansi</li>
+        <li>D. Mengelola sistem penggajian PNS</li>
+        <li>E. Mengelola sistem presensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SAJF digunakan untuk mengelola administrasi JF secara elektronik meliputi angka kredit, kenaikan pangkat/jenjang, dan uji kompetensi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 70 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 70</span>
+      <p class="soal-text">Integrasi antara SAJF dan SIASN bertujuan untuk …</p>
+      <ul class="options">
+        <li>A. Mempersulit administrasi kepegawaian</li>
+        <li class="correct">B. Mewujudkan data ASN yang terpadu, akurat, dan mutakhir dalam satu sistem terintegrasi</li>
+        <li>C. Mengurangi jumlah pegawai</li>
+        <li>D. Menghapus sistem manual sepenuhnya</li>
+        <li>E. Mengalihkan ke sistem swasta</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Integrasi SAJF dan SIASN bertujuan menciptakan data ASN yang terpadu, akurat, dan mutakhir dalam satu platform nasional.</div>
+      </div>
+    </div>
+
+    <!-- Soal 71 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 71</span>
+      <p class="soal-text">Melalui SIASN, Pejabat JF dapat …</p>
+      <ul class="options">
+        <li>A. Memesan tiket dinas</li>
+        <li class="correct">B. Mengakses data kepegawaian pribadi, pengajuan cuti, dan info karier</li>
+        <li>C. Melakukan transaksi keuangan pribadi</li>
+        <li>D. Membeli pulsa</li>
+        <li>E. Mengelola akun media sosial</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SIASN memungkinkan Pejabat JF mengakses data kepegawaian, mengajukan cuti, dan mendapatkan informasi pengembangan karier.</div>
+      </div>
+    </div>
+
+    <!-- Soal 72 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 72</span>
+      <p class="soal-text">Data Pejabat JF yang tercatat di SAJF digunakan sebagai dasar …</p>
+      <ul class="options">
+        <li>A. Pemberian pinjaman bank</li>
+        <li class="correct">B. Penetapan angka kredit, kenaikan pangkat, serta mutasi kepegawaian lainnya</li>
+        <li>C. Penentuan hadiah</li>
+        <li>D. Penjadwalan kegiatan sosial</li>
+        <li>E. Pendataan penduduk</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Data SAJF menjadi dasar administrasi kepegawaian seperti penetapan AK, kenaikan pangkat/jenjang, dan mutasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 73 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 73</span>
+      <p class="soal-text">Sistem informasi yang digunakan untuk mendaftar dan mengelola pelaksanaan UKJPF adalah …</p>
+      <ul class="options">
+        <li class="correct">A. Aplikasi SRIKANDI dan/atau sistem yang ditetapkan oleh instansi pembina</li>
+        <li>B. Aplikasi WhatsApp</li>
+        <li>C. Sistem surat menyurat manual</li>
+        <li>D. Aplikasi Zoom</li>
+        <li>E. Microsoft Excel</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pendaftaran dan pengelolaan UKJPF dilakukan melalui Aplikasi SRIKANDI atau sistem lain yang ditetapkan instansi pembina.</div>
+      </div>
+    </div>
+
+    <!-- Soal 74 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 74</span>
+      <p class="soal-text">Manfaat penggunaan SAJF bagi Pejabat JF adalah …</p>
+      <ul class="options">
+        <li class="correct">A. Mempermudah pengajuan usulan angka kredit secara online tanpa harus datang langsung ke unit kepegawaian</li>
+        <li>B. Mendapatkan diskon belanja</li>
+        <li>C. Mendapatkan akses internet gratis</li>
+        <li>D. Bebas dari kewajiban pajak</li>
+        <li>E. Tidak perlu membuat laporan kinerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SAJF memudahkan Pejabat JF mengajukan usulan angka kredit secara online, mempercepat proses administrasi kepegawaian.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 8: KODE ETIK JF ============ -->
+    <div class="section-header section-8">
+      <span class="icon">📜</span>
+      <span>KODE ETIK JF (Soal 75–82)</span>
+    </div>
+
+    <!-- Soal 75 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 75</span>
+      <p class="soal-text">Kode Etik Pejabat Fungsional bertujuan untuk …</p>
+      <ul class="options">
+        <li>A. Membatasi kebebasan pegawai</li>
+        <li class="correct">B. Menjaga martabat, kehormatan, dan profesionalisme Pejabat JF dalam melaksanakan tugas</li>
+        <li>C. Meningkatkan pendapatan pegawai</li>
+        <li>D. Mengurangi jam kerja</li>
+        <li>E. Mempermudah promosi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kode Etik bertujuan menjaga martabat, kehormatan, citra, dan profesionalisme Pejabat JF dalam melaksanakan tugas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 76 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 76</span>
+      <p class="soal-text">Nilai dasar ASN yang dikenal dengan BERAKHLAK meliputi …</p>
+      <ul class="options">
+        <li>A. Berguna, Efisien, Ramah, Aktif, Kreatif, Harmonis, Loyal, Adaptif, Kolaboratif</li>
+        <li class="correct">B. Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif</li>
+        <li>C. Bersih, Efisien, Responsif, Adil, Kuat, Logis, Aktif, Kreatif</li>
+        <li>D. Berani, Efektif, Rajin, Aktif, Kreatif, Handal, Loyal, Aman, Kuat</li>
+        <li>E. Bijak, Empati, Ramah, Analitis, Kritis, Humanis, Adaptif, Logis</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">BERAKHLAK adalah core value ASN: Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif.</div>
+      </div>
+    </div>
+
+    <!-- Soal 77 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 77</span>
+      <p class="soal-text">Pejabat JF dilarang melakukan hal-hal berikut, KECUALI …</p>
+      <ul class="options">
+        <li>A. Menyalahgunakan wewenang</li>
+        <li>B. Menjadi pengurus partai politik</li>
+        <li>C. Menolak mutasi yang sah sesuai ketentuan</li>
+        <li class="correct">D. Mengikuti pengembangan kompetensi yang ditetapkan instansi</li>
+        <li>E. Melakukan korupsi, kolusi, dan nepotisme</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Mengikuti pengembangan kompetensi adalah kewajiban, bukan larangan. Opsi lainnya merupakan larangan yang diatur dalam kode etik dan disiplin ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 78 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 78</span>
+      <p class="soal-text">Sanksi atas pelanggaran kode etik JF dapat berupa …</p>
+      <ul class="options">
+        <li>A. Hanya teguran lisan</li>
+        <li class="correct">B. Teguran tertulis, pernyataan tidak puas, penundaan kenaikan pangkat, hingga pemberhentian</li>
+        <li>C. Tidak ada sanksi</li>
+        <li>D. Hanya denda administrasi</li>
+        <li>E. Hukuman penjara</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Sanksi pelanggaran kode etik bervariasi dari teguran tertulis, pernyataan tidak puas, penundaan kenaikan pangkat, hingga pemberhentian.</div>
+      </div>
+    </div>
+
+    <!-- Soal 79 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 79</span>
+      <p class="soal-text">Salah satu aspek penting dalam kode etik JF adalah …</p>
+      <ul class="options">
+        <li>A. Boleh menerima gratifikasi dalam bentuk apa pun</li>
+        <li>B. Mengutamakan kepentingan pribadi di atas institusi</li>
+        <li class="correct">C. Menjaga kerahasiaan informasi yang terkait dengan tugas jabatan</li>
+        <li>D. Menyebarkan informasi internal kepada publik</li>
+        <li>E. Memanfaatkan jabatan untuk kepentingan bisnis pribadi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF wajib menjaga kerahasiaan informasi yang terkait dengan tugas jabatan sesuai peraturan perundang-undangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 80 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 80</span>
+      <p class="soal-text">Pengawasan pelaksanaan kode etik JF dilakukan oleh …</p>
+      <ul class="options">
+        <li>A. Hanya BKN</li>
+        <li class="correct">B. Atasan langsung, instansi pembina, dan/atau tim pengawas internal</li>
+        <li>C. Hanya kepolisian</li>
+        <li>D. Hanya KPK</li>
+        <li>E. Hanya masyarakat umum</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengawasan etik JF dilakukan oleh atasan langsung, instansi pembina, dan aparat pengawasan internal pemerintah.</div>
+      </div>
+    </div>
+
+    <!-- Soal 81 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 81</span>
+      <p class="soal-text">Pejabat JF wajib melaporkan jika mengetahui adanya …</p>
+      <ul class="options">
+        <li>A. Kesalahan kecil rekan kerja tanpa dampak</li>
+        <li class="correct">B. Indikasi pelanggaran etik atau tindak pidana yang terjadi di lingkungan kerjanya</li>
+        <li>C. Opini publik tentang instansi</li>
+        <li>D. Gosip kantor</li>
+        <li>E. Kelebihan anggaran yang tidak terpakai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pejabat JF wajib melaporkan indikasi pelanggaran etik atau tindak pidana sebagai bentuk integritas dan tanggung jawab moral.</div>
+      </div>
+    </div>
+
+    <!-- Soal 82 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 82</span>
+      <p class="soal-text">Yang dimaksud dengan 'konflik kepentingan' dalam kode etik JF adalah …</p>
+      <ul class="options">
+        <li class="correct">A. Situasi di mana kepentingan pribadi Pejabat JF dapat memengaruhi objektivitas pelaksanaan tugas</li>
+        <li>B. Persaingan sehat antar rekan kerja</li>
+        <li>C. Perbedaan pendapat dalam rapat</li>
+        <li>D. Kompetisi dalam pengembangan kompetensi</li>
+        <li>E. Pembagian tugas yang tidak merata</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Konflik kepentingan adalah situasi di mana kepentingan pribadi dapat memengaruhi pertimbangan dan objektivitas dalam pelaksanaan tugas.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 9: PENILAIAN KINERJA ============ -->
+    <div class="section-header section-9">
+      <span class="icon">📊</span>
+      <span>PENILAIAN KINERJA (Soal 83–92)</span>
+    </div>
+
+    <!-- Soal 83 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 83</span>
+      <p class="soal-text">Penilaian kinerja Pejabat JF didasarkan pada …</p>
+      <ul class="options">
+        <li>A. Kehadiran dan absensi</li>
+        <li class="correct">B. Sasaran Kinerja Pegawai (SKP) dan perilaku kerja</li>
+        <li>C. Lama masa kerja</li>
+        <li>D. Tingkat pendidikan formal</li>
+        <li>E. Usia pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penilaian kinerja PNS termasuk JF didasarkan pada SKP (perencanaan kinerja) dan perilaku kerja (PP 30/2019 tentang Penilaian Kinerja PNS).</div>
+      </div>
+    </div>
+
+    <!-- Soal 84 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 84</span>
+      <p class="soal-text">SKP disusun setiap …</p>
+      <ul class="options">
+        <li>A. Seminggu sekali</li>
+        <li class="correct">B. Setahun sekali pada awal tahun</li>
+        <li>C. Setiap 5 tahun</li>
+        <li>D. Tidak perlu disusun secara periodik</li>
+        <li>E. Setiap habis mutasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SKP disusun setiap awal tahun sebagai rencana operasional kinerja pegawai, dan menjadi dasar penilaian di akhir tahun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 85 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 85</span>
+      <p class="soal-text">Predikat kinerja yang dapat dicapai Pejabat JF antara lain …</p>
+      <ul class="options">
+        <li class="correct">A. Sangat Baik, Baik, Cukup, Kurang, dan Sangat Kurang</li>
+        <li>B. A, B, C, D, E</li>
+        <li>C. Memuaskan, Standar, Tidak Memuaskan</li>
+        <li>D. Lulus dan Tidak Lulus</li>
+        <li>E. Tidak ada predikat</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Predikat kinerja PNS terdiri dari Sangat Baik, Baik, Cukup, Kurang, dan Sangat Kurang (PP 30/2019).</div>
+      </div>
+    </div>
+
+    <!-- Soal 86 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 86</span>
+      <p class="soal-text">Aspek perilaku kerja yang dinilai meliputi …</p>
+      <ul class="options">
+        <li class="correct">A. Orientasi pelayanan, integritas, komitmen, disiplin, kerja sama, dan kepemimpinan</li>
+        <li>B. Hanya kehadiran</li>
+        <li>C. Hanya kerapian berpakaian</li>
+        <li>D. Hanya kemampuan bergaul</li>
+        <li>E. Hanya kemampuan olahraga</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perilaku kerja mencakup orientasi pelayanan, integritas, komitmen, disiplin, kerja sama, dan kepemimpinan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 87 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 87</span>
+      <p class="soal-text">Jika Pejabat JF mendapatkan predikat kinerja 'Kurang' atau 'Sangat Kurang', dampaknya adalah …</p>
+      <ul class="options">
+        <li>A. Mendapat bonus tambahan</li>
+        <li>B. Tidak ada dampak</li>
+        <li class="correct">C. Tidak dapat naik pangkat dan/atau jenjang serta dikenakan sanksi sesuai ketentuan</li>
+        <li>D. Langsung dipecat</li>
+        <li>E. Dipindahtugaskan ke luar negeri</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Predikat kinerja kurang atau sangat kurang berdampak pada penundaan kenaikan pangkat dan sanksi sesuai ketentuan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 88 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 88</span>
+      <p class="soal-text">Penilaian kinerja JF dilakukan oleh …</p>
+      <ul class="options">
+        <li>A. BKN pusat</li>
+        <li class="correct">B. Pejabat Penilai Kinerja (atasan langsung)</li>
+        <li>C. Rekan kerja</li>
+        <li>D. Bawahan</li>
+        <li>E. Masyarakat umum</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penilaian kinerja JF dilakukan oleh atasan langsung sebagai pejabat penilai kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 89 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 89</span>
+      <p class="soal-text">Dalam sistem Angka Kredit Integrasi (AKI), penilaian kinerja JF …</p>
+      <ul class="options">
+        <li>A. Tidak digunakan sama sekali</li>
+        <li class="correct">B. Terintegrasi langsung dengan perolehan angka kredit, sehingga nilai kinerja menentukan capaian AK</li>
+        <li>C. Hanya sebagai formalitas</li>
+        <li>D. Digunakan secara terpisah dari AK</li>
+        <li>E. Hanya untuk kepentingan mutasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Dalam AKI, penilaian kinerja terintegrasi dengan angka kredit, sehingga hasil kinerja langsung mempengaruhi perolehan AK.</div>
+      </div>
+    </div>
+
+    <!-- Soal 90 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 90</span>
+      <p class="soal-text">Pejabat JF wajib menyusun SKP yang selaras dengan …</p>
+      <ul class="options">
+        <li>A. Keinginan pribadi pegawai</li>
+        <li class="correct">B. Target unit kerja/organisasi dan rencana strategis instansi</li>
+        <li>C. Hobi pegawai</li>
+        <li>D. Jadwal liburan</li>
+        <li>E. Kegiatan sosial pribadi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SKP harus selaras dengan target unit kerja dan rencana strategis instansi untuk memastikan kontribusi pegawai terhadap tujuan organisasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 91 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 91</span>
+      <p class="soal-text">Hasil penilaian kinerja JF dipergunakan untuk …</p>
+      <ul class="options">
+        <li class="correct">A. Promosi, mutasi, pengembangan kompetensi, dan pemberian tunjangan kinerja</li>
+        <li>B. Hanya untuk arsip kepegawaian</li>
+        <li>C. Hanya untuk menentukan tunjangan</li>
+        <li>D. Hanya untuk promosi</li>
+        <li>E. Tidak memiliki fungsi praktis</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Hasil penilaian kinerja digunakan untuk promosi, mutasi, pengembangan kompetensi, dan pemberian tunjangan kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 92 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 92</span>
+      <p class="soal-text">Dalam hal Pejabat JF tidak menyusun SKP, maka …</p>
+      <ul class="options">
+        <li>A. Tidak ada masalah</li>
+        <li class="correct">B. Dianggap tidak melaksanakan kewajiban dan dapat dikenakan sanksi</li>
+        <li>C. Tetap dinilai baik secara otomatis</li>
+        <li>D. Dapat menyusun di akhir tahun</li>
+        <li>E. Cukup laporan lisan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penyusunan SKP adalah kewajiban, jika tidak disusun maka dianggap tidak memenuhi kewajiban dan dapat dikenakan sanksi.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 10: REGULASI TERBARU ============ -->
+    <div class="section-header section-10">
+      <span class="icon">📑</span>
+      <span>REGULASI TERBARU (Soal 93–100)</span>
+    </div>
+
+    <!-- Soal 93 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 93</span>
+      <p class="soal-text">Permenpan RB Nomor 1 Tahun 2023 mengatur tentang …</p>
+      <ul class="options">
+        <li>A. Standar Kompetensi JF Metrolog</li>
+        <li>B. Standar Kompetensi JF Analis Standardisasi</li>
+        <li class="correct">C. Jabatan Fungsional - transformasi tata kelola JF secara komprehensif</li>
+        <li>D. Jabatan Fungsional Guru</li>
+        <li>E. Jabatan Fungsional Dosen</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 1/2023 adalah regulasi komprehensif yang mengatur transformasi tata kelola JF, termasuk pengelolaan kinerja, angka kredit, dan pengembangan kompetensi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 94 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 94</span>
+      <p class="soal-text">Salah satu perubahan penting dalam Permenpan RB 1/2023 adalah …</p>
+      <ul class="options">
+        <li>A. Penghapusan seluruh JF</li>
+        <li class="correct">B. Integrasi penilaian kinerja dengan angka kredit melalui sistem AKI</li>
+        <li>C. Kenaikan pangkat otomatis tanpa syarat</li>
+        <li>D. Pengangkatan JF tanpa pendidikan formal</li>
+        <li>E. Penghapusan uji kompetensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 1/2023 memperkenalkan integrasi penilaian kinerja dengan angka kredit (AKI), menyederhanakan administrasi JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 95 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 95</span>
+      <p class="soal-text">PP Nomor 17 Tahun 2020 tentang Perubahan PP 11/2017 mengatur perubahan dalam hal …</p>
+      <ul class="options">
+        <li class="correct">A. Pendelegasian kewenangan Presiden, kedudukan JF, mutasi JPT, dan pengembangan kompetensi</li>
+        <li>B. Penghapusan tunjangan ASN</li>
+        <li>C. Pembentukan lembaga baru</li>
+        <li>D. Perubahan sistem pendidikan ASN</li>
+        <li>E. Penghapusan jabatan fungsional</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP 17/2020 mengubah beberapa ketentuan PP 11/2017 terkait delegasi kewenangan Presiden, kedudukan JF, mutasi JPT, dan pengembangan kompetensi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 96 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 96</span>
+      <p class="soal-text">Berdasarkan perkembangan regulasi, masa peralihan dari sistem Angka Kredit konvensional ke integrasi berlaku sejak …</p>
+      <ul class="options">
+        <li>A. Januari 2022</li>
+        <li class="correct">B. Januari 2023</li>
+        <li>C. Januari 2024</li>
+        <li>D. Januari 2025</li>
+        <li>E. Januari 2026</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Sejak Januari 2023, penilaian angka kredit menggunakan sistem AK Integrasi/Konversi berdasarkan Permenpan RB 1/2023.</div>
+      </div>
+    </div>
+
+    <!-- Soal 97 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 97</span>
+      <p class="soal-text">Permenpan RB Nomor 21 Tahun 2024 mengatur tentang …</p>
+      <ul class="options">
+        <li>A. JF Analis Kebijakan</li>
+        <li class="correct">B. JF Guru</li>
+        <li>C. JF Pranata Humas</li>
+        <li>D. JF Perencana</li>
+        <li>E. JF Auditor</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 21/2024 mengatur Jabatan Fungsional Guru, menggantikan peraturan sebelumnya terkait JF Guru.</div>
+      </div>
+    </div>
+
+    <!-- Soal 98 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 98</span>
+      <p class="soal-text">Tujuan penyederhanaan tata kelola JF melalui Permenpan RB 1/2023 adalah …</p>
+      <ul class="options">
+        <li>A. Meningkatkan birokrasi yang rumit</li>
+        <li class="correct">B. Menciptakan organisasi yang lincah (agile) dan dinamis dengan pengelolaan kinerja JF yang efektif</li>
+        <li>C. Mengurangi jumlah PNS</li>
+        <li>D. Menambah jumlah eselon</li>
+        <li>E. Memperpanjang proses administrasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 1/2023 bertujuan menciptakan organisasi yang lincah dan dinamis melalui penyederhanaan tata kelola JF dan pengelolaan kinerja yang efektif.</div>
+      </div>
+    </div>
+
+    <!-- Soal 99 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 99</span>
+      <p class="soal-text">Core Value ASN 'BERAKHLAK' ditetapkan melalui …</p>
+      <ul class="options">
+        <li>A. PP 11/2017</li>
+        <li class="correct">B. Keputusan Menteri PANRB dan diterapkan dalam seluruh aspek manajemen ASN termasuk JF</li>
+        <li>C. UU ASN</li>
+        <li>D. Peraturan BKN</li>
+        <li>E. Keputusan Presiden</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Core Value BERAKHLAK ditetapkan melalui Keputusan Menteri PANRB dan menjadi nilai dasar bagi seluruh ASN termasuk Pejabat JF.</div>
+      </div>
+    </div>
+
+    <!-- Soal 100 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 100</span>
+      <p class="soal-text">Salah satu inovasi dalam Permenpan RB 1/2023 terkait jenjang JF adalah …</p>
+      <ul class="options">
+        <li>A. Penghapusan seluruh jenjang JF</li>
+        <li class="correct">B. Penyederhanaan jenjang JF untuk menghilangkan tumpang tindih dan meningkatkan fleksibilitas karier</li>
+        <li>C. Penambahan jenjang hingga 10 level</li>
+        <li>D. Penghapusan JF Keterampilan</li>
+        <li>E. Penyamaan seluruh JF tanpa jenjang</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 1/2023 menyederhanakan jenjang JF untuk menghilangkan tumpang tindih dan memberikan fleksibilitas karier yang lebih baik.</div>
+      </div>
+    </div>
+
+    <!-- ============ RINGKASAN KATEGORI ============ -->
+    <div class="summary-section">
+      <h2>📊 RINGKASAN KATEGORI SOAL</h2>
+      
+      <div class="summary-grid">
+        <div class="summary-card">
+          <h3>📋 Konsep Dasar JF</h3>
+          <ul>
+            <li>Soal 1-12 (12 soal)</li>
+            <li>Definisi, klasifikasi, jenjang</li>
+            <li>Rumpun jabatan</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>🗂️ Pengelompokan JF</h3>
+          <ul>
+            <li>Soal 13-22 (10 soal)</li>
+            <li>JF Guru, Kesehatan, Pajak</li>
+            <li>Pertanian, PPKD, dll</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📝 Proses UKJPF</h3>
+          <ul>
+            <li>Soal 23-38 (16 soal)</li>
+            <li>Definisi, tujuan, metode</li>
+            <li>Kompetensi yang diuji</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📈 Jenjang Karir JF</h3>
+          <ul>
+            <li>Soal 39-48 (10 soal)</li>
+            <li>Urutan jenjang</li>
+            <li>Syarat kenaikan</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>🔢 Angka Kredit</h3>
+          <ul>
+            <li>Soal 49-58 (10 soal)</li>
+            <li>Definisi, unsur, sistem AKI</li>
+            <li>Penetapan dan pemanfaatan</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>⚖️ Hak dan Kewajiban</h3>
+          <ul>
+            <li>Soal 59-66 (8 soal)</li>
+            <li>Gaji, tunjangan, cuti</li>
+            <li>Kewajiban profesi</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>💻 SAJF dan SIASN</h3>
+          <ul>
+            <li>Soal 67-74 (8 soal)</li>
+            <li>Sistem administrasi elektronik</li>
+            <li>Integrasi data ASN</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📜 Kode Etik JF</h3>
+          <ul>
+            <li>Soal 75-82 (8 soal)</li>
+            <li>BERAKHLAK</li>
+            <li>Larangan dan sanksi</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📊 Penilaian Kinerja</h3>
+          <ul>
+            <li>Soal 83-92 (10 soal)</li>
+            <li>SKP dan perilaku kerja</li>
+            <li>Predikat kinerja</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📑 Regulasi Terbaru</h3>
+          <ul>
+            <li>Soal 93-100 (8 soal)</li>
+            <li>Permenpan RB 1/2023</li>
+            <li>Perubahan sistem AKI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ TABEL REGULASI RUJUKAN ============ -->
+    <div class="summary-section">
+      <h2>📚 REGULASI RUJUKAN PENTING</h2>
+      
+      <table class="regulasi-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Regulasi</th>
+            <th>Tentang</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>UU No. 5 Tahun 2014</strong></td>
+            <td>Aparatur Sipil Negara</td>
+            <td>Dasar hukum utama ASN</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>PP No. 11 Tahun 2017</strong></td>
+            <td>Manajemen PNS</td>
+            <td>Dasar manajemen PNS termasuk JF</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>PP No. 17 Tahun 2020</strong></td>
+            <td>Perubahan atas PP 11/2017</td>
+            <td>Perubahan manajemen PNS</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Permenpan RB No. 1 Tahun 2023</strong></td>
+            <td>Jabatan Fungsional</td>
+            <td>Transformasi tata kelola JF, AKI, pengelolaan kinerja</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Permenpan RB No. 21 Tahun 2024</strong></td>
+            <td>Jabatan Fungsional Guru</td>
+            <td>Pengaturan JF Guru terbaru</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>Permenpan RB No. 23 Tahun 2024</strong></td>
+            <td>JF Bidang Pertanian</td>
+            <td>Pengaturan JF bidang pertanian</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>PP No. 30 Tahun 2019</strong></td>
+            <td>Penilaian Kinerja PNS</td>
+            <td>Penilaian kinerja termasuk SKP dan perilaku kerja</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>Kepmen PANRB</strong></td>
+            <td>Core Value ASN BERAKHLAK</td>
+            <td>Nilai dasar ASN</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TIPS BELAJAR -->
+    <div class="tips-box">
+      <h3>💡 Tips Efektif Menghadapi UKJPF 2026</h3>
+      <ul>
+        <li><b>Pahami Konsep Dasar:</b> Kuasai definisi JF, perbedaan dengan jabatan struktural, dan klasifikasi</li>
+        <li><b>Hafalkan Jenjang:</b> Keahlian (Pertama→Muda→Madya→Utama) dan Keterampilan (Pemula→Terampil→Mahir→Penyelia)</li>
+        <li><b>Kuasai 3 Kompetensi:</b> Teknis, Manajerial, dan Sosial Kultural</li>
+        <li><b>Pahami Sistem AKI:</b> Integrasi penilaian kinerja dengan angka kredit sejak Januari 2023</li>
+        <li><b>Update Regulasi:</b> Permenpan RB 1/2023 adalah kunci transformasi JF</li>
+        <li><b>BERAKHLAK:</b> Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif</li>
+        <li><b>SKP Wajib:</b> Disusun awal tahun, selaras dengan target organisasi</li>
+        <li><b>Gunakan SAJF & SIASN:</b> Pahami fungsi sistem administrasi elektronik JF</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><strong>📚 SELAMAT BELAJAR DAN SUKSES UKJPF 2026!</strong></p>
+    <p>Dokumen ini disusun untuk memudahkan pembelajaran dan persiapan Ujian Kompetensi Jabatan Fungsional</p>
+    <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">🗓️ Diperbarui: Agustus 2026 | 📄 Total: 100 Soal + Pembahasan | 📖 10 Kategori</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Soal Analis SDM Aparatur 2026 - Panduan Lengkap</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8edf3 100%);
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  /* HEADER UTAMA */
+  .main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    text-align: center;
+  }
+  
+  .main-header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .main-header .subtitle {
+    font-size: 1.1em;
+    opacity: 0.95;
+    margin-bottom: 15px;
+  }
+  
+  .badge-info {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.95em;
+    margin-top: 10px;
+    border: 1px solid rgba(255,255,255,0.3);
+  }
+  
+  /* SECTION HEADER */
+  .section-header {
+    padding: 25px 30px;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .section-header .icon {
+    font-size: 1.8em;
+  }
+  
+  .section-1 { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); }
+  .section-2 { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); }
+  .section-3 { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); }
+  .section-4 { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); }
+  .section-5 { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); }
+  .section-6 { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #2c3e50; }
+  .section-7 { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #2c3e50; }
+  
+  /* CONTENT */
+  .content {
+    padding: 30px;
+  }
+  
+  /* SOAL CARD */
+  .soal-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #667eea;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .soal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  }
+  
+  .soal-number {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 12px;
+  }
+  
+  .soal-text {
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .options {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  
+  .options li {
+    padding: 10px 15px;
+    margin-bottom: 6px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 3px solid #dee2e6;
+    transition: all 0.2s;
+  }
+  
+  .options li.correct {
+    background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+    border-left: 4px solid #28a745;
+    color: #155724;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
+  }
+  
+  .options li.correct::before {
+    content: "✓ ";
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  /* PEMBAHASAN */
+  .pembahasan {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffe69c 100%);
+    border-left: 4px solid #ffc107;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 12px;
+  }
+  
+  .pembahasan-label {
+    font-weight: bold;
+    color: #856404;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .pembahasan-text {
+    color: #664d03;
+    font-size: 0.95em;
+    line-height: 1.6;
+  }
+  
+  /* RINGKASAN */
+  .summary-section {
+    background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border: 2px solid #00acc1;
+  }
+  
+  .summary-section h2 {
+    color: #006064;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+  }
+  
+  .summary-card {
+    background: white;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-top: 4px solid #00acc1;
+  }
+  
+  .summary-card h3 {
+    color: #006064;
+    font-size: 1.05em;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .summary-card ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .summary-card li {
+    padding: 4px 0;
+    font-size: 0.92em;
+    color: #37474f;
+  }
+  
+  .summary-card li::before {
+    content: "▸ ";
+    color: #00acc1;
+    font-weight: bold;
+  }
+  
+  /* TABEL REGULASI */
+  .regulasi-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  .regulasi-table th {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .regulasi-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .regulasi-table tr:hover {
+    background: #f5f5f5;
+  }
+  
+  .regulasi-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  /* TIPS */
+  .tips-box {
+    background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+    border-left: 5px solid #e91e63;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+  }
+  
+  .tips-box h3 {
+    color: #880e4f;
+    margin-bottom: 10px;
+  }
+  
+  .tips-box ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .tips-box li {
+    padding: 6px 0;
+    color: #4a148c;
+  }
+  
+  .tips-box li::before {
+    content: "💡 ";
+  }
+  
+  /* FOOTER */
+  .footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+  }
+  
+  .footer p {
+    margin: 5px 0;
+  }
+  
+  /* PRINT STYLES */
+  @media print {
+    body { background: white; padding: 0; }
+    .container { box-shadow: none; }
+    .soal-card { break-inside: avoid; page-break-inside: avoid; }
+    .section-header { break-after: avoid; }
+  }
+  
+  @media (max-width: 768px) {
+    .main-header h1 { font-size: 1.6em; }
+    .content { padding: 15px; }
+    .soal-card { padding: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER UTAMA -->
+  <div class="main-header">
+    <h1>📊 100 SOAL ANALIS SDM APARATUR 2026</h1>
+    <p class="subtitle">Panduan Lengkap Belajar & Persiapan Ujian Kompetensi</p>
+    <div class="badge-info">🎯 100 Soal + Pembahasan | 📖 7 Kompetensi Tematik</div>
+  </div>
+
+  <div class="content">
+
+    <!-- ============ BAGIAN 1: PERENCANAAN DAN PENGEMBANGAN SDM ============ -->
+    <div class="section-header section-1">
+      <span class="icon">📋</span>
+      <span>PERENCANAAN DAN PENGEMBANGAN SDM (Soal 1–14)</span>
+    </div>
+
+    <!-- Soal 1 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 1</span>
+      <p class="soal-text">Berdasarkan UU Nomor 20 Tahun 2023 tentang ASN, perencanaan kebutuhan ASN dilakukan untuk jangka waktu...</p>
+      <ul class="options">
+        <li>A. 1 tahun</li>
+        <li>B. 3 tahun</li>
+        <li class="correct">C. 5 tahun</li>
+        <li>D. 10 tahun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UU No. 20 Tahun 2023 mengamanatkan perencanaan kebutuhan ASN dilakukan secara nasional untuk jangka waktu 5 tahun (rencana strategis) yang dijabarkan dalam rencana tahunan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 2 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 2</span>
+      <p class="soal-text">Dalam Permenpan RB No. 37 Tahun 2020, salah satu kegiatan Analis SDM Aparatur dalam perencanaan SDM adalah...</p>
+      <ul class="options">
+        <li>A. Melaksanakan eksekusi anggaran belanja pegawai</li>
+        <li class="correct">B. Menyusun analisis jabatan dan analisis beban kerja</li>
+        <li>C. Mengelola sistem penggajian ASN</li>
+        <li>D. Memproses penetapan NIP CPNS</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Berdasarkan Permenpan RB No. 37 Tahun 2020, analis SDM aparatur bertugas menyusun analisis jabatan dan analisis beban kerja sebagai dasar perencanaan kebutuhan SDM.</div>
+      </div>
+    </div>
+
+    <!-- Soal 3 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 3</span>
+      <p class="soal-text">Sistem Merit dalam manajemen ASN sebagaimana diatur dalam UU No. 20 Tahun 2023 adalah kebijakan dan manajemen ASN yang didasarkan pada...</p>
+      <ul class="options">
+        <li>A. Masa kerja dan senioritas</li>
+        <li class="correct">B. Kualifikasi, kompetensi, dan kinerja secara adil dan wajar</li>
+        <li>C. Kedekatan hubungan dengan pejabat pembina kepegawaian</li>
+        <li>D. Usia dan golongan kepangkatan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pasal 1 UU No. 20 Tahun 2023 mendefinisikan Sistem Merit sebagai kebijakan dan manajemen ASN berdasarkan kualifikasi, kompetensi, dan kinerja secara adil dan wajar.</div>
+      </div>
+    </div>
+
+    <!-- Soal 4 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 4</span>
+      <p class="soal-text">Manajemen Talenta ASN sebagaimana diatur dalam UU No. 20 Tahun 2023 bertujuan untuk...</p>
+      <ul class="options">
+        <li>A. Membatasi mobilitas pegawai agar tetap di instansi asal</li>
+        <li>B. Mengurangi jumlah pegawai ASN secara bertahap</li>
+        <li class="correct">C. Mengembangkan karier pegawai secara terencana dan berkelanjutan</li>
+        <li>D. Mempermudah pemberhentian pegawai yang tidak produktif</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Manajemen talenta ASN adalah sistem pengelolaan karier yang meliputi akuisisi, pengembangan, retensi, dan penempatan talenta secara terencana dan berkelanjutan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 5 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 5</span>
+      <p class="soal-text">Dalam penyusunan perencanaan SDM aparatur, langkah pertama yang harus dilakukan oleh Analis SDM Aparatur adalah...</p>
+      <ul class="options">
+        <li>A. Menyusun formasi CPNS</li>
+        <li class="correct">B. Melakukan analisis jabatan dan analisis beban kerja</li>
+        <li>C. Mengusulkan anggaran gaji pegawai</li>
+        <li>D. Menetapkan kebijakan mutasi pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analisis jabatan dan beban kerja merupakan langkah fundamental dalam perencanaan SDM karena menghasilkan data tentang jumlah, jenis, dan kualifikasi pegawai yang dibutuhkan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 6 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 6</span>
+      <p class="soal-text">Target minimal angka kredit per tahun bagi Analis SDM Aparatur Ahli Pertama adalah...</p>
+      <ul class="options">
+        <li>A. 6,25</li>
+        <li class="correct">B. 12,5</li>
+        <li>C. 25</li>
+        <li>D. 37,5</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB No. 37 Tahun 2020 menetapkan target minimal angka kredit tahunan untuk Ahli Pertama sebesar 12,5. Angka 25 untuk Ahli Muda, dan 37,5 untuk Ahli Madya.</div>
+      </div>
+    </div>
+
+    <!-- Soal 7 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 7</span>
+      <p class="soal-text">Yang dimaksud dengan 'analisis beban kerja' dalam konteks perencanaan SDM aparatur adalah...</p>
+      <ul class="options">
+        <li>A. Perhitungan gaji dan tunjangan berdasarkan jam kerja</li>
+        <li class="correct">B. Proses menghitung jumlah pegawai yang diperlukan berdasarkan volume kerja setiap unit organisasi</li>
+        <li>C. Evaluasi kinerja pegawai selama satu tahun</li>
+        <li>D. Penilaian kepatuhan pegawai terhadap jam kerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analisis beban kerja adalah teknik manajemen untuk menghitung jumlah pegawai yang dibutuhkan berdasarkan volume pekerjaan, waktu penyelesaian, dan kapasitas kerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 8 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 8</span>
+      <p class="soal-text">Dalam UU No. 20 Tahun 2023, perencanaan kebutuhan ASN disusun oleh...</p>
+      <ul class="options">
+        <li>A. Presiden secara sepihak</li>
+        <li>B. Menteri Keuangan</li>
+        <li class="correct">C. Menteri PANRB bersama BKN dan instansi pemerintah secara terintegrasi</li>
+        <li>D. Masing-masing instansi tanpa koordinasi nasional</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perencanaan kebutuhan ASN dilakukan oleh Menteri PANRB bersama BKN dan instansi pemerintah secara terintegrasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 9 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 9</span>
+      <p class="soal-text">Salah satu output utama dari perencanaan SDM aparatur yang disusun oleh Analis SDM Aparatur adalah...</p>
+      <ul class="options">
+        <li>A. Daftar hadir pegawai</li>
+        <li>B. Buku induk pegawai</li>
+        <li class="correct">C. Rencana kebutuhan SDM (Renbut SDM)</li>
+        <li>D. Slip gaji pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Rencana kebutuhan SDM (Renbut SDM) adalah output utama perencanaan SDM yang memuat jumlah, jenis, kualifikasi, dan kompetensi pegawai yang dibutuhkan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 10 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 10</span>
+      <p class="soal-text">Analis SDM Aparatur jenjang Ahli Pertama dapat menempati golongan ruang...</p>
+      <ul class="options">
+        <li>A. II/a - II/b</li>
+        <li class="correct">B. III/a - III/b</li>
+        <li>C. III/c - III/d</li>
+        <li>D. IV/a - IV/b</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur Ahli Pertama dipersyaratkan berijazah S-1/D-IV dan menempati golongan III/a hingga III/b.</div>
+      </div>
+    </div>
+
+    <!-- Soal 11 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 11</span>
+      <p class="soal-text">Yang dimaksud dengan 'peta jabatan' dalam perencanaan SDM aparatur adalah...</p>
+      <ul class="options">
+        <li>A. Daftar nama pegawai yang menduduki jabatan tertentu</li>
+        <li class="correct">B. Gambaran struktur jabatan, jumlah pejabat, dan hubungan hierarki dalam organisasi</li>
+        <li>C. Peta lokasi kantor setiap unit kerja</li>
+        <li>D. Daftar gaji pokok setiap jabatan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Peta jabatan adalah gambaran komprehensif tentang seluruh jabatan dalam organisasi beserta jumlah pejabat, hubungan hierarki, dan jalur kariernya.</div>
+      </div>
+    </div>
+
+    <!-- Soal 12 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 12</span>
+      <p class="soal-text">Peraturan Pemerintah yang mengubah PP No. 11 Tahun 2017 tentang Manajemen PNS adalah...</p>
+      <ul class="options">
+        <li>A. PP No. 10 Tahun 2020</li>
+        <li class="correct">B. PP No. 17 Tahun 2020</li>
+        <li>C. PP No. 24 Tahun 2020</li>
+        <li>D. PP No. 30 Tahun 2020</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP No. 17 Tahun 2020 adalah perubahan atas PP No. 11 Tahun 2017 tentang Manajemen PNS.</div>
+      </div>
+    </div>
+
+    <!-- Soal 13 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 13</span>
+      <p class="soal-text">Prinsip 'right person on the right place' dalam perencanaan SDM berarti...</p>
+      <ul class="options">
+        <li>A. Pegawai ditempatkan di kantor terdekat dengan rumah</li>
+        <li class="correct">B. Penempatan pegawai berdasarkan kualifikasi, kompetensi, dan kebutuhan organisasi</li>
+        <li>C. Semua pegawai mendapat kesempatan rotasi yang sama</li>
+        <li>D. Pegawai senior ditempatkan di jabatan struktural</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Prinsip 'right person on the right place' berarti menempatkan pegawai yang tepat pada posisi yang tepat untuk mencapai efektivitas organisasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 14 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 14</span>
+      <p class="soal-text">Analis SDM Aparatur dalam melaksanakan tugas perencanaan SDM harus berpedoman pada...</p>
+      <ul class="options">
+        <li>A. Keputusan pribadi pejabat pembina kepegawaian</li>
+        <li>B. Kebijakan internal tanpa dasar hukum</li>
+        <li class="correct">C. Peraturan perundang-undangan yang berlaku secara konsisten</li>
+        <li>D. Kebiasaan yang sudah berjalan di instansi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB No. 37 Tahun 2020 menegaskan Analis SDM Aparatur harus berpedoman pada peraturan perundang-undangan yang berlaku.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 2: PENGADAAN DAN PEMBERANGKATAN ASN ============ -->
+    <div class="section-header section-2">
+      <span class="icon">📝</span>
+      <span>PENGADAAN DAN PEMBERANGKATAN ASN (Soal 15–30)</span>
+    </div>
+
+    <!-- Soal 15 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 15</span>
+      <p class="soal-text">Berdasarkan UU No. 20 Tahun 2023, pegawai ASN terdiri dari...</p>
+      <ul class="options">
+        <li>A. PNS dan Pegawai Honorer</li>
+        <li class="correct">B. PNS dan PPPK</li>
+        <li>C. PNS, TNI, dan Polri</li>
+        <li>D. Pegawai Tetap dan Pegawai Kontrak</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pasal 6 UU No. 20 Tahun 2023 menyatakan Pegawai ASN terdiri atas PNS dan PPPK.</div>
+      </div>
+    </div>
+
+    <!-- Soal 16 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 16</span>
+      <p class="soal-text">Syarat umum menjadi PNS berdasarkan PP No. 11 Tahun 2017 adalah...</p>
+      <ul class="options">
+        <li class="correct">A. Berusia maksimal 35 tahun saat melamar</li>
+        <li>B. Memiliki pengalaman kerja minimal 2 tahun</li>
+        <li>C. Telah menikah dan memiliki KTP</li>
+        <li>D. Berijazah minimal SMA/sederajat</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP No. 11/2017 menetapkan batas usia maksimal pelamar PNS adalah 35 tahun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 17 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 17</span>
+      <p class="soal-text">PPPK diangkat dengan perjanjian kerja untuk jangka waktu...</p>
+      <ul class="options">
+        <li>A. 1 tahun dan dapat diperpanjang</li>
+        <li>B. Minimal 5 tahun</li>
+        <li class="correct">C. Sesuai kebutuhan dan ditetapkan dalam perjanjian kerja</li>
+        <li>D. Hingga usia pensiun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UU No. 20/2023 mengatur PPPK diangkat dengan perjanjian kerja sesuai kebutuhan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 18 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 18</span>
+      <p class="soal-text">Pengadaan PNS dilaksanakan melalui tahapan seleksi yang meliputi...</p>
+      <ul class="options">
+        <li>A. Tes Administrasi dan Wawancara</li>
+        <li class="correct">B. Seleksi Kompetensi Dasar dan Seleksi Kompetensi Bidang</li>
+        <li>C. Tes Psikologi dan Tes Kesehatan</li>
+        <li>D. Ujian Akademik dan Tes Kepribadian</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP No. 11/2017 jo PP 17/2020 mengatur tahapan seleksi PNS melalui SKD dan SKB.</div>
+      </div>
+    </div>
+
+    <!-- Soal 19 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 19</span>
+      <p class="soal-text">Formasi CPNS ditetapkan oleh...</p>
+      <ul class="options">
+        <li>A. Presiden</li>
+        <li class="correct">B. Menteri PANRB</li>
+        <li>C. Kepala BKN</li>
+        <li>D. Menteri Keuangan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Formasi CPNS ditetapkan oleh Menteri PANRB setelah berkoordinasi dengan instansi dan BKN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 20 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 20</span>
+      <p class="soal-text">Penetapan NIP CPNS dilakukan oleh...</p>
+      <ul class="options">
+        <li>A. Pejabat Pembina Kepegawaian</li>
+        <li>B. Menteri PANRB</li>
+        <li class="correct">C. Kepala BKN</li>
+        <li>D. Presiden</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kepala BKN berwenang menetapkan NIP CPNS sebagai bagian dari pengelolaan data kepegawaian nasional.</div>
+      </div>
+    </div>
+
+    <!-- Soal 21 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 21</span>
+      <p class="soal-text">Masa percobaan CPNS sebelum diangkat menjadi PNS adalah...</p>
+      <ul class="options">
+        <li>A. 6 bulan</li>
+        <li class="correct">B. 1 tahun</li>
+        <li>C. 2 tahun</li>
+        <li>D. 3 tahun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP No. 11/2017 menetapkan masa percobaan CPNS selama 1 tahun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 22 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 22</span>
+      <p class="soal-text">Prinsip dalam pengadaan ASN adalah...</p>
+      <ul class="options">
+        <li>A. Prioritas bagi keluarga pegawai</li>
+        <li>B. Mengutamakan pelamar dari daerah asal instansi</li>
+        <li class="correct">C. Objektif, transparan, dan bebas dari KKN</li>
+        <li>D. Memberikan kesempatan khusus tanpa seleksi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengadaan ASN harus objektif, transparan, dan bebas dari KKN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 23 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 23</span>
+      <p class="soal-text">Seleksi Kompetensi Dasar (SKD) CPNS menguji...</p>
+      <ul class="options">
+        <li>A. Matematika, Fisika, dan Kimia</li>
+        <li class="correct">B. TWK, TIU, dan TKP</li>
+        <li>C. Kepemimpinan, Manajemen, dan Organisasi</li>
+        <li>D. Bahasa asing dan Komputer</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">SKD CPNS menguji TWK, TIU, dan TKP.</div>
+      </div>
+    </div>
+
+    <!-- Soal 24 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 24</span>
+      <p class="soal-text">Prioritas pengadaan PPPK diberikan kepada...</p>
+      <ul class="options">
+        <li>A. Lulusan perguruan tinggi negeri</li>
+        <li class="correct">B. Eks tenaga honorer yang memenuhi persyaratan</li>
+        <li>C. Pegawai swasta dengan pengalaman</li>
+        <li>D. Warga negara asing</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UU No. 20/2023 memberikan prioritas pengadaan PPPK bagi eks tenaga honorer.</div>
+      </div>
+    </div>
+
+    <!-- Soal 25 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 25</span>
+      <p class="soal-text">Pengadaan ASN harus didasarkan pada...</p>
+      <ul class="options">
+        <li>A. Usulan masing-masing pegawai</li>
+        <li class="correct">B. Kebutuhan nyata organisasi yang tertuang dalam formasi</li>
+        <li>C. Jumlah pegawai yang akan pensiun</li>
+        <li>D. Ketersediaan anggaran semata</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengadaan ASN didasarkan pada kebutuhan nyata organisasi dalam formasi yang ditetapkan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 26 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 26</span>
+      <p class="soal-text">Nilai dasar ASN 'Akuntabel' berarti...</p>
+      <ul class="options">
+        <li>A. Mampu bekerja cepat dalam tekanan</li>
+        <li class="correct">B. Bertanggung jawab atas tugas dan hasil kerjanya</li>
+        <li>C. Memiliki kemampuan komunikasi yang baik</li>
+        <li>D. Mampu beradaptasi dengan teknologi baru</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Nilai 'Akuntabel' berarti ASN bertanggung jawab atas tugas dan hasil kerjanya.</div>
+      </div>
+    </div>
+
+    <!-- Soal 27 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 27</span>
+      <p class="soal-text">Computer Assisted Test (CAT) dalam seleksi ASN bertujuan...</p>
+      <ul class="options">
+        <li>A. Menilai kemampuan fisik peserta</li>
+        <li class="correct">B. Menjamin objektivitas, transparansi, dan efisiensi seleksi</li>
+        <li>C. Menggantikan wawancara dan tes kesehatan</li>
+        <li>D. Mempermudah peserta kurang mampu</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">CAT menjamin objektivitas, transparansi, dan efisiensi seleksi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 28 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 28</span>
+      <p class="soal-text">'Formasi umum' dalam pengadaan CPNS adalah...</p>
+      <ul class="options">
+        <li>A. Formasi untuk putra/putri daerah</li>
+        <li class="correct">B. Formasi untuk seluruh WNI yang memenuhi syarat tanpa kategori khusus</li>
+        <li>C. Formasi khusus penyandang disabilitas</li>
+        <li>D. Formasi untuk pegawai instansi lain</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Formasi umum dibuka untuk seluruh WNI yang memenuhi persyaratan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 29 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 29</span>
+      <p class="soal-text">Pengadaan ASN harus mempertimbangkan...</p>
+      <ul class="options">
+        <li>A. Keinginan pejabat daerah</li>
+        <li>B. Jumlah pegawai tanpa analisis</li>
+        <li class="correct">C. Kebutuhan riil dan kemampuan anggaran instansi</li>
+        <li>D. Target politis pemerintah daerah</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengadaan ASN harus didasarkan pada kebutuhan riil dan kemampuan anggaran.</div>
+      </div>
+    </div>
+
+    <!-- Soal 30 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 30</span>
+      <p class="soal-text">Larangan mengangkat tenaga honorer dalam UU No. 20/2023 bertujuan...</p>
+      <ul class="options">
+        <li>A. Mengurangi belanja pegawai</li>
+        <li class="correct">B. Mendorong profesionalisme ASN dan menghilangkan tenaga kerja tidak tetap</li>
+        <li>C. Memberi kesempatan pegawai swasta</li>
+        <li>D. Mempermudah mutasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tujuannya mendorong profesionalisme ASN dan menciptakan kepastian status.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 3: PENGATURAN DAN PEMBINAAN PEGAWAI ============ -->
+    <div class="section-header section-3">
+      <span class="icon">⚖️</span>
+      <span>PENGATURAN DAN PEMBINAAN PEGAWAI (Soal 31–48)</span>
+    </div>
+
+    <!-- Soal 31 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 31</span>
+      <p class="soal-text">Kewajiban utama PNS terkait politik adalah...</p>
+      <ul class="options">
+        <li class="correct">A. Menjaga netralitas politik dan tidak terlibat dalam kampanye</li>
+        <li>B. Menambah penghasilan di luar kedinasan</li>
+        <li>C. Mengikuti semua kegiatan partai politik</li>
+        <li>D. Memprioritaskan kepentingan pribadi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PNS wajib menjaga netralitas politik dan dilarang terlibat aktivitas partai politik.</div>
+      </div>
+    </div>
+
+    <!-- Soal 32 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 32</span>
+      <p class="soal-text">Kenaikan pangkat reguler PNS diberikan berdasarkan...</p>
+      <ul class="options">
+        <li>A. 1 tahun sekali otomatis</li>
+        <li>B. 2 tahun sekali otomatis</li>
+        <li>C. 4 tahun sekali otomatis</li>
+        <li class="correct">D. Ketentuan peraturan dengan syarat masa golongan dan penilaian kinerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kenaikan pangkat memerlukan syarat masa golongan tertentu dan penilaian kinerja baik.</div>
+      </div>
+    </div>
+
+    <!-- Soal 33 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 33</span>
+      <p class="soal-text">Sanksi disiplin berat bagi PNS meliputi...</p>
+      <ul class="options">
+        <li>A. Teguran lisan dan tertulis</li>
+        <li>B. Penundaan kenaikan gaji berkala</li>
+        <li class="correct">C. Pemberhentian dengan hormat tidak atas permintaan sendiri atau pemberhentian tidak dengan hormat</li>
+        <li>D. Mutasi ke unit kerja lain</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Sanksi disiplin berat meliputi penurunan jabatan, pemberhentian dengan hormat tidak atas permintaan sendiri, dan pemberhentian tidak dengan hormat.</div>
+      </div>
+    </div>
+
+    <!-- Soal 34 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 34</span>
+      <p class="soal-text">'Pola karier' dalam pembinaan pegawai berarti...</p>
+      <ul class="options">
+        <li>A. Daftar hadir pegawai setiap hari</li>
+        <li class="correct">B. Rencana jalur pengembangan karier pegawai dari awal hingga puncak jabatan</li>
+        <li>C. Absensi elektronik pegawai</li>
+        <li>D. Pakaian seragam yang dikenakan pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pola karier adalah rencana jalur pengembangan karier dari awal hingga puncak jabatan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 35 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 35</span>
+      <p class="soal-text">Penilaian kinerja ASN berdasarkan UU No. 20 Tahun 2023 dilakukan berdasarkan...</p>
+      <ul class="options">
+        <li>A. Kehadiran dan absensi</li>
+        <li class="correct">B. Perjanjian kinerja dan capaian hasil kerja</li>
+        <li>C. Lama masa kerja</li>
+        <li>D. Hubungan baik dengan atasan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penilaian kinerja ASN didasarkan pada perjanjian kinerja dan capaian hasil kerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 36 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 36</span>
+      <p class="soal-text">Tugas Analis SDM Aparatur dalam pembinaan pegawai adalah...</p>
+      <ul class="options">
+        <li>A. Menyusun panduan disiplin dan tata tertib ASN</li>
+        <li class="correct">B. Menegur langsung pegawai yang melanggar aturan</li>
+        <li>C. Menetapkan sanksi terhadap pelanggar disiplin</li>
+        <li>D. Memeriksa perkara pelanggaran pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur menyusun kerangka kerja/panduan disiplin ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 37 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 37</span>
+      <p class="soal-text">'Dukungan administratif' dalam pengaturan pegawai adalah...</p>
+      <ul class="options">
+        <li>A. Dukungan finansial untuk pegawai</li>
+        <li class="correct">B. Penyediaan dokumen dan data kepegawaian untuk pengambilan keputusan</li>
+        <li>C. Dukungan politik untuk pegawai</li>
+        <li>D. Bantuan hukum bagi pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Dukungan administratif mencakup penyediaan dokumen dan data kepegawaian yang akurat.</div>
+      </div>
+    </div>
+
+    <!-- Soal 38 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 38</span>
+      <p class="soal-text">Pejabat Fungsional terkena penyetaraan jabatan akibat penataan birokrasi...</p>
+      <ul class="options">
+        <li>A. Diberhentikan dengan hormat</li>
+        <li>B. Ditempatkan di instansi lain tanpa hak</li>
+        <li class="correct">C. Dapat disetarakan ke dalam jabatan lain sesuai kompetensi</li>
+        <li>D. Kehilangan hak pensiun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP No. 17/2020 mengatur Pejabat Fungsional terdampak dapat disetarakan ke jabatan lain.</div>
+      </div>
+    </div>
+
+    <!-- Soal 39 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 39</span>
+      <p class="soal-text">Pembinaan karier PNS bertujuan...</p>
+      <ul class="options">
+        <li>A. Memastikan pegawai tetap di satu unit kerja</li>
+        <li class="correct">B. Mengembangkan potensi pegawai secara optimal sesuai kompetensi</li>
+        <li>C. Membatasi mobilitas pegawai</li>
+        <li>D. Mengurangi jumlah pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pembinaan karier bertujuan mengembangkan potensi pegawai secara optimal.</div>
+      </div>
+    </div>
+
+    <!-- Soal 40 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 40</span>
+      <p class="soal-text">Hukuman disiplin tingkat sedang bagi PNS meliputi...</p>
+      <ul class="options">
+        <li>A. Pemberhentian dengan hormat</li>
+        <li class="correct">B. Penundaan kenaikan pangkat selama 1 tahun</li>
+        <li>C. Pemecatan</li>
+        <li>D. Skorsing 6 bulan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Hukuman disiplin sedang berupa penundaan kenaikan pangkat 1 tahun atau penurunan pangkat.</div>
+      </div>
+    </div>
+
+    <!-- Soal 41 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 41</span>
+      <p class="soal-text">'Mutasi' dalam pembinaan pegawai berarti...</p>
+      <ul class="options">
+        <li>A. Pemberhentian pegawai dari instansi</li>
+        <li class="correct">B. Perpindahan tugas dari satu jabatan/unit ke jabatan/unit lain</li>
+        <li>C. Kenaikan pangkat pegawai</li>
+        <li>D. Penurunan jabatan pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Mutasi adalah perpindahan tugas pegawai antar jabatan, unit, atau instansi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 42 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 42</span>
+      <p class="soal-text">Analis SDM Aparatur Ahli Muda dalam pembinaan pegawai bertugas...</p>
+      <ul class="options">
+        <li>A. Menyusun dokumen dasar pengelolaan SDM</li>
+        <li class="correct">B. Menganalisis dan mengevaluasi pelaksanaan kebijakan SDM aparatur</li>
+        <li>C. Menetapkan gaji pegawai</li>
+        <li>D. Melakukan audit keuangan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur Ahli Muda menganalisis dan mengevaluasi kebijakan SDM.</div>
+      </div>
+    </div>
+
+    <!-- Soal 43 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 43</span>
+      <p class="soal-text">Penghargaan bagi PNS berprestasi adalah...</p>
+      <ul class="options">
+        <li>A. Hadiah uang tunai dari masyarakat</li>
+        <li class="correct">B. Kenaikan pangkat istimewa</li>
+        <li>C. Liburan gratis ke luar negeri</li>
+        <li>D. Bebas dari tugas kedinasan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PNS berprestasi dapat diberikan kenaikan pangkat istimewa atau tanda jasa.</div>
+      </div>
+    </div>
+
+    <!-- Soal 44 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 44</span>
+      <p class="soal-text">Kewenangan Pejabat Pembina Kepegawaian (PPK) meliputi...</p>
+      <ul class="options">
+        <li>A. Menetapkan gaji pegawai sepihak</li>
+        <li class="correct">B. Menetapkan pengangkatan, pemindahan, dan pemberhentian PNS di instansinya</li>
+        <li>C. Menetapkan kebijakan pensiun nasional</li>
+        <li>D. Menentukan besaran tunjangan profesi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PPK berwenang menetapkan pengangkatan, pemindahan, dan pemberhentian PNS di instansinya.</div>
+      </div>
+    </div>
+
+    <!-- Soal 45 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 45</span>
+      <p class="soal-text">'Promosi' dalam kepegawaian berarti...</p>
+      <ul class="options">
+        <li>A. Pemindahan ke unit kerja lebih dekat</li>
+        <li class="correct">B. Peningkatan jabatan ke jenjang lebih tinggi dengan kewenangan lebih besar</li>
+        <li>C. Penambahan gaji tanpa perubahan jabatan</li>
+        <li>D. Perpindahan ke instansi lain</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Promosi adalah peningkatan jabatan ke jenjang lebih tinggi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 46 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 46</span>
+      <p class="soal-text">Pembinaan pegawai melalui pendidikan formal bertujuan...</p>
+      <ul class="options">
+        <li class="correct">A. Meningkatkan kualitas SDM sesuai tuntutan organisasi</li>
+        <li>B. Mengisi waktu luang pegawai</li>
+        <li>C. Memenuhi syarat administratif semata</li>
+        <li>D. Memberi beban tambahan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pendidikan formal bertujuan meningkatkan kualitas SDM sesuai tuntutan organisasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 47 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 47</span>
+      <p class="soal-text">Larangan PNS menjadi anggota partai politik adalah bagian dari...</p>
+      <ul class="options">
+        <li>A. Hak PNS</li>
+        <li class="correct">B. Kewajiban dan larangan PNS</li>
+        <li>C. Kesejahteraan PNS</li>
+        <li>D. Pengembangan kompetensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Larangan menjadi anggota partai politik adalah kewajiban dan larangan PNS untuk menjaga netralitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 48 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 48</span>
+      <p class="soal-text">Analis SDM Aparatur membantu pembinaan pegawai melalui...</p>
+      <ul class="options">
+        <li>A. Pemeriksaan internal keuangan</li>
+        <li class="correct">B. Menyusun SOP pengelolaan SDM</li>
+        <li>C. Menjadi pengacara sengketa kepegawaian</li>
+        <li>D. Merancang sistem akuntansi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur menyusun SOP pengelolaan SDM sebagai panduan pembinaan.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 4: MUTU KINERJA DAN PENGEMBANGAN KOMPETENSI ============ -->
+    <div class="section-header section-4">
+      <span class="icon">📈</span>
+      <span>MUTU KINERJA DAN PENGEMBANGAN KOMPETENSI (Soal 49–62)</span>
+    </div>
+
+    <!-- Soal 49 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 49</span>
+      <p class="soal-text">Sistem penilaian kinerja ASN berdasarkan UU No. 20/2023 disebut...</p>
+      <ul class="options">
+        <li>A. DP3</li>
+        <li class="correct">B. SKP (Sasaran Kinerja Pegawai)</li>
+        <li>C. Evaluasi Jabatan</li>
+        <li>D. Audit SDM</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penilaian kinerja ASN menggunakan SKP berdasarkan perjanjian kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 50 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 50</span>
+      <p class="soal-text">Pengembangan kompetensi ASN dilaksanakan melalui...</p>
+      <ul class="options">
+        <li>A. Hanya pendidikan formal</li>
+        <li class="correct">B. Pendidikan dan pelatihan serta jalur pengembangan lainnya</li>
+        <li>C. Hanya pelatihan teknis</li>
+        <li>D. Hanya magang</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengembangan kompetensi melalui pendidikan formal, pelatihan, seminar, workshop, dan bimtek.</div>
+      </div>
+    </div>
+
+    <!-- Soal 51 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 51</span>
+      <p class="soal-text">Jam pelajaran minimal pengembangan kompetensi ASN per tahun adalah...</p>
+      <ul class="options">
+        <li>A. 10 JP</li>
+        <li>B. 15 JP</li>
+        <li class="correct">C. 20 JP</li>
+        <li>D. 25 JP</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB No. 25/2021 menetapkan minimal 20 JP per tahun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 52 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 52</span>
+      <p class="soal-text">Tahapan pertama penyusunan SKP adalah...</p>
+      <ul class="options">
+        <li>A. Penilaian perilaku kerja</li>
+        <li class="correct">B. Penetapan target kinerja tahunan</li>
+        <li>C. Evaluasi akhir tahun</li>
+        <li>D. Pemberian nilai oleh atasan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penyusunan SKP dimulai dengan penetapan target kinerja tahunan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 53 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 53</span>
+      <p class="soal-text">Analis SDM Aparatur berkontribusi dalam mutu kinerja melalui...</p>
+      <ul class="options">
+        <li class="correct">A. Menyusun kerangka kerja sistem manajemen kinerja ASN</li>
+        <li>B. Menilai langsung kinerja pegawai</li>
+        <li>C. Menentukan besaran tunjangan kinerja</li>
+        <li>D. Memotong tunjangan kinerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur menyusun kerangka kerja sistem manajemen kinerja ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 54 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 54</span>
+      <p class="soal-text">Pengembangan kompetensi adalah...</p>
+      <ul class="options">
+        <li>A. Penambahan gaji berkala</li>
+        <li class="correct">B. Proses peningkatan pengetahuan, keterampilan, dan sikap pegawai</li>
+        <li>C. Pemberian jabatan baru tanpa pelatihan</li>
+        <li>D. Penempatan di unit favorit</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pengembangan kompetensi adalah proses sistematis meningkatkan pengetahuan dan keterampilan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 55 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 55</span>
+      <p class="soal-text">Permenpan RB No. 25/2021 mengatur pengembangan kompetensi melalui...</p>
+      <ul class="options">
+        <li>A. Kursus singkat, seminar, workshop, magang, dan bimtek</li>
+        <li>B. Hanya pelatihan klasikal</li>
+        <li class="correct">C. Hanya pendidikan formal S-2</li>
+        <li>D. Hanya belajar mandiri</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 25/2021 memberikan fleksibilitas banyak metode pengembangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 56 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 56</span>
+      <p class="soal-text">Penilaian kinerja ASN dilakukan oleh...</p>
+      <ul class="options">
+        <li>A. Tim penilai eksternal BKN</li>
+        <li class="correct">B. Atasan langsung pegawai</li>
+        <li>C. Rekan kerja</li>
+        <li>D. Bawahan langsung</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penilaian kinerja oleh atasan langsung berdasarkan perjanjian kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 57 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 57</span>
+      <p class="soal-text">Hasil penilaian kinerja digunakan untuk...</p>
+      <ul class="options">
+        <li class="correct">A. Pengembangan karier, promosi, dan tunjangan kinerja</li>
+        <li>B. Penentuan warna seragam</li>
+        <li>C. Pembagian parkir</li>
+        <li>D. Jadwal liburan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Hasil penilaian kinerja untuk pengembangan karier, promosi, mutasi, dan tunjangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 58 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 58</span>
+      <p class="soal-text">Langkah pertama program pengembangan kompetensi adalah...</p>
+      <ul class="options">
+        <li>A. Menyusun anggaran pelatihan</li>
+        <li>B. Melaksanakan pelatihan</li>
+        <li class="correct">C. Menyusun rencana berdasarkan analisis kebutuhan kompetensi</li>
+        <li>D. Mengevaluasi hasil pelatihan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Dimulai dengan analisis kebutuhan kompetensi (need assessment).</div>
+      </div>
+    </div>
+
+    <!-- Soal 59 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 59</span>
+      <p class="soal-text">Analisis Kebutuhan Pengembangan Kompetensi bertujuan...</p>
+      <ul class="options">
+        <li>A. Menambah beban administrasi</li>
+        <li class="correct">B. Mengidentifikasi kesenjangan kompetensi</li>
+        <li>C. Membatasi akses pelatihan</li>
+        <li>D. Menentukan pemecatan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tujuannya mengidentifikasi gap kompetensi yang dimiliki dan dibutuhkan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 60 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 60</span>
+      <p class="soal-text">Indikator mutu kinerja ASN yang baik adalah...</p>
+      <ul class="options">
+        <li>A. Tingkat absensi tinggi</li>
+        <li class="correct">B. Capaian kinerja sesuai target</li>
+        <li>C. Banyak pengaduan masyarakat</li>
+        <li>D. Anggaran besar</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Mutu kinerja diukur dari capaian kinerja sesuai target SKP.</div>
+      </div>
+    </div>
+
+    <!-- Soal 61 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 61</span>
+      <p class="soal-text">Pengembangan kompetensi melalui pendidikan formal dibiayai...</p>
+      <ul class="options">
+        <li>A. Pegawai mandiri</li>
+        <li class="correct">B. Negara melalui anggaran instansi sesuai ketentuan</li>
+        <li>C. Sponsor swasta</li>
+        <li>D. Pinjaman bank</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Biaya pendidikan formal ASN dapat dibiayai negara sesuai ketentuan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 62 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 62</span>
+      <p class="soal-text">Butir kegiatan analis SDM aparatur terkait mutu kinerja meliputi...</p>
+      <ul class="options">
+        <li>A. Menyusun laporan keuangan</li>
+        <li class="correct">B. Menyusun perencanaan kinerja dan pemantauan kinerja ASN</li>
+        <li>C. Mengelola pengadaan barang</li>
+        <li>D. Menyusun neraca anggaran</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Permenpan RB 37/2020 mencakup perencanaan kinerja dan pemantauan kinerja ASN.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 5: KESEJAHTERAAN PEGAWAI ============ -->
+    <div class="section-header section-5">
+      <span class="icon">💰</span>
+      <span>KESEJAHTERAAN PEGAWAI (Soal 63–76)</span>
+    </div>
+
+    <!-- Soal 63 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 63</span>
+      <p class="soal-text">Komponen penghasilan PNS setiap bulan meliputi...</p>
+      <ul class="options">
+        <li class="correct">A. Gaji pokok, tunjangan keluarga, tunjangan jabatan, dan tunjangan kinerja</li>
+        <li>B. Hanya gaji pokok</li>
+        <li>C. Hanya tunjangan kinerja</li>
+        <li>D. Gaji pokok dan bonus tahunan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penghasilan PNS terdiri dari gaji pokok, tunjangan keluarga, tunjangan jabatan, dan tunjangan kinerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 64 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 64</span>
+      <p class="soal-text">Jaminan pensiun dan hari tua PNS diselenggarakan berdasarkan...</p>
+      <ul class="options">
+        <li>A. Kebijakan instansi masing-masing</li>
+        <li class="correct">B. Peraturan perundang-undangan tentang dana pensiun dan THT</li>
+        <li>C. Kesepakatan bilateral</li>
+        <li>D. Keputusan sepihak atasan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Jaminan pensiun dan hari tua melalui PT Taspen berdasarkan peraturan perundang-undangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 65 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 65</span>
+      <p class="soal-text">Tunjangan kinerja ASN diberikan berdasarkan...</p>
+      <ul class="options">
+        <li>A. Masa kerja</li>
+        <li>B. Golongan ruang</li>
+        <li class="correct">C. Capaian kinerja dan beban kerja</li>
+        <li>D. Usia pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tunjangan kinerja berdasarkan capaian kinerja dan beban kerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 66 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 66</span>
+      <p class="soal-text">Hak cuti ASN meliputi...</p>
+      <ul class="options">
+        <li>A. Cuti tahunan, cuti sakit, cuti melahirkan, cuti besar, cuti alasan penting</li>
+        <li>B. Hanya cuti tahunan</li>
+        <li>C. Hanya untuk pegawai tetap</li>
+        <li>D. Cuti tanpa batas</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Hak cuti ASN meliputi cuti tahunan, sakit, melahirkan, besar, alasan penting.</div>
+      </div>
+    </div>
+
+    <!-- Soal 67 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 67</span>
+      <p class="soal-text">Gaji pokok PNS ditetapkan berdasarkan...</p>
+      <ul class="options">
+        <li>A. Usia dan jenis kelamin</li>
+        <li class="correct">B. Golongan ruang dan masa kerja golongan</li>
+        <li>C. Pendidikan dan status perkawinan</li>
+        <li>D. Lokasi tempat tinggal</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Gaji pokok berdasarkan golongan ruang dan masa kerja golongan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 68 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 68</span>
+      <p class="soal-text">Bentuk kesejahteraan pegawai dalam UU No. 20/2023 adalah...</p>
+      <ul class="options">
+        <li>A. Dividen perusahaan negara</li>
+        <li class="correct">B. Perlindungan hukum dalam melaksanakan tugas</li>
+        <li>C. Pinjaman bank swasta</li>
+        <li>D. Kepemilikan saham</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">ASN berhak mendapat perlindungan hukum dalam melaksanakan tugas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 69 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 69</span>
+      <p class="soal-text">Kenaikan gaji berkala PNS diberikan setiap...</p>
+      <ul class="options">
+        <li>A. 6 bulan otomatis</li>
+        <li>B. 1 tahun tanpa syarat</li>
+        <li class="correct">C. 2 tahun dengan syarat penilaian kinerja baik</li>
+        <li>D. Sesuai masa kerja tanpa penilaian</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kenaikan gaji berkala setiap 2 tahun dengan syarat penilaian kinerja baik.</div>
+      </div>
+    </div>
+
+    <!-- Soal 70 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 70</span>
+      <p class="soal-text">Tunjangan keluarga PNS diberikan untuk...</p>
+      <ul class="options">
+        <li>A. Istri/suami dan anak</li>
+        <li>B. Orang tua dan mertua</li>
+        <li>C. Saudara kandung</li>
+        <li>D. Keponakan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tunjangan keluarga untuk istri/suami (1 orang) dan anak (maksimal 3 orang).</div>
+      </div>
+    </div>
+
+    <!-- Soal 71 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 71</span>
+      <p class="soal-text">Analis SDM Aparatur dalam kesejahteraan pegawai bertugas...</p>
+      <ul class="options">
+        <li>A. Menentukan besaran gaji</li>
+        <li class="correct">B. Menyusun kerangka kerja sistem penggajian, tunjangan, dan fasilitas pegawai</li>
+        <li>C. Membayarkan gaji</li>
+        <li>D. Menandatangani kontrak pengadaan barang</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur menyusun kerangka kerja sistem penggajian, tunjangan, dan fasilitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 72 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 72</span>
+      <p class="soal-text">Tunjangan profesi diberikan berdasarkan...</p>
+      <ul class="options">
+        <li>A. Jabatan fungsional tertentu dan persyaratan yang ditetapkan</li>
+        <li>B. Status sosial</li>
+        <li>C. Popularitas media sosial</li>
+        <li>D. Kekayaan pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Tunjangan profesi untuk JF tertentu yang memenuhi persyaratan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 73 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 73</span>
+      <p class="soal-text">Jaminan kesehatan ASN melalui...</p>
+      <ul class="options">
+        <li>A. BPJS Ketenagakerjaan</li>
+        <li>B. Asuransi swasta</li>
+        <li class="correct">C. BPJS Kesehatan</li>
+        <li>D. Dana sehat mandiri</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Jaminan kesehatan ASN melalui BPJS Kesehatan sesuai SJSN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 74 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 74</span>
+      <p class="soal-text">ASN kecelakaan kerja berhak mendapat...</p>
+      <ul class="options">
+        <li>A. Santunan kecelakaan kerja sesuai peraturan</li>
+        <li>B. Cuti tanpa batas</li>
+        <li>C. Kenaikan pangkat otomatis</li>
+        <li>D. Penggantian kendaraan dinas</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">ASN berhak mendapat santunan kecelakaan kerja.</div>
+      </div>
+    </div>
+
+    <!-- Soal 75 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 75</span>
+      <p class="soal-text">PNS diberhentikan dengan hormat berhak...</p>
+      <ul class="options">
+        <li>A. Hak pensiun sesuai ketentuan</li>
+        <li>B. Kembali menjadi CPNS</li>
+        <li>C. Jabatan struktural di instansi lain</li>
+        <li>D. Penggantian rumah dinas</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PNS diberhentikan dengan hormat berhak mendapat pensiun sesuai ketentuan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 76 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 76</span>
+      <p class="soal-text">Perlindungan ASN dalam UU No. 20/2023 adalah...</p>
+      <ul class="options">
+        <li>A. Perlindungan dari tuntutan hukum pihak ketiga saat tugas kedinasan</li>
+        <li>B. Perlindungan dari kritik publik</li>
+        <li>C. Kebal hukum</li>
+        <li>D. Bebas pajak</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Perlindungan hukum dari tuntutan pihak ketiga terkait tugas kedinasan yang sah.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 6: PERPINDAHAN TUGAS DAN PENSIUN ============ -->
+    <div class="section-header section-6">
+      <span class="icon">🔄</span>
+      <span>PERPINDAHAN TUGAS DAN PENSIUN (Soal 77–86)</span>
+    </div>
+
+    <!-- Soal 77 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 77</span>
+      <p class="soal-text">Batas Usia Pensiun PNS JF Ahli Pertama adalah...</p>
+      <ul class="options">
+        <li>A. 56 tahun</li>
+        <li class="correct">B. 58 tahun</li>
+        <li>C. 60 tahun</li>
+        <li>D. 65 tahun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">BUP JF Ahli Pertama 58 tahun sesuai PP 17/2020.</div>
+      </div>
+    </div>
+
+    <!-- Soal 78 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 78</span>
+      <p class="soal-text">Mutasi PNS antar-instansi berdasarkan...</p>
+      <ul class="options">
+        <li>A. Keinginan pribadi tanpa persetujuan</li>
+        <li>B. Keputusan sepihak PPK</li>
+        <li class="correct">C. Kebutuhan organisasi dan pengembangan karier dengan persetujuan kedua instansi</li>
+        <li>D. Hasil undian</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Mutasi antar-instansi berdasarkan kebutuhan organisasi dan pengembangan karier.</div>
+      </div>
+    </div>
+
+    <!-- Soal 79 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 79</span>
+      <p class="soal-text">Pendelegasian kewenangan Presiden kepada PPK dalam mutasi bertujuan...</p>
+      <ul class="options">
+        <li>A. Memperlambat mutasi</li>
+        <li class="correct">B. Mempercepat keputusan mutasi di tingkat instansi</li>
+        <li>C. Menghapus kewenangan Presiden</li>
+        <li>D. Memberi kewenangan mutasi ke pegawai</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP 17/2020 mendelegasikan kewenangan untuk mempercepat proses mutasi.</div>
+      </div>
+    </div>
+
+    <!-- Soal 80 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 80</span>
+      <p class="soal-text">PNS mencapai BUP diberhentikan...</p>
+      <ul class="options">
+        <li>A. Dengan hormat</li>
+        <li>B. Tidak dengan hormat</li>
+        <li>C. Atas permintaan sendiri</li>
+        <li>D. Sementara</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PNS mencapai BUP diberhentikan dengan hormat dan berhak atas pensiun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 81 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 81</span>
+      <p class="soal-text">'Penugasan' dalam perpindahan tugas adalah...</p>
+      <ul class="options">
+        <li>A. Penempatan tetap tanpa batas waktu</li>
+        <li class="correct">B. Perpindahan untuk jangka waktu tertentu di luar instansi induk</li>
+        <li>C. Pemberhentian pegawai</li>
+        <li>D. Kenaikan pangkat</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penugasan adalah perpindahan untuk jangka waktu tertentu di luar instansi induk.</div>
+      </div>
+    </div>
+
+    <!-- Soal 82 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 82</span>
+      <p class="soal-text">Peran Analis SDM Aparatur dalam perpindahan tugas...</p>
+      <ul class="options">
+        <li>A. Melaksanakan mutasi langsung</li>
+        <li class="correct">B. Menyusun kerangka kerja mutasi dan penugasan pegawai</li>
+        <li>C. Menolak permohonan mutasi</li>
+        <li>D. Menandatangani SK mutasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur menyusun kerangka kerja mutasi dan penugasan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 83 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 83</span>
+      <p class="soal-text">BUP JF Ahli Madya berdasarkan PP 17/2020 adalah...</p>
+      <ul class="options">
+        <li>A. 58 tahun</li>
+        <li>B. 60 tahun</li>
+        <li>C. 62 tahun</li>
+        <li class="correct">D. 65 tahun</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PP 17/2020 memperpanjang BUP JF Ahli Madya hingga 65 tahun.</div>
+      </div>
+    </div>
+
+    <!-- Soal 84 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 84</span>
+      <p class="soal-text">Pemberhentian PNS atas permintaan sendiri diproses setelah...</p>
+      <ul class="options">
+        <li>A. Dikabulkan tanpa syarat</li>
+        <li>B. Mendapat persetujuan PPK</li>
+        <li>C. Otomatis 1 minggu</li>
+        <li>D. Sidang DPR</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pemberhentian atas permintaan sendiri diproses setelah mendapat persetujuan PPK.</div>
+      </div>
+    </div>
+
+    <!-- Soal 85 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 85</span>
+      <p class="soal-text">Hak PNS yang pensiun adalah...</p>
+      <ul class="options">
+        <li>A. Pesangon dari instansi</li>
+        <li class="correct">B. Pensiun bulanan seumur hidup</li>
+        <li>C. Kembali CPNS</li>
+        <li>D. Jabatan di BUMN</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">PNS pensiun berhak menerima pensiun bulanan seumur hidup melalui PT Taspen.</div>
+      </div>
+    </div>
+
+    <!-- Soal 86 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 86</span>
+      <p class="soal-text">Mobilitas talenta ASN antar-instansi berdasarkan...</p>
+      <ul class="options">
+        <li>A. Senioritas</li>
+        <li class="correct">B. Sistem merit melalui manajemen talenta</li>
+        <li>C. Hubungan kekerabatan</li>
+        <li>D. Usia termuda</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pasal 46 UU No. 20/2023 mengatur mobilitas talenta berdasarkan sistem merit.</div>
+      </div>
+    </div>
+
+    <!-- ============ BAGIAN 7: KEPATUHAN HUKUM DAN ETIKA PROFESIONAL ============ -->
+    <div class="section-header section-7">
+      <span class="icon">📜</span>
+      <span>KEPATUHAN HUKUM DAN ETIKA PROFESIONAL (Soal 87–100)</span>
+    </div>
+
+    <!-- Soal 87 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 87</span>
+      <p class="soal-text">Nilai dasar ASN 'BERAKHLAK' adalah...</p>
+      <ul class="options">
+        <li class="correct">A. Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif</li>
+        <li>B. Bersih, Efisien, Ramah, Adil, Kreatif, Handal</li>
+        <li>C. Berani, Efektif, Responsif, Aspiratif, Kredibel</li>
+        <li>D. Berkualitas, Efektif, Responsif, Akomodatif</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">UU No. 20/2023 menetapkan BERAKHLAK.</div>
+      </div>
+    </div>
+
+    <!-- Soal 88 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 88</span>
+      <p class="soal-text">Kode etik ASN bertujuan...</p>
+      <ul class="options">
+        <li>A. Meningkatkan popularitas</li>
+        <li class="correct">B. Menjaga martabat, kehormatan, dan citra profesional ASN</li>
+        <li>C. Membatasi hak politik</li>
+        <li>D. Mengatur penghasilan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kode etik menjaga martabat, kehormatan, dan citra profesional ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 89 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 89</span>
+      <p class="soal-text">Analis SDM Aparatur harus menerapkan prinsip...</p>
+      <ul class="options">
+        <li>A. Subjektivitas dan diskresi pribadi</li>
+        <li class="correct">B. Netralitas, integritas, dan profesionalitas</li>
+        <li>C. Kepentingan kelompok</li>
+        <li>D. Fleksibilitas tanpa batas hukum</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Analis SDM Aparatur wajib menerapkan netralitas, integritas, dan profesionalitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 90 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 90</span>
+      <p class="soal-text">Benturan kepentingan terjadi ketika...</p>
+      <ul class="options">
+        <li>A. Pegawai bekerja sesuai prosedur</li>
+        <li>B. Pegawai ikut pendidikan formal</li>
+        <li class="correct">C. Kepentingan pribadi mempengaruhi keputusan kedinasan</li>
+        <li>D. Pegawai menggunakan hak cuti</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Benturan kepentingan ketika kepentingan pribadi mempengaruhi objektivitas keputusan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 91 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 91</span>
+      <p class="soal-text">Sanksi pelanggaran kode etik ASN...</p>
+      <ul class="options">
+        <li>A. Hukuman penjara tanpa peradilan</li>
+        <li class="correct">B. Sanksi moral, administratif, dan/atau disiplin</li>
+        <li>C. Denda uang tunai</li>
+        <li>D. Pencabutan hak pilih</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pelanggaran kode etik dikenakan sanksi moral, administratif, dan/atau disiplin.</div>
+      </div>
+    </div>
+
+    <!-- Soal 92 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 92</span>
+      <p class="soal-text">Larangan gratifikasi ASN diatur dalam...</p>
+      <ul class="options">
+        <li>A. Hanya kode etik</li>
+        <li class="correct">B. UU Tipikor dan peraturan internal ASN</li>
+        <li>C. Peraturan berpakaian</li>
+        <li>D. Pedoman olahraga</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Larangan gratifikasi diatur dalam UU Tipikor dan peraturan internal ASN.</div>
+      </div>
+    </div>
+
+    <!-- Soal 93 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 93</span>
+      <p class="soal-text">Whistleblowing system berfungsi sebagai...</p>
+      <ul class="options">
+        <li>A. Pengaduan masyarakat</li>
+        <li class="correct">B. Pelaporan dugaan pelanggaran oleh pegawai secara rahasia</li>
+        <li>C. Sistem penggajian</li>
+        <li>D. Aplikasi absensi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Whistleblowing adalah mekanisme pelaporan pelanggaran secara rahasia.</div>
+      </div>
+    </div>
+
+    <!-- Soal 94 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 94</span>
+      <p class="soal-text">Kewajiban ASN dalam kepatuhan hukum...</p>
+      <ul class="options">
+        <li>A. Menyembunyikan informasi</li>
+        <li class="correct">B. Melaksanakan tugas sesuai peraturan perundang-undangan</li>
+        <li>C. Menolak supervisi</li>
+        <li>D. Mengabaikan prosedur</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">ASN wajib melaksanakan tugas sesuai peraturan perundang-undangan.</div>
+      </div>
+    </div>
+
+    <!-- Soal 95 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 95</span>
+      <p class="soal-text">Nilai 'Loyal' dalam BERAKHLAK berarti...</p>
+      <ul class="options">
+        <li>A. Setia pada kepentingan pribadi</li>
+        <li class="correct">B. Setia dan berdedikasi pada organisasi, bangsa, dan negara</li>
+        <li>C. Loyal pada atasan meski melanggar hukum</li>
+        <li>D. Mengikuti keinginan rekan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Loyal berarti setia dan berdedikasi pada organisasi, bangsa, dan negara.</div>
+      </div>
+    </div>
+
+    <!-- Soal 96 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 96</span>
+      <p class="soal-text">Kerahasiaan data kepegawaian wajib dijaga untuk...</p>
+      <ul class="options">
+        <li>A. Data tidak penting</li>
+        <li class="correct">B. Melindungi privasi pegawai dan keamanan data sesuai peraturan</li>
+        <li>C. Bersifat rahasia negara mutlak</li>
+        <li>D. Menghindari beban kerja</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Kerahasiaan data untuk melindungi privasi dan keamanan data.</div>
+      </div>
+    </div>
+
+    <!-- Soal 97 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 97</span>
+      <p class="soal-text">Integritas dalam etika profesi berarti...</p>
+      <ul class="options">
+        <li>A. Kemampuan menghafal peraturan</li>
+        <li class="correct">B. Konsistensi ucapan, pikiran, dan perbuatan dalam menerapkan nilai etika</li>
+        <li>C. Kecepatan dokumen</li>
+        <li>D. Kemampuan komunikasi</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Integritas berarti konsistensi dalam menerapkan nilai etika, kejujuran, dan moralitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 98 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 98</span>
+      <p class="soal-text">Pelanggaran netralitas ASN dalam pemilu berakibat...</p>
+      <ul class="options">
+        <li>A. Tidak ada sanksi</li>
+        <li>B. Sanksi ringan teguran</li>
+        <li class="correct">C. Sanksi disiplin sedang hingga berat</li>
+        <li>D. Penghargaan</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Pelanggaran netralitas ASN dikenakan sanksi disiplin sedang hingga berat.</div>
+      </div>
+    </div>
+
+    <!-- Soal 99 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 99</span>
+      <p class="soal-text">Asas pengelolaan SDM yang harus diterapkan Analis SDM...</p>
+      <ul class="options">
+        <li>A. Diskriminatif</li>
+        <li class="correct">B. Keadilan, kepastian hukum, kepentingan nasional, proporsionalitas</li>
+        <li>C. Spekulatif</li>
+        <li>D. Subjektif</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Asas meliputi keadilan, kepastian hukum, kepentingan nasional, dan proporsionalitas.</div>
+      </div>
+    </div>
+
+    <!-- Soal 100 -->
+    <div class="soal-card">
+      <span class="soal-number">Soal 100</span>
+      <p class="soal-text">Etika profesi ASN ditegakkan melalui...</p>
+      <ul class="options">
+        <li>A. Pengawasan masyarakat</li>
+        <li class="correct">B. Kode etik dan kode perilaku oleh Dewan Kehormatan</li>
+        <li>C. Laporan media</li>
+        <li>D. Penilaian Presiden</li>
+      </ul>
+      <div class="pembahasan">
+        <div class="pembahasan-label">💡 Pembahasan:</div>
+        <div class="pembahasan-text">Penegakan etika profesi melalui kode etik dan kode perilaku oleh Dewan Kehormatan.</div>
+      </div>
+    </div>
+
+    <!-- ============ RINGKASAN DISTRIBUSI SOAL ============ -->
+    <div class="summary-section">
+      <h2>📊 RINGKASAN DISTRIBUSI SOAL</h2>
+      
+      <div class="summary-grid">
+        <div class="summary-card">
+          <h3>📋 Perencanaan & Pengembangan SDM</h3>
+          <ul>
+            <li>Soal 1-14 (14 soal)</li>
+            <li>Analisis jabatan & beban kerja</li>
+            <li>Sistem Merit & Manajemen Talenta</li>
+            <li>Peta jabatan & Renbut SDM</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📝 Pengadaan & Pemberangkatan ASN</h3>
+          <ul>
+            <li>Soal 15-30 (16 soal)</li>
+            <li>PNS dan PPPK</li>
+            <li>SKD dan SKB</li>
+            <li>Formasi & NIP CPNS</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>⚖️ Pengaturan & Pembinaan Pegawai</h3>
+          <ul>
+            <li>Soal 31-48 (18 soal)</li>
+            <li>Netralitas politik</li>
+            <li>Kenaikan pangkat & disiplin</li>
+            <li>Mutasi & promosi</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📈 Mutu Kinerja & Pengembangan Kompetensi</h3>
+          <ul>
+            <li>Soal 49-62 (14 soal)</li>
+            <li>SKP & penilaian kinerja</li>
+            <li>Pengembangan kompetensi 20 JP</li>
+            <li>Analisis kebutuhan kompetensi</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>💰 Kesejahteraan Pegawai</h3>
+          <ul>
+            <li>Soal 63-76 (14 soal)</li>
+            <li>Gaji, tunjangan, cuti</li>
+            <li>Pensiun & jaminan kesehatan</li>
+            <li>Perlindungan hukum</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>🔄 Perpindahan Tugas & Pensiun</h3>
+          <ul>
+            <li>Soal 77-86 (10 soal)</li>
+            <li>BUP JF (58-65 tahun)</li>
+            <li>Mutasi antar-instansi</li>
+            <li>Penugasan & pensiun</li>
+          </ul>
+        </div>
+
+        <div class="summary-card">
+          <h3>📜 Kepatuhan Hukum & Etika Profesional</h3>
+          <ul>
+            <li>Soal 87-100 (14 soal)</li>
+            <li>BERAKHLAK</li>
+            <li>Kode etik & gratifikasi</li>
+            <li>Whistleblowing & netralitas</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ TABEL REGULASI RUJUKAN ============ -->
+    <div class="summary-section">
+      <h2>📚 REGULASI RUJUKAN PENTING</h2>
+      
+      <table class="regulasi-table">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Regulasi</th>
+            <th>Tentang</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>UU No. 20 Tahun 2023</strong></td>
+            <td>Aparatur Sipil Negara</td>
+            <td>Menggantikan UU No. 5 Tahun 2014</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>UU No. 5 Tahun 2014</strong></td>
+            <td>Aparatur Sipil Negara</td>
+            <td>Dasar hukum ASN (sebagaimana diubah)</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>PP No. 11 Tahun 2017</strong></td>
+            <td>Manajemen PNS</td>
+            <td>Dasar manajemen PNS</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>PP No. 17 Tahun 2020</strong></td>
+            <td>Perubahan PP 11/2017</td>
+            <td>Perubahan manajemen PNS</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Permenpan RB No. 37 Tahun 2020</strong></td>
+            <td>JF Analis SDM Aparatur</td>
+            <td>Pengaturan JF Analis SDM</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>Permenpan RB No. 25 Tahun 2021</strong></td>
+            <td>Pengembangan Kompetensi ASN</td>
+            <td>Minimal 20 JP per tahun</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>Permenpan RB No. 39 Tahun 2021</strong></td>
+            <td>JF Analis Pengembangan Kompetensi</td>
+            <td>Pengaturan JF Analis PK</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>UU No. 31/1999 jo UU 20/2001</strong></td>
+            <td>Tindak Pidana Korupsi</td>
+            <td>Larangan gratifikasi</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><strong>Permenpan RB No. 1 Tahun 2023</strong></td>
+            <td>Jabatan Fungsional</td>
+            <td>Transformasi tata kelola JF</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><strong>PP No. 30 Tahun 2019</strong></td>
+            <td>Penilaian Kinerja PNS</td>
+            <td>SKP dan perilaku kerja</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><strong>UU No. 27 Tahun 2022</strong></td>
+            <td>Perlindungan Data Pribadi</td>
+            <td>Kerahasiaan data pegawai</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- TIPS BELAJAR -->
+    <div class="tips-box">
+      <h3>💡 Tips Efektif Menghadapi UKOM Analis SDM Aparatur 2026</h3>
+      <ul>
+        <li><b>Kuasai 7 Kompetensi Utama:</b> Perencanaan, Pengadaan, Pembinaan, Kinerja, Kesejahteraan, Mutasi, Etika</li>
+        <li><b>Pahami UU No. 20/2023:</b> Regulasi terbaru yang menggantikan UU 5/2014</li>
+        <li><b>Hafalkan Regulasi Kunci:</b> PP 11/2017, PP 17/2020, Permenpan RB 37/2020</li>
+        <li><b>Sistem Merit:</b> Kualifikasi, kompetensi, kinerja secara adil dan wajar</li>
+        <li><b>BERAKHLAK:</b> Berorientasi Pelayanan, Akuntabel, Kompeten, Harmonis, Loyal, Adaptif, Kolaboratif</li>
+        <li><b>SKP & Kinerja:</b> Minimal 20 JP pengembangan kompetensi per tahun</li>
+        <li><b>BUP JF:</b> Ahli Pertama 58 tahun, Ahli Madya 65 tahun</li>
+        <li><b>Angka Kredit:</b> Ahli Pertama 12,5, Ahli Muda 25, Ahli Madya 37,5 per tahun</li>
+        <li><b>Netralitas:</b> PNS dilarang menjadi anggota partai politik</li>
+        <li><b>Whistleblowing:</b> Mekanisme pelaporan pelanggaran secara rahasia</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><strong>📊 SELAMAT BELAJAR DAN SUKSES UKOM ANALIS SDM APARATUR 2026!</strong></p>
+    <p>Dokumen ini disusun untuk memudahkan pembelajaran dan persiapan Ujian Kompetensi Jabatan Fungsional Analis SDM Aparatur</p>
+    <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">🗓️ Diperbarui: Agustus 2026 | 📄 Total: 100 Soal + Pembahasan | 📖 7 Kompetensi</p>
+  </div>
+
+</div>
+
+</body>
+</html>
