@@ -1461,49 +1461,365 @@ footer { text-align: center; padding: 30px; color: var(--muted); font-size: 0.85
 
 </section>
 
-<!-- ============ RINGKASAN TABEL ============ -->
-<div class="section-title">📊 Ringkasan Tabel Penting</div>
+<!-- ============ RINGKASAN TABEL PENTING (DIPERBAIKAI) ============ -->
+<div class="section-title">📊 Ringkasan Tabel Penting (Revisi Sesuai Regulasi)</div>
 
+<!-- ===== TABEL 1: KOEFISIEN AK TAHUNAN ===== -->
 <div class="qa-card">
-  <h3>Tabel Koefisien Angka Kredit Tahunan</h3>
+  <h3>Tabel 1 – Koefisien Angka Kredit Tahunan & Konversi Predikat Kinerja</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 1/2023</span>
+    <span class="dasar-hukum">Peraturan BKN 3/2023</span>
+  </p>
   <table class="tabel-ak">
-    <tr><th>Jenjang JF</th><th>Koefisien AK Tahunan</th><th>Sangat Baik (150%)</th><th>Baik (100%)</th><th>Cukup (75%)</th></tr>
-    <tr><td>Ahli Pertama</td><td>12,5</td><td>18,75</td><td>12,5</td><td>9,375</td></tr>
-    <tr><td>Ahli Muda</td><td>25</td><td>37,5</td><td>25</td><td>18,75</td></tr>
-    <tr><td>Ahli Madya</td><td>37,5</td><td>56,25</td><td>37,5</td><td>28,125</td></tr>
-    <tr><td>Ahli Utama</td><td>50</td><td>75</td><td>50</td><td>37,5</td></tr>
+    <tr>
+      <th>Jenjang JF</th>
+      <th>Koefisien AK<br>Tahunan</th>
+      <th>Sangat Baik<br>(150%)</th>
+      <th>Baik<br>(100%)</th>
+      <th>Cukup/Butuh<br>Perbaikan (75%)</th>
+      <th>Kurang<br>(50%)</th>
+      <th>Sangat Kurang<br>(25%)</th>
+    </tr>
+    <tr><td>Ahli Pertama</td><td>12,5</td><td>18,75</td><td>12,5</td><td>9,375</td><td>6,25</td><td>3,125</td></tr>
+    <tr><td>Ahli Muda</td><td>25</td><td>37,5</td><td>25</td><td>18,75</td><td>12,5</td><td>6,25</td></tr>
+    <tr><td>Ahli Madya</td><td>37,5</td><td>56,25</td><td>37,5</td><td>28,125</td><td>18,75</td><td>9,375</td></tr>
+    <tr><td>Ahli Utama</td><td>50</td><td>75</td><td>50</td><td>37,5</td><td>25</td><td>12,5</td></tr>
+  </table>
+  <div class="note">
+    Rumus AK Proporsional: <strong>(Jumlah bulan periode ÷ 12) × % Predikat × Koefisien AK Tahunan</strong>
+  </div>
+</div>
+
+<!-- ===== TABEL 2: HUKUMAN DISIPLIN (DIPERBAIKAI TOTAL) ===== -->
+<div class="qa-card" style="border-left-color:#c62828;">
+  <h3>⚠️ Tabel 2 – Hukuman Disiplin Ketidakhadiran Tanpa Alasan Sah (PP 94/2021)</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">PP 94/2021 Pasal 9, 10, 13</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Tidak Masuk<br>(hari kerja)</th>
+      <th>Tingkat</th>
+      <th>Hukuman</th>
+      <th>Dasar Pasal</th>
+    </tr>
+    <tr><td>3</td><td style="background:#e8f5e9;font-weight:600;">RINGAN</td><td>Teguran lisan</td><td>Pasal 9</td></tr>
+    <tr><td>4 – 6</td><td style="background:#e8f5e9;font-weight:600;">RINGAN</td><td>Teguran tertulis</td><td>Pasal 9</td></tr>
+    <tr><td>7 – 10</td><td style="background:#e8f5e9;font-weight:600;">RINGAN</td><td>Pernyataan tidak puas secara tertulis</td><td>Pasal 9</td></tr>
+    <tr style="background:#fff3e0;"><td><strong>11 – 13</strong></td><td style="background:#fff8e1;font-weight:600;">SEDANG</td><td><strong>Potong TK 25% selama 6 bulan</strong></td><td><strong>Pasal 10 ayat (2) huruf f angka 1</strong></td></tr>
+    <tr style="background:#fff3e0;"><td><strong>14 – 16</strong></td><td style="background:#fff8e1;font-weight:600;">SEDANG</td><td><strong>Potong TK 25% selama 9 bulan</strong></td><td><strong>Pasal 10 ayat (2) huruf f angka 2</strong></td></tr>
+    <tr style="background:#fff3e0;"><td><strong>17 – 20</strong></td><td style="background:#fff8e1;font-weight:600;">SEDANG</td><td><strong>Potong TK 25% selama 12 bulan</strong></td><td><strong>Pasal 10 ayat (2) huruf f angka 3</strong></td></tr>
+    <tr style="background:#ffebee;"><td>21 – 24</td><td style="background:#ffcdd2;font-weight:600;">BERAT</td><td>Penurunan jabatan setingkat lebih rendah selama 12 bulan</td><td>Pasal 13</td></tr>
+    <tr style="background:#ffebee;"><td>25 – 27</td><td style="background:#ffcdd2;font-weight:600;">BERAT</td><td>Pembebasan dari jabatan menjadi jabatan pelaksana selama 12 bulan</td><td>Pasal 13</td></tr>
+    <tr style="background:#ffebee;"><td>28 – 30</td><td style="background:#ffcdd2;font-weight:600;">BERAT</td><td>Pemberhentian dengan hormat tidak atas permintaan sendiri</td><td>Pasal 13</td></tr>
+    <tr style="background:#ffebee;"><td>≥ 31</td><td style="background:#ffcdd2;font-weight:600;">BERAT</td><td>Pemberhentian tidak dengan hormat</td><td>Pasal 13</td></tr>
+  </table>
+  <div class="note">
+    <strong>Ketentuan Pemberatan (Pasal 14):</strong> PNS yang telah dijatuhi hukuman disiplin kemudian melakukan pelanggaran lagi dijatuhi hukuman <strong>satu tingkat lebih berat</strong>. Contoh: sudah teguran lisan → pelanggaran lagi → teguran tertulis.
+  </div>
+</div>
+
+<!-- ===== TABEL 3: JENJANG JF & KESETARAAN ===== -->
+<div class="qa-card">
+  <h3>Tabel 3 – Jenjang JF, Kualifikasi & Kesetaraan Jabatan Manajerial</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 1/2023 Pasal 7</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>JF Keahlian</th>
+      <th>Kualifikasi Profesional</th>
+      <th>Setara Jabatan</th>
+      <th>Koefisien AK</th>
+    </tr>
+    <tr><td>Ahli Pertama</td><td>Profesional tingkat dasar</td><td>Pengawas (IV)</td><td>12,5</td></tr>
+    <tr><td><strong>Ahli Muda</strong></td><td><strong>Profesional tingkat menengah</strong></td><td><strong>Administrator (III)</strong></td><td><strong>25</strong></td></tr>
+    <tr><td>Ahli Madya</td><td>Profesional tingkat tinggi</td><td>JPT Pratama (II)</td><td>37,5</td></tr>
+    <tr><td>Ahli Utama</td><td>Profesional tingkat sangat tinggi/strategis</td><td>JPT Madya/Utama (I)</td><td>50</td></tr>
+  </table>
+  <div class="note">
+    <strong>Perpindahan jabatan:</strong> Administrator → JF Ahli Madya; Pengawas → JF Ahli Muda; Pelaksana → JF Ahli Pertama.
+  </div>
+</div>
+
+<!-- ===== TABEL 4: AK TAMBAHAN IJAZAH ===== -->
+<div class="qa-card">
+  <h3>Tabel 4 – Angka Kredit Tambahan Ijazah</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 1/2023</span>
+    <span class="dasar-hukum">Peraturan BKN 3/2023</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Jenjang JF</th>
+      <th>Ijazah S-2/Magister</th>
+      <th>Ijazah S-3/Doktor</th>
+    </tr>
+    <tr><td>Ahli Pertama</td><td><strong>12,5</strong></td><td>25</td></tr>
+    <tr><td>Ahli Muda</td><td><strong>25</strong></td><td>37,5</td></tr>
+    <tr><td>Ahli Madya</td><td>37,5</td><td><strong>50</strong></td></tr>
+  </table>
+  <div class="note">
+    Syarat: ijazah harus <strong>linear atau relevan</strong> dengan tugas jabatan. Ijazah tidak sesuai jenjang saat perpindahan → AK ditetapkan <strong>100</strong> (flat).
+  </div>
+</div>
+
+<!-- ===== TABEL 5: PREDIKAT RB ===== -->
+<div class="qa-card">
+  <h3>Tabel 5 – Predikat Evaluasi Reformasi Birokrasi</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 9/2023</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Nilai</th>
+      <th>Predikat</th>
+      <th>Kriteria</th>
+    </tr>
+    <tr style="background:#e8f5e9;"><td><strong>AA (&gt;100)</strong></td><td><strong>Sangat Memuaskan</strong></td><td>Birokrasi bersih, efektif, berdaya saing, dampak nyata, transformasi digital, budaya BerAKHLAK</td></tr>
+    <tr><td>&gt;80 – 100</td><td>Memuaskan</td><td>Birokrasi efektif, transformasi berjalan baik</td></tr>
+    <tr><td>&gt;70 – 80</td><td>Sangat Baik</td><td>Birokrasi berkinerja tinggi</td></tr>
+    <tr><td>&gt;60 – 70</td><td>Baik</td><td>Birokrasi cukup efektif</td></tr>
+    <tr><td>&gt;50 – 60</td><td>Cukup</td><td>Perlu perbaikan signifikan</td></tr>
+    <tr><td>≤ 50</td><td>Kurang</td><td>Belum memenuhi standar</td></tr>
   </table>
 </div>
 
+<!-- ===== TABEL 6: IP ASN ===== -->
 <div class="qa-card">
-  <h3>Tabel Hukuman Disiplin (PP 94/2021) – Ketidakhadiran</h3>
+  <h3>Tabel 6 – Indeks Profesionalitas ASN (IP ASN)</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Peraturan BKN tentang IP ASN</span>
+  </p>
   <table class="tabel-ak">
-    <tr><th>Tidak Masuk (hari)</th><th>Tingkat</th><th>Hukuman</th></tr>
-    <tr><td>3–6</td><td>Ringan</td><td>Teguran lisan</td></tr>
-    <tr><td>7–10</td><td>Ringan</td><td>Teguran tertulis</td></tr>
-    <tr><td>11–13</td><td>Ringan</td><td>Pernyataan tidak puas tertulis</td></tr>
-    <tr><td>14–16</td><td>Sedang</td><td>Potong TK 25% – 6 bulan</td></tr>
-    <tr><td>17–20</td><td>Sedang</td><td>Potong TK 25% – 9 bulan</td></tr>
-    <tr><td>21–24</td><td>Sedang</td><td>Potong TK 25% – 12 bulan</td></tr>
-    <tr><td>25–27</td><td>Berat</td><td>Penurunan jabatan 1 tingkat – 12 bulan</td></tr>
-    <tr><td>28–30</td><td>Berat</td><td>Pembebasan dari jabatan – 12 bulan</td></tr>
-    <tr><td>≥31</td><td>Berat</td><td>Pemberhentian tidak hormat</td></tr>
+    <tr>
+      <th>Dimensi</th>
+      <th>Bobot</th>
+      <th>Komponen Penilaian</th>
+    </tr>
+    <tr><td><strong>Kualifikasi</strong></td><td><strong>30%</strong></td><td>Pendidikan: S-1/D-IV = 15, S-2 = 20, S-3 = 25</td></tr>
+    <tr><td><strong>Kompetensi</strong></td><td><strong>30%</strong></td><td>Pelatihan klasikal, non-klasikal, pengembangan kompetensi lainnya</td></tr>
+    <tr><td><strong>Kinerja</strong></td><td><strong>30%</strong></td><td>Predikat kinerja tahunan (SKP)</td></tr>
+    <tr><td><strong>Disiplin</strong></td><td><strong>10%</strong></td><td>Riwayat hukuman disiplin 5 tahun terakhir</td></tr>
   </table>
 </div>
 
+<!-- ===== TABEL 7: CUTI PNS & PPPK ===== -->
 <div class="qa-card">
-  <h3>Tabel Jenjang JF & Kesetaraan Jabatan Manajerial</h3>
+  <h3>Tabel 7 – Jenis Cuti PNS & PPPK</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">PP 11/2017 Pasal 320-344</span>
+    <span class="dasar-hukum">PP 49/2018 Pasal 40-44</span>
+    <span class="dasar-hukum">Peraturan BKN 24/2017 jo. 7/2021</span>
+  </p>
   <table class="tabel-ak">
-    <tr><th>JF Keahlian</th><th>Kualifikasi</th><th>Setara Jabatan</th></tr>
-    <tr><td>Ahli Pertama</td><td>Profesional dasar</td><td>Pengawas (IV)</td></tr>
-    <tr><td>Ahli Muda</td><td>Profesional menengah</td><td>Administrator (III)</td></tr>
-    <tr><td>Ahli Madya</td><td>Profesional tinggi</td><td>JPT Pratama (II)</td></tr>
-    <tr><td>Ahli Utama</td><td>Profesional sangat tinggi</td><td>JPT Madya/Utama (I)</td></tr>
+    <tr>
+      <th>Jenis Cuti</th>
+      <th>PNS</th>
+      <th>PPPK</th>
+    </tr>
+    <tr><td><strong>Cuti Tahunan</strong></td><td>12 hari kerja/tahun</td><td>12 hari kerja/tahun (akumulasi max 24 hari)</td></tr>
+    <tr><td><strong>Cuti Besar</strong></td><td>3 bulan (setelah ≥5 tahun)</td><td>—</td></tr>
+    <tr><td><strong>Cuti Sakit</strong></td><td>S.d. 1 tahun + tambahan 1 tahun</td><td>Sesuai perjanjian kerja</td></tr>
+    <tr><td><strong>Cuti Melahirkan</strong></td><td>3 bulan (anak 1-3); Cuti besar (anak ≥4)</td><td>3 bulan (semua kelahiran)</td></tr>
+    <tr><td><strong>Cuti Alasan Penting</strong></td><td>Termasuk pemulihan PNS di daerah rawan</td><td>Sesuai ketentuan</td></tr>
+    <tr><td><strong>Cuti di Luar TN</strong></td><td>S.d. 3 tahun (dapat diperpanjang)</td><td>—</td></tr>
+  </table>
+  <div class="note">
+    <strong>Cuti Besar:</strong> Cuti besar berikutnya baru dapat diajukan <strong>5 tahun setelah akhir cuti besar sebelumnya</strong>. PNS yang mengambil cuti besar 3 bulan <strong>tidak berhak cuti tahunan</strong> pada tahun tersebut.
+  </div>
+</div>
+
+<!-- ===== TABEL 8: PENYEDERHANAAN BIROKRASI ===== -->
+<div class="qa-card">
+  <h3>Tabel 8 – Tahapan Penyederhanaan Birokrasi</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 25/2021</span>
+    <span class="dasar-hukum">Permenpan RB 7/2022</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Tahap</th>
+      <th>Kegiatan</th>
+      <th>Output</th>
+    </tr>
+    <tr><td><strong>1</strong></td><td>Penyederhanaan Struktur Organisasi</td><td>Penghapusan eselon III-IV, struktur menjadi 2 level</td></tr>
+    <tr><td><strong>2</strong></td><td>Penyetaraan Jabatan</td><td>Pejabat struktural → Jabatan Fungsional</td></tr>
+    <tr><td><strong>3</strong></td><td>Penyesuaian Sistem Kerja</td><td>Kolaborasi lintas unit, SPBE, mekanisme kerja baru</td></tr>
+  </table>
+  <div class="note">
+    <strong>Prinsip Sistem Kerja (Permenpan RB 7/2022):</strong> Kolaborasi lintas unit, penguatan koordinasi, fleksibilitas pelaksanaan tugas, penyampaian kinerja organisasi.
+  </div>
+</div>
+
+<!-- ===== TABEL 9: MANAJEMEN TALENTA ===== -->
+<div class="qa-card">
+  <h3>Tabel 9 – Tahapan Akuisisi Talenta & Kotak Talenta</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Permenpan RB 3/2020</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Tahap</th>
+      <th>Kegiatan</th>
+    </tr>
+    <tr><td>1</td><td>Identifikasi dan penetapan jabatan kritikal</td></tr>
+    <tr><td>2</td><td>Analisis kebutuhan talent</td></tr>
+    <tr><td>3</td><td>Penetapan strategi akuisisi</td></tr>
+    <tr><td>4</td><td>Identifikasi, penilaian, dan pemetaan talenta</td></tr>
+    <tr><td>5</td><td>Penetapan kelompok rencana suksesi</td></tr>
+    <tr><td>6</td><td>Pencarian talenta melalui mutasi/rotasi/mekanisme khusus</td></tr>
+  </table>
+  <br>
+  <table class="tabel-ak">
+    <tr>
+      <th>Kotak Talenta</th>
+      <th>Kinerja</th>
+      <th>Potensi</th>
+      <th>Rekomendasi</th>
+    </tr>
+    <tr style="background:#e8f5e9;"><td><strong>9 (Top-Right)</strong></td><td>Di atas ekspektasi</td><td>Tinggi</td><td>Promosi + Rencana suksesi + Penghargaan</td></tr>
+    <tr><td>7</td><td>Tinggi</td><td>Sedang</td><td>Dipertahankan + Rotasi + Pengembangan + Tugas belajar</td></tr>
+    <tr><td>5</td><td>Sedang</td><td>Tinggi</td><td>Dipertahankan + Rotasi + Bimbingan kinerja</td></tr>
+    <tr><td>1 (Bottom-Left)</td><td>Di bawah ekspektasi</td><td>Rendah</td><td>Bimbingan + Konseling + Pengembangan + Penempatan sesuai</td></tr>
   </table>
 </div>
 
+<!-- ===== TABEL 10: PENGEMBANGAN KOMPETENSI ===== -->
+<div class="qa-card">
+  <h3>Tabel 10 – Model Pengembangan Kompetensi ASN (70:20:10)</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">Peraturan BKN 10/2018</span>
+    <span class="dasar-hukum">Konsep Corporate University ASN</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Komponen</th>
+      <th>Persentase</th>
+      <th>Bentuk Kegiatan</th>
+    </tr>
+    <tr><td><strong>Experiential Learning</strong></td><td>70%</td><td>Belajar mandiri, penugasan, proyek, magang</td></tr>
+    <tr style="background:#fff8e1;"><td><strong>Social Learning</strong></td><td><strong>20%</strong></td><td><strong>Mentoring, Coaching</strong></td></tr>
+    <tr><td><strong>Formal Learning</strong></td><td>10%</td><td>Pelatihan klasikal, e-learning, pelatihan jarak jauh</td></tr>
+  </table>
+  <div class="note">
+    <strong>PPPK:</strong> Pengembangan kompetensi minimal <strong>24 JP/tahun</strong> masa perjanjian kerja (PP 49/2018 Pasal 29).<br>
+    <strong>Tugas Belajar:</strong> Sisa masa kerja minimal <strong>2× waktu normatif program studi</strong> sebelum BUP.
+  </div>
 </div>
 
+<!-- ===== TABEL 11: JABATAN MANAJERIAL ===== -->
+<div class="qa-card">
+  <h3>Tabel 11 – Jabatan Manajerial & Non-Manajerial</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">UU 20/2023 Pasal 1</span>
+    <span class="dasar-hukum">PP 11/2017 Pasal 12</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Kategori</th>
+      <th>Jenis Jabatan</th>
+    </tr>
+    <tr>
+      <td rowspan="5"><strong>Manajerial</strong></td>
+      <td>JPT Utama</td>
+    </tr>
+    <tr><td>JPT Madya</td></tr>
+    <tr><td>JPT Pratama</td></tr>
+    <tr><td>Administrator</td></tr>
+    <tr><td>Pengawas</td></tr>
+    <tr>
+      <td rowspan="2"><strong>Non-Manajerial</strong></td>
+      <td>Jabatan Fungsional (Keahlian & Keterampilan)</td>
+    </tr>
+    <tr><td>Jabatan Pelaksana</td></tr>
+  </table>
+</div>
+
+<!-- ===== TABEL 12: STATUS PNS ===== -->
+<div class="qa-card">
+  <h3>Tabel 12 – Status PNS yang Diangkat Menjadi Pejabat Negara</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">PP 11/2017 Pasal 281, 346</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Kondisi</th>
+      <th>Status PNS</th>
+      <th>Ketentuan</th>
+    </tr>
+    <tr><td>Diangkat menjadi pejabat negara</td><td><strong>Diberhentikan sementara</strong></td><td>Dapat diaktifkan kembali jika belum BUP</td></tr>
+    <tr><td>Masa kerja sbg pejabat negara</td><td><strong>Tidak diperhitungkan</strong></td><td>Tidak dihitung sebagai masa kerja PNS</td></tr>
+    <tr><td>Mencalonkan jadi pejabat negara</td><td><strong>Wajib mengundurkan diri tertulis</strong></td><td>Tidak dapat ditarik kembali</td></tr>
+    <tr><td>Tidak mengundurkan diri saat dicalonkan</td><td><strong>Diberhentikan tidak dengan hormat</strong></td><td>PP 11/2017 Pasal 346</td></tr>
+    <tr><td>Pejabat negara yang dapat diangkat kembali</td><td><strong>Menteri</strong> (jabatan pengangkatan, bukan pemilihan)</td><td>Selama belum BUP</td></tr>
+  </table>
+</div>
+
+<!-- ===== TABEL 13: PERLINDUNGAN PPPK ===== -->
+<div class="qa-card">
+  <h3>Tabel 13 – Perlindungan PPPK (PP 49/2018)</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">PP 49/2018</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Perlindungan</th>
+      <th>PNS</th>
+      <th>PPPK</th>
+    </tr>
+    <tr><td>Jaminan Kesehatan</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Jaminan Kecelakaan Kerja</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Jaminan Kematian</td><td>✅</td><td>✅</td></tr>
+    <tr><td>Bantuan Hukum</td><td>✅</td><td>✅</td></tr>
+    <tr style="background:#ffebee;"><td><strong>Jaminan Pensiun</strong></td><td>✅</td><td><strong>❌ TIDAK</strong></td></tr>
+    <tr><td>Jaminan Hari Tua</td><td>✅</td><td>❌</td></tr>
+  </table>
+</div>
+
+<!-- ===== TABEL 14: TIM PEMERIKSA DISIPLIN ===== -->
+<div class="qa-card">
+  <h3>Tabel 14 – Tim Pemeriksa Hukuman Disiplin</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">PP 94/2021 Pasal 31</span>
+    <span class="dasar-hukum">Peraturan BKN 6/2022 Pasal 30</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Ancaman Hukuman</th>
+      <th>Tim Pemeriksa</th>
+    </tr>
+    <tr><td>Ringan</td><td>Atasan langsung (tidak perlu Tim Pemeriksa formal)</td></tr>
+    <tr style="background:#fff8e1;"><td><strong>Sedang/Berat</strong></td><td><strong>PPK membentuk Tim Pemeriksa</strong> terdiri dari:<br>1. Atasan langsung<br>2. Unit kerja pengawasan internal (APIP)<br>3. Unit kerja kepegawaian<br>4. Pejabat lain yang ditunjuk PPK</td></tr>
+  </table>
+</div>
+
+<!-- ===== TABEL 15: CORE VALUES BerAKHLAK ===== -->
+<div class="qa-card">
+  <h3>Tabel 15 – Core Values ASN BerAKHLAK & Employer Branding</h3>
+  <p style="font-size:0.85rem;color:#666;margin-bottom:10px;">
+    <span class="dasar-hukum">SE Menpan RB 20/2021</span>
+    <span class="dasar-hukum">Kepmenpan RB 39/2022</span>
+  </p>
+  <table class="tabel-ak">
+    <tr>
+      <th>Nilai</th>
+      <th>Panduan Perilaku</th>
+    </tr>
+    <tr><td><strong>B</strong>erorientasi Pelayanan</td><td>Memahami dan memenuhi kebutuhan masyarakat; ramah, cekatan, solutif; memperbaiki pelayanan tiada henti</td></tr>
+    <tr><td><strong>A</strong>kuntabel</td><td>Jujur, bertanggung jawab, cermat, disiplin; tidak menyalahgunakan kewenangan</td></tr>
+    <tr><td><strong>K</strong>ompeten</td><td>Meningkatkan kompetensi; membantu orang lain belajar; melaksanakan tugas dengan kualitas terbaik</td></tr>
+    <tr><td><strong>H</strong>armonis</td><td>Menghargai tanpa diskriminasi; membangun lingkungan kerja kondusif; menyelesaikan perbedaan konstruktif</td></tr>
+    <tr><td><strong>L</strong>oyal</td><td>Memegang teguh ideologi Pancasila; menjaga nama baik ASN, pimpinan, instansi, negara; menjaga rahasia jabatan dan negara</td></tr>
+    <tr><td><strong>A</strong>daptif</td><td>Cepat menyesuaikan diri; terus berinovasi dan mengembangkan kreativitas; bertindak proaktif</td></tr>
+    <tr><td><strong>K</strong>olaboratif</td><td>Memberi kesempatan berbagai pihak berkontribusi; terbuka dalam bekerja sama; menggerakkan sumber daya untuk tujuan bersama</td></tr>
+  </table>
+  <div class="note">
+    <strong>Employer Branding ASN:</strong> "Bangga Melayani Bangsa"
+  </div>
+</div>
+  
 <footer>
   <p>📚 <strong>Q&A Pembahasan Tryout ASN 2026</strong> – Jabatan Fungsional Analis SDM Aparatur</p>
   <p>Disusun berdasarkan: UU 20/2023 | PP 11/2017 jo. PP 17/2020 | PP 49/2018 | PP 94/2021 | PP 30/2019 | Permenpan RB 1/2023 | Permenpan RB 3/2020 | Permenpan RB 6/2022 | Permenpan RB 7/2022 | Permenpan RB 9/2023 | Peraturan BKN 3/2023 | Peraturan BKN 6/2022</p>
