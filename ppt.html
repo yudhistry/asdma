@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UKT ASDMA Ahli Muda — Narasi Presentasi & Prediksi Q&A</title>
+<style>
+:root{
+  --bg:#f4f6fa; --ink:#20242e; --muted:#5b6472; --card:#fff; --line:#e3e7ef;
+  --open:#475569; --S:#2563eb; --T:#d97706; --A:#059669; --R:#7c3aed;
+  --mark:#ffe86b; --radius:16px;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+     background:var(--bg);color:var(--ink);line-height:1.7}
+.wrap{max-width:960px;margin:0 auto;padding:0 16px}
+/* ---------- HEADER ---------- */
+header.top{background:linear-gradient(135deg,#0b3b6f 0%,#0f6b5c 100%);color:#fff;padding:38px 0 30px}
+.kicker{letter-spacing:.18em;font-size:.72rem;font-weight:700;opacity:.85;margin:0 0 10px}
+h1{margin:0;font-size:clamp(1.4rem,4vw,2.2rem);line-height:1.25}
+h1 .slogan{color:#ffd76a}
+.ident{margin:12px 0 0;font-size:.93rem;opacity:.95}
+.toolbar{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
+.toolbar button{border:0;border-radius:999px;padding:9px 16px;font-weight:700;font-size:.82rem;
+  background:#ffffff22;color:#fff;cursor:pointer;border:1px solid #ffffff55}
+.toolbar button:hover{background:#ffffff38}
+/* ---------- NAV ---------- */
+nav.nav{display:flex;gap:8px;flex-wrap:wrap;padding:12px 16px;position:sticky;top:0;z-index:50;
+  background:rgba(244,246,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.nav a{color:var(--ink);text-decoration:none;font-size:.82rem;font-weight:700;background:#fff;
+  border:1px solid var(--line);border-radius:999px;padding:6px 14px}
+nav.nav a:hover{border-color:#0f6b5c;color:#0f6b5c}
+/* ---------- SECTION ---------- */
+section{margin:34px 0}
+h2.sec{font-size:1.25rem;margin:0 0 6px}
+p.sub{color:var(--muted);font-size:.9rem;margin:0 0 14px}
+/* ---------- PETA STAR ---------- */
+.star-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:8px}
+.chip{background:#fff;border:1px solid var(--line);border-top:5px solid var(--c,#999);border-radius:12px;
+  padding:10px 8px;text-align:center;font-size:.78rem;font-weight:700}
+.chip small{display:block;font-weight:600;color:var(--muted)}
+/* ---------- SLIDE ---------- */
+.slide{--c:#999;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--c);
+  border-radius:var(--radius);padding:18px 20px 14px;margin:14px 0;box-shadow:0 2px 10px rgba(20,30,60,.06)}
+.slide header{display:flex;align-items:center;gap:14px;margin-bottom:10px}
+.slide .num{font-size:2rem;font-weight:800;color:var(--c);line-height:1}
+.slide h3{margin:0;font-size:1.02rem}
+.badge{display:inline-block;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:#fff;
+  background:var(--c);border-radius:999px;padding:3px 10px;margin-top:4px}
+.cue{background:#f1f5f9;border:1px dashed #cbd5e1;color:#475569;font-style:italic;
+  padding:8px 12px;border-radius:10px;font-size:.86rem;margin:8px 0}
+.narasi{font-size:1.02rem}
+mark{background:linear-gradient(transparent 45%,var(--mark) 45%);font-weight:700;padding:0 2px;border-radius:3px}
+body.hafalan .narasi{filter:blur(9px);transition:filter .25s;user-select:none}
+body.hafalan .narasi:hover,body.hafalan .narasi:focus{filter:none}
+.hint{display:none;font-size:.78rem;color:#b45309;font-weight:700}
+body.hafalan .hint{display:block}
+/* ---------- HAFALAN ---------- */
+.mn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.mn{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.mn b.big{font-size:1.5rem;color:#0f6b5c}
+.mn h4{margin:2px 0 6px;font-size:.9rem}
+.mn p{margin:0;font-size:.88rem;color:var(--muted)}
+/* ---------- Q&A ---------- */
+details.qa-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin:12px 0;overflow:hidden}
+details.qa-item summary{cursor:pointer;list-style:none;padding:14px 18px;display:flex;gap:12px;align-items:center}
+details.qa-item summary::-webkit-details-marker{display:none}
+details.qa-item summary::after{content:"＋";margin-left:auto;font-weight:800;color:var(--muted)}
+details[open].qa-item summary::after{content:"－"}
+.fase{flex:0 0 auto;font-size:.68rem;font-weight:800;color:#fff;border-radius:999px;padding:4px 10px;letter-spacing:.06em}
+.f1{background:#059669}.f2{background:#d97706}.f3{background:#dc2626}.f4{background:#2563eb}.f5{background:#7c3aed}
+.qa-title{font-weight:700;font-size:.95rem}
+.qa-body{padding:0 18px 18px}
+.mech{font-size:.86rem;color:var(--muted);background:#f8fafc;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.q{background:#eef4ff;border-left:4px solid #2563eb;border-radius:8px;padding:10px 14px;font-size:.95rem}
+.hid{font-size:.85rem;color:#92400e;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:8px 12px;margin:10px 0}
+.ans{border-left:4px solid #059669;background:#f0fdf4;border-radius:8px;padding:10px 14px;font-size:.97rem}
+/* ---------- TIPS ---------- */
+.tips li{margin:10px 0}
+.jurus{background:#0f172a;color:#e2e8f0;border-radius:14px;padding:16px 18px;font-size:.95rem}
+.jurus em{color:#ffd76a}
+footer{margin:40px 0 30px;color:var(--muted);font-size:.82rem;text-align:center}
+@media print{
+  nav.nav,.toolbar{display:none}
+  body.hafalan .narasi{filter:none}
+  .slide,details.qa-item{box-shadow:none}
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <p class="kicker">UJI KOMPETENSI TEKNIS • ANALIS SUMBER DAYA MANUSIA APARATUR AHLI MUDA</p>
+    <h1>Perubahan Budaya Data ASN<br><span class="slogan">“Datamu, Tanggungjawabmu!”</span></h1>
+    <p class="ident">Yudhistira Ramadhany, S.Kom., M.M • Pranata Komputer Ahli Muda → Analis SDMA Ahli Muda • BKPSDM Kab. Paser • Bid. Pengendalian ASN – Penguatan Budaya Kerja</p>
+    <div class="toolbar">
+      <button id="btnHafalan">🧠 Mode Hafalan: MATI</button>
+      <button id="btnBuka">📂 Buka Semua Q&amp;A</button>
+      <button id="btnTutup">📁 Tutup Semua Q&amp;A</button>
+      <button onclick="window.print()">🖨️ Cetak</button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav wrap">
+  <a href="#star">🗺️ Peta STAR</a>
+  <a href="#deck">🎤 Deck Narasi</a>
+  <a href="#hafalan">🔑 Kunci Hafalan</a>
+  <a href="#qa">❓ Prediksi Q&amp;A</a>
+  <a href="#tips">🛡️ Tips Penguji</a>
+</nav>
+
+<main class="wrap">
+
+<!-- ================= PETA STAR ================= -->
+<section id="star">
+  <h2 class="sec">🗺️ Peta STAR</h2>
+  <p class="sub">Pembuka = 01 • <b style="color:var(--S)">S</b> = 02–03 • <b style="color:var(--T)">T</b> = 03 (paruh akhir) • <b style="color:var(--A)">A</b> = 04–05 • <b style="color:var(--R)">R</b> = 06–07</p>
+  <div class="star-grid">
+    <div class="chip" style="--c:var(--open)">01<small>PEMBUKA</small></div>
+    <div class="chip" style="--c:var(--S)">02<small>SITUATION</small></div>
+    <div class="chip" style="--c:var(--S)">03<small>SITUATION</small></div>
+    <div class="chip" style="--c:var(--T)">03<small>TASK (akhir)</small></div>
+    <div class="chip" style="--c:var(--A)">04<small>ACTION</small></div>
+    <div class="chip" style="--c:var(--A)">05<small>ACTION</small></div>
+    <div class="chip" style="--c:var(--R)">06<small>RESULT</small></div>
+    <div class="chip" style="--c:var(--R)">07<small>RESULT / TUTUP</small></div>
+  </div>
+</section>
+
+<!-- ================= DECK NARASI ================= -->
+<section id="deck">
+  <h2 class="sec">🎤 Deck Narasi (7 Slide)</h2>
+  <p class="sub">Kata kunci di-<mark>highlight</mark> untuk penekanan suara. Teks miring abu-abu = arahan delivery. <span class="hint">⚠️ Mode Hafalan AKTIF — arahkan kursor/klik teks untuk mengintip.</span></p>
+
+  <article class="slide" style="--c:var(--open)">
+    <header><span class="num">01</span><div><h3>PEMBUKA</h3><span class="badge">PEMBUKA</span></div></header>
+    <p class="cue">🎬 Berdiri tegap, senyum, tatap seluruh penguji</p>
+    <div class="narasi" tabindex="0"><p>“<b>Assalamu'alaikum warahmatullahi wabarakatuh.</b> Salam sejahtera bagi kita semua. Bapak-Ibu tim penguji yang terhormat, saya Yudhistira Ramadhany — hari ini Pranata Komputer Ahli Muda, dan sedang melangkah menuju Analis SDM Aparatur Ahli Muda. Bertahun-tahun saya menjadi ‘penjaga gawang’ data kepegawaian Kabupaten Paser: dari SIMPADU sampai SIASN. Hari ini saya tidak datang membawa cerita tentang server dan aplikasi — tapi membawa cerita tentang <mark>manusia dan budaya</mark>. Sebelum mulai, saya ingin sampaikan: kalau KTP bilang A, tapi ijazah bilang B — kita percaya yang mana? … kita percaya yang mana? <i>(jeda)</i> Nah… pertanyaan sederhana itulah yang mengubah cara saya memandang pekerjaan saya. Judul cerita ini adalah: Perubahan Budaya Data ASN — <mark>Datamu, Tanggungjawabmu!</mark>”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--S)">
+    <header><span class="num">02</span><div><h3>SITUATION — Hasil Kerja &amp; Temuan</h3><span class="badge">SITUATION</span></div></header>
+    <p class="cue">🎬 Tempo santai, gaya bercerita</p>
+    <div class="narasi" tabindex="0"><p>“Mari saya gambarkan situasinya. Pekerjaan saya sehari-hari ada tiga: <mark>kelola sistem</mark> — SIMPADU Paser dan SIASN BKN; <mark>kelola data</mark> — pemutakhiran dan verifikasi; <mark>kelola evaluasi</mark> — memantau IKD dan disparitas data. Terdengar rapi, ya? Tapi begitu melihat laporan IKD dan hasil verifikasi-validasi… <i>(angkat alis)</i> …<mark>disparitas data masih ada</mark>. Pemutakhiran tidak selalu proaktif. Data? Masih dipersepsikan urusan admin. Bapak-Ibu, saya punya satu kalimat untuk ini: <mark>‘Ketika data dianggap milik admin, maka kualitas data menjadi tanggung jawab admin.’</mark> Padahal datanya data siapa? Datanya data dia sendiri! Ini bukan masalah teknis — ini masalah <mark>rasa memiliki</mark>.”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--S)">
+    <header><span class="num">03</span><div><h3>SITUATION → TASK — Gap &amp; Tugas Saya</h3><span class="badge" style="background:var(--S)">SITUATION</span> <span class="badge" style="background:var(--T)">TASK</span></div></header>
+    <p class="cue">🎬 Naikkan energi, hitung dengan jari → lalu turunkan suara, serius</p>
+    <div class="narasi" tabindex="0"><p>“Padahal mandatnya sudah jelas: <mark>UU 20/2023</mark> memerintahkan manajemen ASN digital — datanya <mark>akurat, terkini, terpadu</mark>. NSPK BKN menyerukan: <mark>Satu Data ASN!</mark> Tapi faktanya? Tiga ‘belum’: <mark>belum akurat</mark> — datanya masih beda; <mark>belum terkini</mark> — menunggu didorong; <mark>belum terpadu</mark> — sistemnya belum saling menyapa. Ibarat suami-istri yang belanja dan masak sendiri-sendiri — ya sajiannya tidak pernah satu meja! <i>(turunkan suara, serius)</i> Saya masih ingat, seorang rekan senior datang dengan wajah gelisah — kenaikan pangkatnya tertunda karena data di sistem tidak sama dengan berkasnya. Saat itu kita sadar: yang tertunda bukan sekadar data — <mark>yang tertunda adalah nasib orang</mark>. Risikonya nyata: layanan terlambat, keputusan kurang presisi, bahkan bisa berdampak pada talenta salah peta. Maka tugas saya bukan sekadar memperbaiki data — tapi <mark>memperbaiki perilaku</mark>. Karena kalau hanya memperbaiki data, masalah bisa berulang; kalau memperbaiki perilaku, <mark>kualitas data menjadi kebiasaan!</mark>”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--A)">
+    <header><span class="num">04</span><div><h3>ACTION — 4 Jurus Solusi</h3><span class="badge">ACTION</span></div></header>
+    <p class="cue">🎬 Tempo cepat, semangat, gestur menghitung</p>
+    <div class="narasi" tabindex="0"><p>“Maka saya rumuskan <mark>empat jurus</mark>. <b>Satu</b> — Gerakan <mark>‘Datamu Tanggungjawabmu’</mark>: ASN merawat datanya sendiri lewat MyASN dan SIMPADU — kita edukasi sampai jadi kebiasaan. <b>Dua</b> — <mark>Apresiasi Unit Kerja Sadar Data</mark>: perangkat daerah kita adu sehat, yang tercepat dan terakurat mendapat penghargaan — kompetisi positif! <b>Tiga</b> — <mark>Klinik Data</mark>: untuk ASN senior kita dampingi secara humanis, karena dalam transformasi digital tidak boleh ada satu pun yang tertinggal. <b>Empat</b> — <mark>Koordinasi BKN</mark>: sinkronisasi dan evaluasi berkala agar SIMPADU Paser selalu seirama dengan pusat. Alurnya rapi: <mark>edukasi → fasilitasi → apresiasi → evaluasi</mark>. Empat jurus, satu sasaran: data <mark>akurat, terkini, terpadu!</mark>”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--A)">
+    <header><span class="num">05</span><div><h3>ACTION — Peran Human Capital Analis SDMA</h3><span class="badge">ACTION</span></div></header>
+    <p class="cue">🎬 Hangat, meyakinkan, tangan di dada</p>
+    <div class="narasi" tabindex="0"><p>“Tapi yang perlu diingat, Bapak-Ibu — sebagai Analis SDMA, saya tidak bermain di kabel, saya mengelola SDM. Pendekatannya <mark>Human Capital</mark>. Saya memakai dua topi: topi <mark>Pelopor Perubahan</mark> — menggeser budaya dari ‘urusan admin’ menjadi ‘tanggung jawab saya’; dan topi <mark>Mitra Pegawai</mark> — mendampingi, mendengarkan, memudahkan. Fungsi MSDM yang dijalankan: <mark>membangun keterlibatan dan budaya kerja</mark>. Karena sistem yang terhubung tidak ada artinya kalau manusianya tidak terhubung. Di sinilah core value ASN BerAKHLAK hidup: <mark>Akuntabel</mark> — integritas terhadap data sendiri; <mark>Adaptif</mark> — tidak takut pada standarisasi dan digitalisasi; <mark>Kolaboratif</mark> — admin dan ASN adalah mitra, bukan pelayan dan yang dilayani. Peran Analis SDMA tegas: <mark>validasi kesesuaian NSPK</mark>, mendukung <mark>Sistem Merit</mark>, dan mewujudkan <mark>PASER TUNTAS!</mark>”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--R)">
+    <header><span class="num">06</span><div><h3>RESULT — Dampak</h3><span class="badge">RESULT</span></div></header>
+    <p class="cue">🎬 Bangga tapi tulus, tempo melambat</p>
+    <div class="narasi" tabindex="0"><p>“Dan hasilnya? Lihat perubahannya. Data menjadi <mark>akurat, terkini, terpadu</mark>. Layanan kepegawaian lebih cepat, koreksi minim. Manajemen ASN sadar data, pemetaan talenta lebih presisi. Dan organisasi? Sistem Merit menguat, Paser TUNTAS terwujud. Karena <mark>dari data yang benar, lahir keputusan yang benar</mark>. <i>(jeda, tatap penguji)</i> Saya ingin meninggalkan satu kalimat: data yang baik bukan tujuan akhir — <mark>data yang baik harus menghasilkan keputusan kepegawaian yang lebih baik</mark>. Itulah artinya <mark>membangun sistem sambil membangun budaya</mark>.”</p></div>
+  </article>
+
+  <article class="slide" style="--c:var(--R)">
+    <header><span class="num">07</span><div><h3>PENUTUP — Punchline</h3><span class="badge">RESULT / TUTUP</span></div></header>
+    <p class="cue">🎬 Jeda panjang, tatap satu-satu, tekan tiap kata</p>
+    <div class="narasi" tabindex="0"><p>“Saya tutup dengan satu rumus: <mark>satu mandat</mark> — manajemen ASN digital; <mark>tiga kelola</mark> — sistem, data, evaluasi; <mark>tiga tantangan</mark> — akurat, terkini, terpadu; dan <mark>satu akar</mark> — budaya kerja. Karena sistem secanggih apa pun akan kalah oleh kebiasaan yang membandel — kalau budayanya tidak kita ubah. Maka mari kita ubah bersama: dengan nilai <mark>Akuntabel, Adaptif, Kolaboratif</mark>, demi Paser yang TUNTAS — <mark>Tangguh, Unggul, Transformatif, Adil, Sejahtera</mark>. Dan jangan pernah lupa… <i>(angkat suara, senyum)</i> <mark>DATAMU — TANGGUNGJAWABMU!</mark> Terima kasih. <b>Wassalamu'alaikum warahmatullahi wabarakatuh.</b>”</p></div>
+  </article>
+</section>
+
+<!-- ================= KUNCI HAFALAN ================= -->
+<section id="hafalan">
+  <h2 class="sec">🔑 Kunci Hafalan</h2>
+  <p class="sub">Rumus <b>1–3–3–1</b> + tiga pegangan nilai.</p>
+  <div class="mn-grid">
+    <div class="mn"><b class="big">1</b><h4>MANDAT</h4><p>Manajemen ASN Digital — <b>UU 20/2023</b> → data akurat, terkini, terpadu; NSPK BKN → Satu Data ASN.</p></div>
+    <div class="mn"><b class="big">3</b><h4>KELOLA</h4><p><b>Sistem</b> (SIMPADU–SIASN) • <b>Data</b> (pemutakhiran &amp; verifikasi) • <b>Evaluasi</b> (IKD &amp; disparitas).</p></div>
+    <div class="mn"><b class="big">3</b><h4>TANTANGAN</h4><p>Belum <b>Akurat</b> • belum <b>Terkini</b> • belum <b>Terpadu</b>.</p></div>
+    <div class="mn"><b class="big">1</b><h4>AKAR</h4><p><b>Budaya kerja</b> — “data = urusan admin” → ubah jadi “tanggung jawab saya”.</p></div>
+    <div class="mn"><b class="big">3</b><h4>BERAKHLAK</h4><p><b>Akuntabel • Adaptif • Kolaboratif</b>.</p></div>
+    <div class="mn"><b class="big">5</b><h4>PASER TUNTAS</h4><p><b>Tangguh – Unggul – Transformatif – Adil – Sejahtera</b>.</p></div>
+  </div>
+</section>
+
+<!-- ================= PREDIKSI Q&A ================= -->
+<section id="qa">
+  <h2 class="sec">❓ Prediksi Mekanisme Pertanyaan Penguji</h2>
+  <p class="sub">Klik untuk membuka jawaban — baca dulu pertanyaannya, uji diri Anda, baru buka jawabannya.</p>
+
+  <details class="qa-item"><summary><span class="fase f1">FASE 1</span><span class="qa-title">Uji Transisi Peran — “The IT vs HR Trap”</span></summary>
+    <div class="qa-body">
+      <p class="mech"><b>Mekanisme:</b> Penguji menyerang latar belakang IT untuk menjebak Anda menjawab dengan “solusi teknis/coding”, padahal Anda diuji sebagai Analis SDM.</p>
+      <p class="q">🗣️ <i>Penguji:</i> “Mas Yudhistira, Anda kan aslinya Pranata Komputer. Otak Anda terbiasa dengan server, coding, jaringan. Analis SDMA bermain di manusia, kebijakan, strategi. Bagaimana Anda meyakinkan kami bahwa Anda tidak akan terjebak menyelesaikan masalah budaya ini dengan sekadar ‘membuat aplikasi baru’ atau ‘menambah fitur SIMPADU’?”</p>
+      <p class="hid">💡 <b>Hidden agenda:</b> Menguji pemahaman batas antara <i>tools</i> (alat) dan <i>human capital</i> (manusia).</p>
+      <p class="cue">🎬 Senyum, anggukkan kepala, jawab dengan tenang</p>
+      <div class="ans">🎯 “Terima kasih, Bapak/Ibu. Justru latar belakang IT adalah <mark>aset analitis</mark> saya, bukan penjara saya. Ibarat membangun jalan tol, membuat aplikasi dan server itu urusan Pranata Komputer. Tapi <mark>membuat pengemaranya mau tertib lalu lintas dan merawat kendaraannya</mark>, itu urusan Analis SDMA. Masalah disparitas data yang saya temukan bukan karena servernya down, tapi karena <i>mindset</i>-nya yang <i>offline</i>. Sebagai Analis SDMA, saya tidak akan menambah tombol di aplikasi, tapi saya akan <mark>mengubah perilaku</mark> melalui pendekatan <mark>Human Capital</mark>. Sistem hanya alat, Bapak/Ibu; <mark>budaya kerja adalah penggeraknya</mark>. Itulah mengapa saya mengambil sub-bidang Penguatan Budaya Kerja, bukan rekayasa perangkat lunak.”</div>
+    </div>
+  </details>
+
+  <details class="qa-item"><summary><span class="fase f2">FASE 2</span><span class="qa-title">Devil’s Advocate — Uji Empati &amp; Resistensi</span></summary>
+    <div class="qa-body">
+      <p class="mech"><b>Mekanisme:</b> Penguji memberi skenario pesimistis untuk menguji ketahanan mental dan empati (Kolaboratif &amp; Mitra Pegawai).</p>
+      <p class="q">🗣️ <i>Penguji:</i> “Slogan ‘Datamu Tanggungjawabmu’ terdengar indah. Tapi realitanya ASN di daerah beban kerjanya tinggi, mengurus data pribadi dianggap beban tambahan. Kalau mereka apatis, tidak mau buka MyASN, malah marah-marah ke admin BKPSDM — apa yang Anda lakukan? Apakah akan Anda usulkan sanksi disiplin?”</p>
+      <p class="hid">💡 <b>Hidden agenda:</b> Menguji apakah Anda memakai pendekatan otoriter (hukuman) atau humanis (kultural).</p>
+      <p class="cue">🎬 Tatap penguji, suara merendah namun tegas</p>
+      <div class="ans">🎯 “Bapak/Ibu, <mark>budaya tidak bisa dipaksa dengan SK Sanksi; budaya tumbuh dari kesadaran.</mark> Jika mereka apatis, itu berarti kita gagal menjadi <i>Mitra Pegawai</i>. Alih-alih menghukum, saya gunakan pendekatan <i>nudging</i> dan gamifikasi. Pertama, saya jalankan <mark>Klinik Data Humanis</mark> — kita jemput bola, kita dampingi ASN senior yang gagap teknologi. Kedua, saya geser bebannya ke pimpinan melalui <mark>Apresiasi Unit Kerja Sadar Data</mark>. Ketika Kepala Dinasnya yang mengajak dan berkompetisi secara positif, ASN yang apatis akan ikut bergerak karena lingkungan yang mendukung. <mark>Kita sentuh hatinya dulu, baru sistemnya yang bekerja.</mark>”</div>
+    </div>
+  </details>
+
+  <details class="qa-item"><summary><span class="fase f3">FASE 3</span><span class="qa-title">Crisis Management — Tekanan Pimpinan vs Regulasi</span></summary>
+    <div class="qa-body">
+      <p class="mech"><b>Mekanisme:</b> <i>Curveball</i> yang menempatkan Anda di antara dua tekanan: regulasi BKN yang ketat vs kebutuhan pimpinan yang mendesak.</p>
+      <p class="q">🗣️ <i>Penguji:</i> “Suatu hari BKN merilis aturan validasi baru yang membuat ribuan data ASN Paser tiba-tiba ‘merah’. Di saat sama, Bupati butuh data cepat untuk promosi dan mutasi besar-besaran. Pimpinan panik dan menyuruh Anda ‘memanipulasi’ data agar terlihat hijau. Apa yang Anda lakukan sebagai Analis SDMA?”</p>
+      <p class="hid">💡 <b>Hidden agenda:</b> Menguji integritas (Akuntabel) dan komunikasi strategis ke pimpinan.</p>
+      <p class="cue">🎬 Postur tegak, tunjukkan integritas</p>
+      <div class="ans">🎯 “Sebagai Analis SDMA, <mark>integritas data adalah harga mati</mark> karena ini fondasi <mark>Sistem Merit</mark>. Saya tidak akan memanipulasi data, karena itu mencederai nilai <mark>Akuntabel</mark> dan UU 20/2023. Namun saya juga tidak akan sekadar bilang ‘tidak’ pada pimpinan. Saya lakukan <mark>komunikasi strategis</mark>: saya sajikan <i>dashboard</i> kepada Bupati bahwa ‘data merah’ ini bukanlah kesalahan, melainkan <mark>proses pembersihan</mark> menuju Satu Data ASN yang diamanatkan Undang-Undang. Saya buatkan <i>Task Force</i> ver-val percepatan dengan melibatkan admin OPD. <mark>Saya lindungi pimpinan dari keputusan salah berbasis data cacat</mark>, sekaligus mengawal ASN Paser menuju data yang Akurat, Terkini, dan Terpadu.”</div>
+    </div>
+  </details>
+
+  <details class="qa-item"><summary><span class="fase f4">FASE 4</span><span class="qa-title">Measurement — Mengukur yang Abstrak</span></summary>
+    <div class="qa-body">
+      <p class="mech"><b>Mekanisme:</b> Penguji menantang Anda menerjemahkan “budaya” yang abstrak ke metrik konkret.</p>
+      <p class="q">🗣️ <i>Penguji:</i> “Anda bilang ingin mengubah budaya kerja. Budaya itu abstrak, Mas. Bagaimana cara mengukur keberhasilannya secara kuantitatif di akhir tahun? Jangan jawab ‘IKD naik’, itu indikator teknis BKN. Apa indikator budayanya?”</p>
+      <p class="hid">💡 <b>Hidden agenda:</b> Menguji kemampuan evaluasi program MSDM.</p>
+      <p class="cue">🎬 Senyum percaya diri</p>
+      <div class="ans">🎯 “Pertanyaan yang sangat brilian, Bapak/Ibu. Benar, IKD adalah hasil akhir teknis. Untuk mengukur <mark>budayanya</mark>, saya melihat <mark>perubahan pola interaksi</mark>. Dua indikator saya: <b>1. Penurunan Tiket Komplain Pasif</b> — berkurangnya ASN yang datang ke BKPSDM hanya untuk minta tolong <i>reset password</i> atau update data, karena mereka sudah mandiri. <b>2. Peningkatan <i>Proactive Login</i></b> — lonjakan ASN yang login ke SIMPADU/MyASN di luar masa <i>deadline</i>, sekadar mengecek profil atau mengunggah sertifikat diklat secara mandiri. <mark>Ketika ASN membuka aplikasi tanpa disuruh, di situlah budaya ‘Datamu Tanggungjawabmu’ berhasil kita tanam.</mark>”</div>
+    </div>
+  </details>
+
+  <details class="qa-item"><summary><span class="fase f5">FASE 5</span><span class="qa-title">Strategic Impact — Koneksi ke Visi Daerah</span></summary>
+    <div class="qa-body">
+      <p class="mech"><b>Mekanisme:</b> Mengunci presentasi dengan visi besar instansi (Paser TUNTAS).</p>
+      <p class="q">🗣️ <i>Penguji:</i> “Anda mengaitkan ini dengan Paser TUNTAS. Jelaskan secara singkat, bagaimana data ASN yang akurat di dalam kamar BKPSDM bisa berdampak langsung pada masyarakat Kabupaten Paser yang butuh pelayanan publik?”</p>
+      <p class="hid">💡 <b>Hidden agenda:</b> Menguji <i>helicopter view</i> (pemahaman makro) dampak MSDM terhadap organisasi dan publik.</p>
+      <p class="cue">🎬 Tempo melambat, penuh penekanan</p>
+      <div class="ans">🎯 “Bapak-Ibu, <mark>data yang benar melahirkan keputusan yang benar.</mark> Ketika data ASN Paser akurat dan terpetakan talangnya, BKPSDM bisa menempatkan <i>the right man in the right place</i>. Ketika pejabat yang kompeten dan berintegritas memimpin dinas pelayanan publik, maka <mark>pelayanan ke masyarakat Paser akan semakin cepat, adil, dan transformatif</mark>. Jadi, merawat data ASN bukan sekadar urusan administrasi birokrasi; ini adalah <mark>cara kita merawat kepercayaan masyarakat Paser</mark>. Itulah wujud nyata dukungan Analis SDMA untuk <mark>Paser TUNTAS</mark>. Terima kasih.”</div>
+    </div>
+  </details>
+</section>
+
+<!-- ================= TIPS ================= -->
+<section id="tips">
+  <h2 class="sec">🛡️ Tips Tambahan Saat Menghadapi Penguji</h2>
+  <ul class="tips">
+    <li><b>Aturan 3 Detik:</b> setelah penguji selesai bertanya, jangan langsung menjawab. Tarik napas, jeda 2–3 detik, tatap penguji, lalu jawab → terlihat analitis, bukan menghafal.</li>
+    <li><b>Kata Kunci Ajaib:</b> selalu selipkan <mark>Mandat UU 20/2023</mark>, <mark>Sistem Merit</mark>, dan <mark>Human Capital</mark> di setiap jawaban — “musik” di telinga penguji ASDMA.</li>
+    <li><b>Jika Ditanya Hal yang Tidak Diketahui:</b> jangan mengarang — gunakan jurus pamungkas di bawah ini.</li>
+  </ul>
+  <div class="jurus">🥋 <b>Jurus Pamungkas (Pivot):</b> “Bapak/Ibu, secara teknis regulasi di luar konteks yang saya presentasikan saat ini saya perlu pelajari lebih dalam. Namun jika ditarik dari perspektif <em>Human Capital</em> dan penguatan budaya kerja, pendekatan yang akan saya lakukan adalah…” <i>(kembalikan ke ranah yang Anda kuasai)</i></div>
+</section>
+
+<footer>📌 Catatan delivery: total ± 8–9 menit (± 70–80 detik/slide) • Dinamika suara: santai di 02, serius di 03, cepat di 04, hangat di 05, tegas di 06–07 • Slide hanya papan petunjuk — cerita hidup di Anda. <br>UKT-ASDMA_MU-2026 • Yudhistira Ramadhany</footer>
+
+</main>
+
+<script>
+const body=document.body;
+const bh=document.getElementById('btnHafalan');
+bh.onclick=()=>{body.classList.toggle('hafalan');
+  bh.textContent='🧠 Mode Hafalan: '+(body.classList.contains('hafalan')?'NYALA':'MATI');};
+document.getElementById('btnBuka').onclick=()=>document.querySelectorAll('details.qa-item').forEach(d=>d.open=true);
+document.getElementById('btnTutup').onclick=()=>document.querySelectorAll('details.qa-item').forEach(d=>d.open=false);
+window.addEventListener('beforeprint',()=>document.querySelectorAll('details.qa-item').forEach(d=>d.open=true));
+</script>
+</body>
+</html>
